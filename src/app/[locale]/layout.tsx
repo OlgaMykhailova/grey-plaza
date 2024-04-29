@@ -1,8 +1,11 @@
 import { getTranslations } from "next-intl/server";
-import { Inter } from "next/font/google";
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const fira = Fira_Sans({
+  weight: ["400", "500", "700"],
+  subsets: ["latin", "cyrillic"],
+});
 
 export async function generateMetadata({
   params: { locale },
@@ -25,7 +28,7 @@ export default function LocaleLayout({
 }>) {
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body className={fira.className}>{children}</body>
     </html>
   );
 }
