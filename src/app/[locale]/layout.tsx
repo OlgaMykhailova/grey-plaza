@@ -1,9 +1,11 @@
 import { getTranslations } from "next-intl/server";
 import { Fira_Sans } from "next/font/google";
+import Header from "@/src/components/shared/header/Header";
+import Footer from "@/src/components/shared/footer/Footer";
 import "./globals.css";
 
 const fira = Fira_Sans({
-  weight: ["400", "500", "700"],
+  weight: ["400", "600", "700"],
   subsets: ["latin", "cyrillic"],
 });
 
@@ -28,7 +30,11 @@ export default function LocaleLayout({
 }>) {
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={fira.className}>{children}</body>
+      <body className={fira.className}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
