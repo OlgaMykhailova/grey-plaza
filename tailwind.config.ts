@@ -77,6 +77,10 @@ const config: Config = {
         grey: "#444444",
         white: { bg: "#F6F6F6", text: "#FFFFFF" },
       },
+      backgroundImage: {
+        gradient:
+          "linear-gradient(to bottom, #878686 0%, #597286 66%, #042C4A 100%)",
+      },
     },
   },
   plugins: [],
