@@ -70,6 +70,13 @@ const config: Config = {
           },
         ],
       },
+      colors: {
+        black: "#080000",
+        primary: "#042C4A",
+        accent: "#F23E02",
+        grey: "#444444",
+        white: { bg: "#F6F6F6", text: "#FFFFFF" },
+      },
     },
   },
   plugins: [],
