@@ -30,7 +30,7 @@ export default function LocaleLayout({
 }>) {
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={fira.className}>
+      <body className={`${fira.className} bg-white-bg`}>
         <Header />
         <main>{children}</main>
         <Footer />
