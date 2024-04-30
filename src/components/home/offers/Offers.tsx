@@ -17,7 +17,6 @@ export default function Offers() {
           className="h-[72px] bg-accent"
         >
           <h2 className="text-xlsb text-white-text">
-            {t("title")}
             <span>&nbsp; &nbsp; &nbsp;</span>
           </h2>
         </Marquee>
