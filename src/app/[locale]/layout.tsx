@@ -8,6 +8,7 @@ import "./globals.css";
 const fira = Fira_Sans({
   weight: ["400", "600", "700"],
   subsets: ["latin", "cyrillic"],
+  variable: "--font-fira",
 });
 
 export async function generateMetadata({
@@ -34,7 +35,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${fira.className} bg-white-bg`}>
+        <body className={`${fira.variable} bg-white-bg font-fira`}>
           <Header />
           <main>{children}</main>
           <Footer />

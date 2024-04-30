@@ -12,6 +12,9 @@ const config: Config = {
         tablet: "768px",
         desktop: "1280px",
       },
+      fontFamily: {
+        fira: ["var(--font-fira)"],
+      },
       fontSize: {
         xs: [
           "14px",
