@@ -9,7 +9,7 @@ export default function EquipmentListItem({
 }: EquipmentListItemProps) {
   const { title, icon } = equipment;
   return (
-    <li className="flex flex-col items-center justify-center gap-4 [&:not(:last-child)]:mb-2 after::content-[''] after:w-[64%] after:h-[1px] after:bg-accent">
+    <li className="flex flex-col items-center justify-center gap-4 p-4 [&:not(:last-child)]:mb-2 after::content-[''] after:w-[185px] after:h-[1px] after:bg-accent">
       <Image
         src={`/images/icons/${icon}`}
         width="0"

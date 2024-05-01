@@ -10,7 +10,7 @@ export default function EquipmentList() {
     { title: t("monitoring"), icon: "videoMonitoring.svg" },
   ];
   return (
-    <ul className="p-4">
+    <ul>
       {equipmentList.map((equipment, idx) => (
         <EquipmentListItem key={idx} equipment={equipment} />
       ))}
