@@ -8,9 +8,8 @@ export default function Offers() {
   const locale = useLocale();
 
   return (
-    // TODO Update link href when write us form is ready
     <section>
-      <Link href={`/${locale}`}>
+      <Link href={`/${locale}#contacts`}>
         <Marquee
           autoFill={true}
           pauseOnHover={true}

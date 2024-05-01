@@ -1,3 +1,3 @@
 export default function WriteUs() {
-  return <section></section>;
+  return <section id="contacts"></section>;
 }

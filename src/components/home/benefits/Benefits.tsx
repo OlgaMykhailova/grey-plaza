@@ -1,3 +1,3 @@
 export default function Benefits() {
-  return <section></section>;
+  return <section id="benefits"></section>;
 }

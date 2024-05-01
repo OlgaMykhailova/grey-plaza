@@ -1,3 +1,3 @@
 export default function Offices() {
-  return <section></section>;
+  return <section id="offices"></section>;
 }

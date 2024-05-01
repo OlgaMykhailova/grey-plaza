@@ -1,3 +1,3 @@
 export default function Gallery() {
-  return <section></section>;
+  return <section id="gallery"></section>;
 }

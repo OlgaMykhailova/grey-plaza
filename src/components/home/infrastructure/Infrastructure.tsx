@@ -1,3 +1,3 @@
 export default function Infrastructure() {
-  return <section></section>;
+  return <section id="infrastructure"></section>;
 }
