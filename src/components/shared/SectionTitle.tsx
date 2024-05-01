@@ -3,8 +3,13 @@ interface SectionTitleProps {
   className?: string;
 }
 
-export const SectionTitle = ({ children, className }: SectionTitleProps) => {
+export default function SectionTitle({
+  children,
+  className,
+}: SectionTitleProps) {
   return (
-    <h2 className={`center mb-[20px] text-xlsb ${className}`}>{children}</h2>
+    <h2 className={`mb-[20px] text-xlsb text-center ${className}`}>
+      {children}
+    </h2>
   );
-};
+}

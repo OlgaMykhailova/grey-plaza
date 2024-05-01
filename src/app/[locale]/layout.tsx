@@ -35,7 +35,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${fira.variable} bg-white-bg font-fira`}>
+        <body className={`${fira.variable} bg-white-bg font-fira text-black`}>
           <Header />
           <main>{children}</main>
           <Footer />
