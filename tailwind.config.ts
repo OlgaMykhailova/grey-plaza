@@ -12,6 +12,12 @@ const config: Config = {
         tablet: "768px",
         desktop: "1280px",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "20px",
+        },
+      },
       fontFamily: {
         fira: ["var(--font-fira)"],
       },
