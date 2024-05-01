@@ -1,3 +1,3 @@
 export default function Equipment() {
-  return <section></section>;
+  return <section id="equipment"></section>;
 }
