@@ -3,7 +3,16 @@
     "title": "Grey Plaza Business Center",
     "description": "Офісні приміщення для вашого бізнесу в Києві"
   },
+  "Header": {},
+  "Hero": {},
   "Offers": {
     "title": "Спеціальні умови при оренді від 200 м²"
-  }
+  },
+  "Infrastructure": { "title": "Інфраструктура" },
+  "Equipment": { "title": "Технічне оснащення" },
+  "Benefits": { "title": "Наші переваги" },
+  "Offices": { "title": "Оренда приміщень" },
+  "WriteUs": { "title": "Шукаєте офісне приміщення для вашого бізнесу?" },
+  "Location": { "title": "Розташування та схема проїзду" },
+  "Footer": {}
 }

@@ -1,3 +1,13 @@
+import { useTranslations } from "next-intl";
+import Section from "../../shared/Section";
+import SectionTitle from "../../shared/SectionTitle";
+
 export default function Equipment() {
-  return <section id="equipment"></section>;
+  const t = useTranslations("Equipment");
+
+  return (
+    <Section id="equipment">
+      <SectionTitle>{t("title")}</SectionTitle>
+    </Section>
+  );
 }

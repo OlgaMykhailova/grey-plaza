@@ -1,3 +1,13 @@
+import { useTranslations } from "next-intl";
+import Section from "../../shared/Section";
+import SectionTitle from "../../shared/SectionTitle";
+
 export default function Benefits() {
-  return <section id="benefits"></section>;
+  const t = useTranslations("Benefits");
+
+  return (
+    <Section id="benefits">
+      <SectionTitle className="text-white-text">{t("title")}</SectionTitle>
+    </Section>
+  );
 }
