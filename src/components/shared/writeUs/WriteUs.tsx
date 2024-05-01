@@ -1,3 +1,9 @@
+import Section from "../Section";
+
 export default function WriteUs() {
-  return <section id="contacts"></section>;
+  return (
+    <Section id="contacts">
+      <></>
+    </Section>
+  );
 }

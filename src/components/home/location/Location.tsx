@@ -1,3 +1,9 @@
+import Section from "../../shared/Section";
+
 export default function Location() {
-  return <section></section>;
+  return (
+    <Section>
+      <></>
+    </Section>
+  );
 }

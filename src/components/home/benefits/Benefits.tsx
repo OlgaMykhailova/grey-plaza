@@ -1,3 +1,9 @@
+import Section from "../../shared/Section";
+
 export default function Benefits() {
-  return <section id="benefits"></section>;
+  return (
+    <Section id="benefits">
+      <></>
+    </Section>
+  );
 }

@@ -1,3 +1,9 @@
+import Section from "../../shared/Section";
+
 export default function Infrastructure() {
-  return <section id="infrastructure"></section>;
+  return (
+    <Section id="infrastructure">
+      <></>
+    </Section>
+  );
 }

@@ -1,3 +1,9 @@
+import Section from "../../shared/Section";
+
 export default function Offices() {
-  return <section id="offices"></section>;
+  return (
+    <Section id="offices">
+      <></>
+    </Section>
+  );
 }
