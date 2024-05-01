@@ -80,15 +80,20 @@ const config: Config = {
         ],
       },
       colors: {
-        black: "#080000",
         primary: "#042C4A",
+        secondary: "#ACC8E5",
         accent: "#F23E02",
+        black: "#080000",
+        disabled: "#8B8B8B",
         grey: "#444444",
         white: { bg: "#F6F6F6", text: "#FFFFFF" },
       },
       backgroundImage: {
         gradient:
           "linear-gradient(to bottom, #878686 0%, #597286 66%, #042C4A 100%)",
+      },
+      transitionTimingFunction: {
+        "ease-out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
     },
   },

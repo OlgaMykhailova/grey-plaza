@@ -7,9 +7,8 @@ export default function Infrastructure() {
   const t = useTranslations("Infrastructure");
 
   return (
-    <Section id="infrastructure" className="bg-primary">
+    <Section id="infrastructure">
       <SectionTitle>{t("title")}</SectionTitle>
-      <Button>Шо попало</Button>
     </Section>
   );
 }
