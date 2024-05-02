@@ -3,6 +3,9 @@
     "title": "Grey Plaza Business Center",
     "description": "Офісні приміщення для вашого бізнесу в Києві"
   },
+  "Buttons": {
+    "order": "Хочу орендувати"
+  },
   "Header": {},
   "Hero": {},
   "Offers": {
