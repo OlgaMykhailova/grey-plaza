@@ -1,5 +1,8 @@
 import { useTranslations } from "next-intl";
 import ContactInfoItem from "./ContactInfoItem";
+import IconPhone from "../../icons/IconPhone";
+import IconEmail from "../../icons/IconEmail";
+import IconLocationSmall from "../../icons/IconLocationSmall";
 
 export default function ContactInfo() {
   const t = useTranslations("Footer");
@@ -8,13 +11,13 @@ export default function ContactInfo() {
 
   const contactsList = [
     {
-      icon: "phone.svg",
+      icon: <IconPhone />,
       url: `tel:+${t("phone").replace(/\D/g, "")}`,
       name: t("phone"),
     },
-    { icon: "mail.svg", url: `mailto:${t("email")}`, name: t("email") },
+    { icon: <IconEmail />, url: `mailto:${t("email")}`, name: t("email") },
     {
-      icon: "locationSmall.svg",
+      icon: <IconLocationSmall />,
       url: "https://maps.app.goo.gl/XdyPTk5aaQVUhvH78",
       name: t("address"),
     },

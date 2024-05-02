@@ -33,7 +33,7 @@ export default function LocaleLayout({
   const messages = useMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className="scroll-smooth">
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${fira.variable} bg-white-bg font-fira text-black`}>
           <Header />
