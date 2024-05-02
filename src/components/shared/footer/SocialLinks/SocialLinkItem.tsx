@@ -8,7 +8,13 @@ export default function SocialLinkItem({ social }: SocialLinkItemProps) {
   const { name, icon, url } = social;
   return (
     <li>
-      <a href={url} target="_blank" rel="noopener noreferrer" aria-label={name}>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={name}
+        className="outline-none"
+      >
         <Image
           src={`/images/icons/${icon}`}
           width="0"

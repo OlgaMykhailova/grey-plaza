@@ -1,3 +1,3 @@
 export default function Hero() {
-  return <section id="about"></section>;
+  return <section id="about-us"></section>;
 }

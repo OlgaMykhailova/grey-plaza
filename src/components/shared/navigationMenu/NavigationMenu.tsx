@@ -4,13 +4,13 @@ import NavigationMenuItem from "./NavigationMenuItem";
 export default function NavigationMenu() {
   const t = useTranslations();
   const menuList = [
-    { title: t("Hero.title"), id: "hero" },
+    { title: t("Hero.title"), id: "about-us" },
     { title: t("Infrastructure.title"), id: "infrastructure" },
     { title: t("Equipment.title"), id: "equipment" },
     { title: t("Benefits.title"), id: "benefits" },
     { title: t("Offices.title"), id: "offices" },
     { title: t("Gallery.title"), id: "gallery" },
-    { title: t("WriteUs.title"), id: "contacts" },
+    { title: t("WriteUs.title"), id: "write-us" },
   ];
   return (
     <nav>

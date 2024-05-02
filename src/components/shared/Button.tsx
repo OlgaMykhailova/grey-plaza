@@ -30,7 +30,7 @@ export default function Button({
         variant === "primary" ? primaryColor : secondaryColor
       } ${
         size === "big" ? "w-[180px] h-[56px]" : "w-[162px] h-[40px]"
-      }  outline-none text-baseb text-white-text enabled:laptop:focus:bg-white-bg enabled:desktop:focus:text-accent ${className}`}
+      }  outline-none text-baseb text-white-text enabled:laptop:focus-visible:bg-white-bg enabled:desktop:focus-visible:text-accent ${className}`}
     >
       {children}
       <div
