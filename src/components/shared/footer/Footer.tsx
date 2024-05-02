@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Section from "../Section";
 import NavigationMenu from "../navigationMenu/NavigationMenu";
-import ContactInfo from "./ContactInfo";
+import ContactInfo from "./ContactInfo/ContactInfo";
+import SocialLinks from "./SocialLinks/SocialLinks";
 
 export default function Footer() {
   return (
@@ -16,6 +17,7 @@ export default function Footer() {
         />
         <NavigationMenu />
         <ContactInfo />
+        <SocialLinks />
       </Section>
     </footer>
   );
