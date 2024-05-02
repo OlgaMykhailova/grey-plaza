@@ -11,7 +11,7 @@ const config: Config = {
       screens: {
         mobileXl: "560px",
         tablet: "768px",
-        desktop: "1280px",
+        laptop: "1280px",
       },
       container: {
         center: true,
@@ -101,7 +101,7 @@ const config: Config = {
           "linear-gradient(to bottom, #878686 0%, #597286 66%, #042C4A 100%)",
       },
       transitionTimingFunction: {
-        "ease-out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+        "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
     },
   },

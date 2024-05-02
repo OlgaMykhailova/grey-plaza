@@ -7,7 +7,7 @@ export default function WriteUs() {
 
   return (
     <Section id="contacts">
-      <SectionTitle className="text-white-text">{t("title")}</SectionTitle>
+      <SectionTitle className="text-white-text">{t("subTitle")}</SectionTitle>
     </Section>
   );
 }
