@@ -22,6 +22,13 @@ const config: Config = {
         fira: ["var(--font-fira)"],
       },
       fontSize: {
+        xxs: [
+          "10px",
+          {
+            lineHeight: "12px",
+            fontWeight: "400",
+          },
+        ],
         xs: [
           "14px",
           {
