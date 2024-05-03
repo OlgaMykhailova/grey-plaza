@@ -6,7 +6,7 @@ export default function Location() {
   const t = useTranslations("Location");
 
   return (
-    <section className="py-10 mb-10">
+    <section className="py-10 mb-10 scroll-mt-[72px]">
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
       </Container>

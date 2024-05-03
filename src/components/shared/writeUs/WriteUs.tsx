@@ -6,7 +6,7 @@ export default function WriteUs() {
   const t = useTranslations("WriteUs");
 
   return (
-    <section id="write-us">
+    <section id="write-us" className="scroll-mt-[72px]">
       <Container>
         <SectionTitle className="text-white-text">{t("subTitle")}</SectionTitle>
       </Container>

@@ -65,6 +65,13 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        md: [
+          "18px",
+          {
+            lineHeight: "24px",
+            fontWeight: "400",
+          },
+        ],
         mdb: [
           "18px",
           {

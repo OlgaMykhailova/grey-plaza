@@ -8,7 +8,7 @@ export default function Equipment() {
   const t = useTranslations("Equipment");
 
   return (
-    <section id="equipment" className="relative py-10 mb-10">
+    <section id="equipment" className="relative py-10 mb-10 scroll-mt-[72px]">
       <Image
         src={`/images/bgImages/hexagonsBg.svg`}
         width="0"
