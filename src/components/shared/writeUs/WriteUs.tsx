@@ -6,8 +6,8 @@ export default function WriteUs() {
   const t = useTranslations("WriteUs");
 
   return (
-    <Section id="contacts">
-      <SectionTitle className="text-white-text">{t("title")}</SectionTitle>
+    <Section id="write-us">
+      <SectionTitle className="text-white-text">{t("subTitle")}</SectionTitle>
     </Section>
   );
 }

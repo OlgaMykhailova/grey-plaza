@@ -12,7 +12,7 @@ export default function Button({
   children,
   variant = "primary",
   size = "big",
-  className,
+  className = "",
   type = "button",
   disabled = false,
   onClick,
@@ -30,13 +30,13 @@ export default function Button({
         variant === "primary" ? primaryColor : secondaryColor
       } ${
         size === "big" ? "w-[180px] h-[56px]" : "w-[162px] h-[40px]"
-      }  outline-none text-baseb text-white-text enabled:desktop:focus:bg-white-bg enabled:desktop:focus:text-accent ${className}`}
+      }  outline-none text-baseb text-white-text enabled:laptop:focus-visible:bg-white-bg enabled:desktop:focus-visible:text-accent ${className}`}
     >
       {children}
       <div
         data-label={children}
         className={`absolute z-10 flex justify-center items-center bg-white-bg text-accent overflow-hidden h-0 w-full
-        group-enabled:desktop:group-hover:h-full before:content-[attr(data-label)] transition-[height] duration-[300ms] ease-out-quart`}
+        group-enabled:laptop:group-hover:h-full before:content-[attr(data-label)] transition-[height] duration-[300ms] ease-out-quart`}
       ></div>
     </button>
   );

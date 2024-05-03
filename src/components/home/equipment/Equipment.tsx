@@ -14,7 +14,7 @@ export default function Equipment() {
         width="0"
         height="0"
         alt="hexagons background"
-        className="absolute top-[-40px] z-[-10] min-w-[313px] max-w-[414px] w-[87%] h-auto"
+        className="absolute top-[-40px] z-[-10] min-w-[313px] max-w-[414px] w-[84%] mobileXl:min-w-[414px] mobileXl:max-w-[514px] mobileXl:w-[70%] h-auto"
       />
       <Section id="equipment">
         <SectionTitle>{t("title")}</SectionTitle>

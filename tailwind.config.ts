@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        mobileXl: "560px",
         tablet: "768px",
-        desktop: "1280px",
+        laptop: "1280px",
       },
       container: {
         center: true,
@@ -22,10 +23,17 @@ const config: Config = {
         fira: ["var(--font-fira)"],
       },
       fontSize: {
-        xxs: [
+        "3xs": [
           "10px",
           {
             lineHeight: "12px",
+            fontWeight: "400",
+          },
+        ],
+        "2xs": [
+          "12px",
+          {
+            lineHeight: "16px",
             fontWeight: "400",
           },
         ],
@@ -100,7 +108,7 @@ const config: Config = {
           "linear-gradient(to bottom, #878686 0%, #597286 66%, #042C4A 100%)",
       },
       transitionTimingFunction: {
-        "ease-out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+        "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
     },
   },
