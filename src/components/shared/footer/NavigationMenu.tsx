@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import NavigationMenuItem from "./NavigationMenuItem";
+import NavigationMenuItem from "../NavigationMenuItem";
 
 export default function NavigationMenu() {
   const t = useTranslations();

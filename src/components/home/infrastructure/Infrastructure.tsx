@@ -6,7 +6,7 @@ export default function Infrastructure() {
   const t = useTranslations("Infrastructure");
 
   return (
-    <section id="infrastructure">
+    <section id="infrastructure" className="py-10 mb-10">
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
       </Container>
