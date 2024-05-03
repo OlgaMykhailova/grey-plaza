@@ -1,18 +1,16 @@
 import { ReactNode } from "react";
 
-interface SectionProps {
+interface ContainerProps {
   children: ReactNode;
   className?: string;
-  id?: string;
 }
 
-export default function Section({ children, className, id }: SectionProps) {
+export default function Container({ children, className }: ContainerProps) {
   return (
-    <section
-      id={id}
+    <div
       className={`container max-w-[560px] py-[40px] [&:not(:last-child)]:mb-[40px] ${className}`}
     >
       {children}
-    </section>
+    </div>
   );
 }

@@ -1,13 +1,15 @@
 import { useTranslations } from "next-intl";
-import Section from "../../shared/Section";
+import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 
 export default function Location() {
   const t = useTranslations("Location");
 
   return (
-    <Section>
-      <SectionTitle>{t("title")}</SectionTitle>
-    </Section>
+    <section>
+      <Container>
+        <SectionTitle>{t("title")}</SectionTitle>
+      </Container>
+    </section>
   );
 }

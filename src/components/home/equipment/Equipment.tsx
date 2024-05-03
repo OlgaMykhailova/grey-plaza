@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Section from "../../shared/Section";
+import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import EquipmentList from "./EquipmentList";
 
@@ -8,7 +8,7 @@ export default function Equipment() {
   const t = useTranslations("Equipment");
 
   return (
-    <div className="relative">
+    <section id="equipment" className="relative">
       <Image
         src={`/images/bgImages/hexagonsBg.svg`}
         width="0"
@@ -16,10 +16,10 @@ export default function Equipment() {
         alt="hexagons background"
         className="absolute top-[-40px] z-[-10] min-w-[313px] max-w-[414px] w-[84%] mobileXl:min-w-[414px] mobileXl:max-w-[514px] mobileXl:w-[70%] h-auto"
       />
-      <Section id="equipment">
+      <Container>
         <SectionTitle>{t("title")}</SectionTitle>
         <EquipmentList />
-      </Section>
-    </div>
+      </Container>
+    </section>
   );
 }
