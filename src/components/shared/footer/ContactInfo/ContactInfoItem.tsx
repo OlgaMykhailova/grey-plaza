@@ -16,8 +16,8 @@ export default function ContactInfoItem({ contact }: ContactInfoItemProps) {
         className="flex justify-center items-center gap-2 outline-none text-base text-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
         transition-[color] duration-[300ms] ease-out-quart"
       >
-        <span>{icon}</span>
-        <span className="">{name}</span>
+        {icon}
+        {name}
       </a>
     </li>
   );
