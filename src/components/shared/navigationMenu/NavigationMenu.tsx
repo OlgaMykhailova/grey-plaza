@@ -14,7 +14,7 @@ export default function NavigationMenu() {
   ];
   return (
     <nav>
-      <ul className="flex flex-col items-center gap-y-2 py-[9.5px]">
+      <ul className="flex flex-col items-center">
         {menuList.map((menuItem, idx) => (
           <NavigationMenuItem key={idx} menuItem={menuItem} />
         ))}
