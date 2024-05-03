@@ -10,7 +10,7 @@ import Location from "@/src/components/home/location/Location";
 
 export default function Home() {
   return (
-    <>
+    <div className="pt-[72px]">
       <Hero />
       <Offers />
       <Infrastructure />
@@ -20,6 +20,6 @@ export default function Home() {
       <Gallery />
       <WriteUs />
       <Location />
-    </>
+    </div>
   );
 }

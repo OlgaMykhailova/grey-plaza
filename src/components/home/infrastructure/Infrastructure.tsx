@@ -1,13 +1,15 @@
 import { useTranslations } from "next-intl";
-import Section from "../../shared/Section";
+import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 
 export default function Infrastructure() {
   const t = useTranslations("Infrastructure");
 
   return (
-    <Section id="infrastructure">
-      <SectionTitle>{t("title")}</SectionTitle>
-    </Section>
+    <section id="infrastructure" className="py-10 mb-10">
+      <Container>
+        <SectionTitle>{t("title")}</SectionTitle>
+      </Container>
+    </section>
   );
 }
