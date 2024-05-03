@@ -17,7 +17,7 @@ export default function ContactInfoItem({ contact }: ContactInfoItemProps) {
         transition-[color] duration-[300ms] ease-out-quart"
       >
         <span>{icon}</span>
-        <span className="max-w-[220px]">{name}</span>
+        <span className="">{name}</span>
       </a>
     </li>
   );
