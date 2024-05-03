@@ -22,7 +22,7 @@ export default function Offers() {
             <span className="text-3xs">
               &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp;
             </span>
-
+            <span className="text-md">{"Залишити заявку".toUpperCase()}</span>
             <span className="text-3xs">
               &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
             </span>
