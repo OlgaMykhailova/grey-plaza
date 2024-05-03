@@ -24,7 +24,7 @@ export default function ContactInfo() {
   ];
 
   return (
-    <ul className="flex flex-col items-center">
+    <ul id="contacts" className="flex flex-col items-center">
       {contactsList.map((contact, idx) => (
         <ContactInfoItem key={idx} contact={contact} />
       ))}
