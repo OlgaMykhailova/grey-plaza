@@ -12,7 +12,7 @@ export default function LogoLink() {
         width="0"
         height="0"
         alt="logo"
-        className="w-[120px] h-[60px] laptop:group-hover:scale-105 laptop:group-focus-visible:scale-105 transition-[transform] duration-[300ms] ease-out-quart"
+        className="w-[120px] h-[60px] laptop:group-hover:scale-[1.03] laptop:group-focus-visible:scale-[1.03] transition-[transform] duration-[300ms] ease-out-quart"
       />
     </Link>
   );

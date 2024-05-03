@@ -2,6 +2,7 @@ import Section from "../Section";
 import NavigationMenu from "../navigationMenu/NavigationMenu";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import LogoLink from "./ContactInfo/LogoLink";
+import FooterThumb from "./FooterThumb/FooterThumb";
 import SocialLinks from "./SocialLinks/SocialLinks";
 
 export default function Footer() {
@@ -12,6 +13,7 @@ export default function Footer() {
         <NavigationMenu />
         <ContactInfo />
         <SocialLinks />
+        <FooterThumb />
       </Section>
     </footer>
   );

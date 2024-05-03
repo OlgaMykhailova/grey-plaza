@@ -23,10 +23,17 @@ const config: Config = {
         fira: ["var(--font-fira)"],
       },
       fontSize: {
-        xxs: [
+        "3xs": [
           "10px",
           {
             lineHeight: "12px",
+            fontWeight: "400",
+          },
+        ],
+        "2xs": [
+          "12px",
+          {
+            lineHeight: "16px",
             fontWeight: "400",
           },
         ],

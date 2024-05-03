@@ -13,14 +13,15 @@ export default function SocialLinkItem({ social }: SocialLinkItemProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={name}
-        className="outline-none"
+        className="relative flex items-center justify-center w-9 h-9 outline-none after:content-[''] after:absolute after:w-0 after:h-0 after:rounded-full after:bg-secondary
+        transition-width after:duration-300 after:ease-out-quart laptop:focus-visible:after:w-full laptop:focus-visible:after:h-full laptop:hover:after:w-full laptop:hover:after:h-full after:blur-[2px]"
       >
         <Image
           src={`/images/icons/${icon}`}
           width="0"
           height="0"
           alt="phone"
-          className="w-8 h-8"
+          className="z-10 w-full h-full"
         />
       </a>
     </li>

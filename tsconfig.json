@@ -29,7 +29,8 @@
     "**/*.tsx",
     "**/**/*.ts",
     "**/**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/components/shared/footer/FooterThumb"
   ],
   "exclude": ["node_modules"]
 }
