@@ -10,7 +10,7 @@ export default function Offers() {
 
   return (
     <section>
-      <Link href={`/${locale}#contacts`}>
+      <Link href={`/${locale}#write-us`}>
         <Marquee
           autoFill={true}
           pauseOnHover={true}
@@ -19,13 +19,9 @@ export default function Offers() {
         >
           <h2 className="flex items-center text-lgb text-white-text">
             {t("Offers.title")}
-            <span className="text-3xs">
-              &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp;
-            </span>
+            <span className="text-3xs">&nbsp; &nbsp; ⬢ &nbsp; &nbsp;</span>
             <span className="text-md">{"Залишити заявку".toUpperCase()}</span>
-            <span className="text-3xs">
-              &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
-            </span>
+            <span className="text-3xs">&nbsp; &nbsp; ⬢ &nbsp; &nbsp;</span>
           </h2>
         </Marquee>
       </Link>
