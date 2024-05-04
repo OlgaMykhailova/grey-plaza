@@ -21,11 +21,11 @@ export default function HeaderMenu({
 
   return (
     <div
-      className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-primary bg-opacity-[0.8] ${
-        isHeaderMenuOpened ? "h-[calc(100dvh-72px)]" : "h-0"
+      className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-headerGradient ${
+        isHeaderMenuOpened ? "h-[calc(100vh-72px)] no-doc-scroll" : "h-0"
       }`}
     >
-      <Container className="flex flex-col items-center gap-y-10 py-10">
+      <Container className="flex flex-col items-center gap-y-10 h-full py-10 overflow-y-auto">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
         <Link href={`/${locale}#write-us`} className="outline-none">

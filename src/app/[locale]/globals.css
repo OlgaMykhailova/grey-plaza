@@ -5,6 +5,10 @@
 :root {
 }
 
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
   }
