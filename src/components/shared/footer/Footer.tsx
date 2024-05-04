@@ -3,7 +3,7 @@ import FooterNavigationMenu from "./FooterNavigationMenu";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import LogoLink from "../LogoLink";
 import FooterThumb from "./FooterThumb/FooterThumb";
-import SocialLinks from "./SocialLinks/SocialLinks";
+import SocialLinks from "../socialLinks/SocialLinks";
 
 export default function Footer() {
   return (

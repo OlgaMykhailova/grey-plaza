@@ -1,8 +1,15 @@
 import { useTranslations } from "next-intl";
 import NavigationMenu from "../navigationMenu/NavigationMenu";
 
-export default function HeaderNavigationMenu() {
+interface HeaderNavigationMenuProps {
+  onClick?: () => void;
+}
+
+export default function HeaderNavigationMenu({
+  onClick,
+}: HeaderNavigationMenuProps) {
   const t = useTranslations();
+
   const menuList = [
     { title: t("Hero.title"), id: "about-us" },
     { title: t("Infrastructure.title"), id: "infrastructure" },
@@ -13,5 +20,11 @@ export default function HeaderNavigationMenu() {
     { title: t("Footer.contacts"), id: "contacts" },
   ];
 
-  return <NavigationMenu menuList={menuList} className="text-baseb" />;
+  return (
+    <NavigationMenu
+      menuList={menuList}
+      className="text-baseb"
+      onClick={onClick}
+    />
+  );
 }

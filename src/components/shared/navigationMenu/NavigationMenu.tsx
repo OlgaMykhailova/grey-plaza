@@ -6,11 +6,13 @@ interface MenuItem {
 
 interface NavigationMenuProps {
   menuList: MenuItem[];
+  onClick?: () => void;
   className?: string;
 }
 
 export default function NavigationMenu({
   menuList,
+  onClick,
   className = "",
 }: NavigationMenuProps) {
   return (
@@ -19,7 +21,7 @@ export default function NavigationMenu({
         className={`flex flex-col items-center text-base text-white-text ${className}`}
       >
         {menuList.map((menuItem, idx) => (
-          <NavigationMenuItem key={idx} menuItem={menuItem} />
+          <NavigationMenuItem key={idx} menuItem={menuItem} onClick={onClick} />
         ))}
       </ul>
     </nav>

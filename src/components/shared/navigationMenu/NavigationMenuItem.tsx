@@ -3,16 +3,18 @@ import Link from "next/link";
 
 interface NavigationMenuItemProps {
   menuItem: { title: string; id: string };
+  onClick?: () => void;
 }
 
 export default function NavigationMenuItem({
   menuItem,
+  onClick,
 }: NavigationMenuItemProps) {
   const { title, id } = menuItem;
   const locale = useLocale();
 
   return (
-    <li className="relative text-inherit">
+    <li onClick={onClick} className="relative text-inherit">
       <Link
         href={`/${locale}#${id}`}
         className="inline-block py-[9.5px] outline-none after:content-[''] after:absolute after:left-0 after:bottom-[1.5px] after:h-[1px] 
