@@ -12,7 +12,7 @@ export default function NavigationMenuItem({
   const locale = useLocale();
 
   return (
-    <li className="relative text-base text-white-text">
+    <li className="relative text-inherit">
       <Link
         href={`/${locale}#${id}`}
         className="inline-block py-[9.5px] outline-none after:content-[''] after:absolute after:left-0 after:bottom-[1.5px] after:h-[1px] 

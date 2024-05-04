@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
-import NavigationMenuItem from "../NavigationMenuItem";
+import NavigationMenu from "../navigationMenu/NavigationMenu";
 
-export default function NavigationMenu() {
+export default function HeaderNavigationMenu() {
   const t = useTranslations();
   const menuList = [
     { title: t("Hero.title"), id: "about-us" },
@@ -10,15 +10,8 @@ export default function NavigationMenu() {
     { title: t("Benefits.title"), id: "benefits" },
     { title: t("Offices.title"), id: "offices" },
     { title: t("Gallery.title"), id: "gallery" },
-    { title: t("WriteUs.title"), id: "write-us" },
+    { title: t("Footer.contacts"), id: "contacts" },
   ];
-  return (
-    <nav>
-      <ul className="flex flex-col items-center">
-        {menuList.map((menuItem, idx) => (
-          <NavigationMenuItem key={idx} menuItem={menuItem} />
-        ))}
-      </ul>
-    </nav>
-  );
+
+  return <NavigationMenu menuList={menuList} className="text-baseb" />;
 }

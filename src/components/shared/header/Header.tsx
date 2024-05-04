@@ -4,6 +4,7 @@ import Container from "../Container";
 import LogoLink from "../LogoLink";
 import BurgerMenuButton from "./BurgerMenuButton";
 import PhoneLink from "./PhoneLink";
+import HeaderMenu from "./HeaderMenu";
 
 export default function Header() {
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
@@ -22,6 +23,10 @@ export default function Header() {
           />
         </div>
       </Container>
+      <HeaderMenu
+        isHeaderMenuOpened={isHeaderMenuOpened}
+        setIsHeaderMenuOpened={setIsHeaderMenuOpened}
+      />
     </header>
   );
 }
