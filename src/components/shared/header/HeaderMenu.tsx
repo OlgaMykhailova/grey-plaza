@@ -25,7 +25,7 @@ export default function HeaderMenu({
         isHeaderMenuOpened ? "h-[calc(100dvh-72px)]" : "h-0"
       }`}
     >
-      <Container className="flex flex-col items-center gap-y-10 py-10">
+      <Container className="flex flex-col items-center gap-y-10 h-full py-10">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
         <Link href={`/${locale}#write-us`} className="outline-none">
