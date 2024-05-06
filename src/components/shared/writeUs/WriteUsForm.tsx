@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import Link from "next/link";
 import Button from "../Button";
+import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
 
 export default function WriteUsForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,19 +18,22 @@ export default function WriteUsForm() {
     message: "",
   };
 
-  const labelStyles = "relative w-full h-12";
+  const validationSchema = WriteUsValidation();
+
+  const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
     "absolute left-4 transition-translate duration-300 ease-out-quart text-grey bg-white-bg";
-  const fieldStyles =
-    "outline-none w-full h-full py-2 px-4 text-black bg-white-bg";
-  const teaxtAreaLabelStyles = "relative w-full h-[116px]";
-  const textAreaStyles =
-    "outline-none w-full h-full p-4 resize-none text-black bg-white-bg";
+  const fieldStyles = "outline-none w-full h-full text-black ";
+  const teaxtAreaLabelStyles = "relative w-full h-[116px] p-4 bg-white-bg";
+  const textAreaStyles = "outline-none w-full h-full  resize-none text-black ";
+  const errorStyles =
+    "absolute bottom-[-18px] right-0 text-2xs text-error-text";
 
   return (
     <Formik
       initialValues={initialValues}
       onSubmit={(values) => console.log(values)}
+      validationSchema={validationSchema}
     >
       {({ values, status, setStatus }) => (
         <Form className="flex flex-col items-center gap-y-7 text-base ">
@@ -50,7 +54,11 @@ export default function WriteUsForm() {
               onFocus={() => setStatus("name")}
               className={`${fieldStyles}`}
             ></Field>
-            <ErrorMessage name="name" component="p" className=""></ErrorMessage>
+            <ErrorMessage
+              name="name"
+              component="p"
+              className={errorStyles}
+            ></ErrorMessage>
           </label>
           <label className={`${labelStyles}`}>
             <p
@@ -72,7 +80,7 @@ export default function WriteUsForm() {
             <ErrorMessage
               name="email"
               component="p"
-              className=""
+              className={errorStyles}
             ></ErrorMessage>
           </label>
           <label className={`${labelStyles}`}>
@@ -95,7 +103,7 @@ export default function WriteUsForm() {
             <ErrorMessage
               name="phone"
               component="p"
-              className=""
+              className={errorStyles}
             ></ErrorMessage>
           </label>
           <label className={`${teaxtAreaLabelStyles}`}>
@@ -119,7 +127,7 @@ export default function WriteUsForm() {
             <ErrorMessage
               name="message"
               component="p"
-              className=""
+              className={errorStyles}
             ></ErrorMessage>
           </label>
           <div className="flex gap-x-2 mb-1 text-white-text">

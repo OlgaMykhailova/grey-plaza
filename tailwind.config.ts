@@ -110,6 +110,7 @@ const config: Config = {
         disabled: "#8B8B8B",
         grey: "#444444",
         white: { bg: "#F6F6F6", text: "#FFFFFF" },
+        error: { text: "#FF958F", input: "#DD4037" },
       },
       backgroundImage: {
         gradient:
