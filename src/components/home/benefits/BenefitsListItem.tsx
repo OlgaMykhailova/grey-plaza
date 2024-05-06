@@ -9,8 +9,8 @@ interface BenefitsListItemProps {
 export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
   const { title, description, icon } = benefit;
   const { ref, inView } = useInView({
-    threshold: 0.7,
-    rootMargin: "-35% 0% -35% 0%",
+    threshold: 0.01,
+    rootMargin: "-49% 0% -49% 0%",
   });
 
   return (
