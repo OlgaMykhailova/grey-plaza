@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Field, Form, Formik, ErrorMessage } from "formik";
+import MaskedInput from "react-text-mask";
 import Link from "next/link";
 import Button from "../Button";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
@@ -20,14 +21,37 @@ export default function WriteUsForm() {
 
   const validationSchema = WriteUsValidation();
 
+  const phoneNumberMask = [
+    "+",
+    "3",
+    "8",
+    " ",
+    "(",
+    "0",
+    /[0-9]/,
+    /\d/,
+    ")",
+    " ",
+    /\d/,
+    /\d/,
+    /\d/,
+    "-",
+    /\d/,
+    /\d/,
+    "-",
+    /\d/,
+    /\d/,
+  ];
+
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
     "absolute left-4 transition-translate duration-300 ease-out-quart text-grey bg-white-bg";
-  const fieldStyles = "outline-none w-full h-full text-black ";
+  const fieldStyles = "outline-none w-full h-full text-black bg-white-bg";
   const teaxtAreaLabelStyles = "relative w-full h-[116px] p-4 bg-white-bg";
-  const textAreaStyles = "outline-none w-full h-full  resize-none text-black ";
+  const textAreaStyles =
+    "outline-none w-full h-full resize-none text-black bg-white-bg";
   const errorStyles =
-    "absolute bottom-[-18px] right-0 text-2xs text-error-text";
+    "absolute bottom-[-16px] right-0 text-2xs text-error-text";
 
   return (
     <Formik
@@ -51,6 +75,9 @@ export default function WriteUsForm() {
               name="name"
               type="text"
               autoComplete="on"
+              placeholder={
+                status === "name" ? t("WriteUs.namePlaceholder") : ""
+              }
               onFocus={() => setStatus("name")}
               className={`${fieldStyles}`}
             ></Field>
@@ -74,6 +101,9 @@ export default function WriteUsForm() {
               name="email"
               type="email"
               autoComplete="on"
+              placeholder={
+                status === "email" ? t("WriteUs.emailPlaceholder") : ""
+              }
               onFocus={() => setStatus("email")}
               className={`${fieldStyles}`}
             ></Field>
@@ -94,9 +124,14 @@ export default function WriteUsForm() {
               {t("WriteUs.phone")}
             </p>
             <Field
+              as={MaskedInput}
+              mask={phoneNumberMask}
               name="phone"
               type="text"
               autoComplete="on"
+              placeholder={
+                status === "phone" ? t("WriteUs.phonePlaceholder") : ""
+              }
               onFocus={() => setStatus("phone")}
               className={`${fieldStyles}`}
             ></Field>
@@ -111,7 +146,7 @@ export default function WriteUsForm() {
               className={`${textLabelStyles} ${
                 values.message || status === "message"
                   ? "top-[-10px] px-1.5 text-xs"
-                  : "top-[14px] text-base"
+                  : "top-[16px] left-0 text-base"
               }`}
             >
               {t("WriteUs.message")}
@@ -121,6 +156,9 @@ export default function WriteUsForm() {
               name="message"
               type="text"
               autoComplete="on"
+              placeholder={
+                status === "message" ? t("WriteUs.messagePlaceholder") : ""
+              }
               onFocus={() => setStatus("message")}
               className={`${textAreaStyles}`}
             ></Field>
