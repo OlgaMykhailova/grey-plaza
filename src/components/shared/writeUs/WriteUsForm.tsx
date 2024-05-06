@@ -60,7 +60,7 @@ export default function WriteUsForm() {
       validationSchema={validationSchema}
     >
       {({ values, errors, status, setStatus }) => (
-        <Form className="flex flex-col items-center gap-y-7 text-base ">
+        <Form className="flex flex-col items-center gap-y-7 h-full text-base ">
           <label
             className={`${labelStyles} ${
               errors.name ? "border-[1px] border-error-input" : ""

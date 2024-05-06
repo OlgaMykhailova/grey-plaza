@@ -18,7 +18,7 @@ export default function WriteUs() {
         className="absolute z-[-10] min-h-[792px] w-full h-auto object-cover object-left"
       />
       <div className="min-h-[792px] h-full bg-gradient bg-opacity-90">
-        <Container className="flex flex-col items-center py-10">
+        <Container className="flex flex-col items-center justify-between min-h-[792px] h-full py-10">
           <SectionTitle className="text-white-text">
             {t("subTitle")}
           </SectionTitle>
