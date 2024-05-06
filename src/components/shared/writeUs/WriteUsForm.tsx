@@ -59,11 +59,13 @@ export default function WriteUsForm() {
       onSubmit={(values) => console.log(values)}
       validationSchema={validationSchema}
     >
-      {({ values, errors, status, setStatus }) => (
+      {({ values, errors, touched, status, setStatus }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full text-base ">
           <label
             className={`${labelStyles} ${
-              errors.name ? "border-[1px] border-error-input" : ""
+              errors.name && touched.name
+                ? "border-[1px] border-error-input"
+                : ""
             }`}
           >
             <p
@@ -84,7 +86,7 @@ export default function WriteUsForm() {
               }
               onFocus={() => setStatus("name")}
               className={`${fieldStyles} ${
-                errors.name ? "text-error-input" : ""
+                errors.name && touched.name ? "text-error-input" : ""
               }`}
             ></Field>
             <ErrorMessage
@@ -95,7 +97,9 @@ export default function WriteUsForm() {
           </label>
           <label
             className={`${labelStyles} ${
-              errors.email ? "border-[1px] border-error-input" : ""
+              errors.email && touched.email
+                ? "border-[1px] border-error-input"
+                : ""
             }`}
           >
             <p
@@ -116,7 +120,7 @@ export default function WriteUsForm() {
               }
               onFocus={() => setStatus("email")}
               className={`${fieldStyles} ${
-                errors.email ? "text-error-input" : ""
+                errors.email && touched.email ? "text-error-input" : ""
               }`}
             ></Field>
             <ErrorMessage
@@ -127,7 +131,9 @@ export default function WriteUsForm() {
           </label>
           <label
             className={`${labelStyles} ${
-              errors.phone ? "border-[1px] border-error-input" : ""
+              errors.phone && touched.phone
+                ? "border-[1px] border-error-input"
+                : ""
             }`}
           >
             <p
@@ -150,7 +156,7 @@ export default function WriteUsForm() {
               }
               onFocus={() => setStatus("phone")}
               className={`${fieldStyles} ${
-                errors.phone ? "text-error-input" : ""
+                errors.phone && touched.phone ? "text-error-input" : ""
               }`}
             ></Field>
             <ErrorMessage
@@ -161,7 +167,9 @@ export default function WriteUsForm() {
           </label>
           <label
             className={`${teaxtAreaLabelStyles} ${
-              errors.message ? "border-[1px] border-error-input" : ""
+              errors.message && touched.message
+                ? "border-[1px] border-error-input"
+                : ""
             }`}
           >
             <p
@@ -183,7 +191,7 @@ export default function WriteUsForm() {
               }
               onFocus={() => setStatus("message")}
               className={`${textAreaStyles} ${
-                errors.message ? "text-error-input" : ""
+                errors.message && touched.message ? "text-error-input" : ""
               }`}
             ></Field>
             <ErrorMessage
