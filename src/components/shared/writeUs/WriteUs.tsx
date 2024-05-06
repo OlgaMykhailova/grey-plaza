@@ -17,7 +17,7 @@ export default function WriteUs() {
         sizes="100%"
         className="absolute z-[-10] w-full h-full min-h-[784px] object-cover object-left"
       />
-      <div className="min-h-[784px] bg-gradient opacity-90">
+      <div className="min-h-[784px] bg-gradient bg-opacity-90">
         <Container className="py-10">
           <SectionTitle className="text-white-text">
             {t("subTitle")}
