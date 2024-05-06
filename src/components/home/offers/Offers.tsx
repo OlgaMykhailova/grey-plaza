@@ -14,14 +14,13 @@ export default function Offers() {
         <Marquee
           autoFill={true}
           pauseOnHover={true}
-          pauseOnClick={true}
           className="h-[72px] bg-accent"
         >
           <h2 className="flex items-center text-lgb text-white-text">
             {t("Offers.title")}
-            <span className="text-3xs">&nbsp; &nbsp; ⬢ &nbsp; &nbsp;</span>
-            <span className="text-md">{"Залишити заявку".toUpperCase()}</span>
-            <span className="text-3xs">&nbsp; &nbsp; ⬢ &nbsp; &nbsp;</span>
+            <span className="text-3xs">
+              &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
+            </span>
           </h2>
         </Marquee>
       </Link>
