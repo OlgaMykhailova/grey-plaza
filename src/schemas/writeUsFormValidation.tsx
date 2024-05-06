@@ -26,7 +26,8 @@ export const WriteUsValidation = () => {
     message: yup
       .string()
       .min(10, t("messageMinMaxSymbols"))
-      .max(200, t("messageMinMaxSymbols")),
+      .max(200, t("messageMinMaxSymbols"))
+      .required(t("required")),
   });
 
   return writeUsFormValidationSchema;

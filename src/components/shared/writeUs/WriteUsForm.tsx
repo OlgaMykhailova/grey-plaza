@@ -59,13 +59,17 @@ export default function WriteUsForm() {
       onSubmit={(values) => console.log(values)}
       validationSchema={validationSchema}
     >
-      {({ values, status, setStatus }) => (
+      {({ values, errors, status, setStatus }) => (
         <Form className="flex flex-col items-center gap-y-7 text-base ">
-          <label className={`${labelStyles}`}>
+          <label
+            className={`${labelStyles} ${
+              errors.name ? "border-[1px] border-error-input" : ""
+            }`}
+          >
             <p
               className={`${textLabelStyles} ${
                 values.name || status === "name"
-                  ? "top-[-10px] px-1.5 text-xs"
+                  ? "top-[-8px] px-1.5 text-xs"
                   : "top-[14px] text-base"
               }`}
             >
@@ -79,7 +83,9 @@ export default function WriteUsForm() {
                 status === "name" ? t("WriteUs.namePlaceholder") : ""
               }
               onFocus={() => setStatus("name")}
-              className={`${fieldStyles}`}
+              className={`${fieldStyles} ${
+                errors.name ? "text-error-input" : ""
+              }`}
             ></Field>
             <ErrorMessage
               name="name"
@@ -87,11 +93,15 @@ export default function WriteUsForm() {
               className={errorStyles}
             ></ErrorMessage>
           </label>
-          <label className={`${labelStyles}`}>
+          <label
+            className={`${labelStyles} ${
+              errors.email ? "border-[1px] border-error-input" : ""
+            }`}
+          >
             <p
               className={`${textLabelStyles} ${
                 values.email || status === "email"
-                  ? "top-[-10px] px-1.5 text-xs"
+                  ? "top-[-8px] px-1.5 text-xs"
                   : "top-[14px] text-base"
               }`}
             >
@@ -105,7 +115,9 @@ export default function WriteUsForm() {
                 status === "email" ? t("WriteUs.emailPlaceholder") : ""
               }
               onFocus={() => setStatus("email")}
-              className={`${fieldStyles}`}
+              className={`${fieldStyles} ${
+                errors.email ? "text-error-input" : ""
+              }`}
             ></Field>
             <ErrorMessage
               name="email"
@@ -113,11 +125,15 @@ export default function WriteUsForm() {
               className={errorStyles}
             ></ErrorMessage>
           </label>
-          <label className={`${labelStyles}`}>
+          <label
+            className={`${labelStyles} ${
+              errors.phone ? "border-[1px] border-error-input" : ""
+            }`}
+          >
             <p
               className={`${textLabelStyles} ${
                 values.phone || status === "phone"
-                  ? "top-[-10px] px-1.5 text-xs"
+                  ? "top-[-8px] px-1.5 text-xs"
                   : "top-[14px] text-base"
               }`}
             >
@@ -133,7 +149,9 @@ export default function WriteUsForm() {
                 status === "phone" ? t("WriteUs.phonePlaceholder") : ""
               }
               onFocus={() => setStatus("phone")}
-              className={`${fieldStyles}`}
+              className={`${fieldStyles} ${
+                errors.phone ? "text-error-input" : ""
+              }`}
             ></Field>
             <ErrorMessage
               name="phone"
@@ -141,11 +159,15 @@ export default function WriteUsForm() {
               className={errorStyles}
             ></ErrorMessage>
           </label>
-          <label className={`${teaxtAreaLabelStyles}`}>
+          <label
+            className={`${teaxtAreaLabelStyles} ${
+              errors.message ? "border-[1px] border-error-input" : ""
+            }`}
+          >
             <p
               className={`${textLabelStyles} ${
                 values.message || status === "message"
-                  ? "top-[-10px] px-1.5 text-xs"
+                  ? "top-[-8px] px-1.5 text-xs"
                   : "top-[16px] left-0 text-base"
               }`}
             >
@@ -160,7 +182,9 @@ export default function WriteUsForm() {
                 status === "message" ? t("WriteUs.messagePlaceholder") : ""
               }
               onFocus={() => setStatus("message")}
-              className={`${textAreaStyles}`}
+              className={`${textAreaStyles} ${
+                errors.message ? "text-error-input" : ""
+              }`}
             ></Field>
             <ErrorMessage
               name="message"
@@ -168,13 +192,16 @@ export default function WriteUsForm() {
               className={errorStyles}
             ></ErrorMessage>
           </label>
-          <div className="flex gap-x-2 mb-1 text-white-text">
-            <span>*</span>
+          <div className="text-xs text-white-text ">
+            <div className="flex gap-x-2 w-full mb-1.5">
+              <span>*</span>
+              <p>{t("WriteUs.requiredFields")}</p>
+            </div>
             <p>
               {t("WriteUs.agreement")}
               <Link
                 href={`/${locale}/policy`}
-                className="outline-none border-b-[1px] border-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
+                className="outline-none  border-b-[1px] border-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
             laptop:hover:border-accent laptop:focus-visible:border-accent transition-[color] duration-[300ms] ease-out-quart"
               >
                 {t("WriteUs.policy")}
