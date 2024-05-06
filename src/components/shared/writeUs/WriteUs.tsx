@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Container from "../Container";
 import SectionTitle from "../../shared/SectionTitle";
+import WriteUsForm from "./WriteUsForm";
 
 export default function WriteUs() {
   const t = useTranslations("WriteUs");
@@ -21,6 +22,7 @@ export default function WriteUs() {
           <SectionTitle className="text-white-text">
             {t("subTitle")}
           </SectionTitle>
+          <WriteUsForm />
         </Container>
       </div>
     </section>
