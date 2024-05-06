@@ -9,7 +9,8 @@ interface BenefitsListItemProps {
 export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
   const { title, description, icon } = benefit;
   const { ref, inView } = useInView({
-    threshold: 0.75,
+    threshold: 0.7,
+    rootMargin: "-35% 0% -35% 0%",
   });
 
   return (
@@ -17,21 +18,24 @@ export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
       ref={ref}
       className="flex gap-4 px-3 py-4 [&:not(:last-child)]:mb-2 text-white-text"
     >
-      <div
-        className={`after:content-[''] after:absolute after:left-0 after:top-0 after:w-[1px] 
-        after:h-0 overflow-hidden ${inView && "h-full"}`}
-      >
-        <Image
-          src={`/images/icons/${icon}`}
-          width="0"
-          height="0"
-          alt={title}
-          className="w-[32px] h-[32px]"
-        />
-      </div>
+      <Image
+        src={`/images/icons/${icon}`}
+        width="0"
+        height="0"
+        alt={title}
+        className="w-[32px] h-[32px]"
+      />
+
       <div>
         <h3 className="mb-2 text-mdb">{title}</h3>
-        <p className="text-base">{description}</p>
+        <p
+          className={`relative text-base after:content-[''] after:absolute after:left-[-32px] after:top-[8px] after:w-[1px] after:bg-accent
+        after:h-0 after:overflow-hidden after:transition-height after:duration-[600ms] ease-out-quart ${
+          inView && "after:h-[calc(100%-8px)]"
+        }`}
+        >
+          {description}
+        </p>
       </div>
     </li>
   );
