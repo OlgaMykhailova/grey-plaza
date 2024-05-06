@@ -31,7 +31,7 @@ export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
         <p
           className={`relative text-base after:content-[''] after:absolute after:left-[-32px] after:top-[8px] after:w-[1px] after:bg-accent
         after:h-0 after:overflow-hidden after:transition-height after:duration-[600ms] ease-out-quart ${
-          inView && "after:h-[calc(100%-8px)]"
+          inView && "after:h-[calc(100%-12px)]"
         }`}
         >
           {description}
