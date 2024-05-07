@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import EquipmentList from "./EquipmentList";

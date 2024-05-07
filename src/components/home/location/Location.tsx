@@ -3,6 +3,7 @@ import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import LocationList from "./LocationList";
 import SectionHexagonBgImage from "../../shared/sectionHexagonBgImage";
+import Map from "./Map";
 
 export default function Location() {
   const t = useTranslations("Location");
@@ -15,6 +16,7 @@ export default function Location() {
         <p className="text-base mb-5">{t("description")}</p>
         <LocationList />
       </Container>
+      <Map />
     </section>
   );
 }
