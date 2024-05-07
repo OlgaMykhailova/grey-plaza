@@ -3,6 +3,7 @@ import BenefitsListItem from "./BenefitsListItem";
 
 export default function BenefitsList() {
   const t = useTranslations("Benefits");
+
   const benefitsList = [
     {
       title: t("location"),
@@ -35,6 +36,7 @@ export default function BenefitsList() {
       icon: "shelter.svg",
     },
   ];
+
   return (
     <ul>
       {benefitsList.map((benefit, idx) => (
