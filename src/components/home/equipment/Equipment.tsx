@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import EquipmentList from "./EquipmentList";
-import SectionHexagonBgImage from "../../shared/sectionHexagonBgImage";
+import SectionHexagonBgImage from "../../shared/SectionHexagonBgImage";
 
 export default function Equipment() {
   const t = useTranslations("Equipment");

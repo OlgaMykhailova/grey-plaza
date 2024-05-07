@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import LocationList from "./LocationList";
-import SectionHexagonBgImage from "../../shared/sectionHexagonBgImage";
+import SectionHexagonBgImage from "../../shared/SectionHexagonBgImage";
 import Map from "./Map";
 
 export default function Location() {
