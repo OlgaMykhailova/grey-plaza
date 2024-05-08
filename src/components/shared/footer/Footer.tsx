@@ -1,8 +1,8 @@
 import Container from "../Container";
 import FooterNavigationMenu from "./FooterNavigationMenu";
-import ContactInfo from "./ContactInfo/ContactInfo";
+import ContactInfo from "./contactInfo/ContactInfo";
 import LogoLink from "../LogoLink";
-import FooterThumb from "./FooterThumb/FooterThumb";
+import FooterThumb from "./footerThumb/FooterThumb";
 import SocialLinks from "../socialLinks/SocialLinks";
 
 export default function Footer() {

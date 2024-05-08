@@ -1,9 +1,8 @@
 import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
-import Button from "../Button";
 import Container from "../Container";
 import SocialLinks from "../socialLinks/SocialLinks";
 import HeaderNavigationMenu from "./HeaderNavigationMenu";
+import CallBackModal from "./CallBackModal";
 
 interface HeaderMenuProps {
   isHeaderMenuOpened: boolean;
@@ -28,14 +27,7 @@ export default function HeaderMenu({
       <Container className="flex flex-col items-center gap-y-10 h-full py-10 overflow-y-auto">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
-        <Link href={`/${locale}#write-us`} className="outline-none">
-          <Button
-            variant="secondary"
-            onClick={() => setIsHeaderMenuOpened(false)}
-          >
-            {t("callBack")}
-          </Button>
-        </Link>
+        <CallBackModal />
       </Container>
     </div>
   );

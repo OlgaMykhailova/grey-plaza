@@ -2,6 +2,7 @@ interface ButtonProps {
   children: string;
   variant?: "primary" | "secondary";
   size?: "big" | "small";
+  ariaLabel?: string;
   className?: string;
   type?: "submit" | "button";
   disabled?: boolean;
@@ -12,6 +13,7 @@ export default function Button({
   children,
   variant = "primary",
   size = "big",
+  ariaLabel = "",
   className = "",
   type = "button",
   disabled = false,
@@ -22,7 +24,7 @@ export default function Button({
     "bg-transparent border-solid border-[1px] border-white-bg disabled:border-disabled disabled:text-disabled";
   return (
     <button
-      aria-label="contact button"
+      aria-label={ariaLabel}
       type={type}
       disabled={disabled}
       onClick={onClick}
