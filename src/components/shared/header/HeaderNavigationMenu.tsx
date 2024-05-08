@@ -17,6 +17,7 @@ export default function HeaderNavigationMenu({
     { title: t("Benefits.title"), id: "benefits" },
     { title: t("Offices.title"), id: "offices" },
     { title: t("Gallery.title"), id: "gallery" },
+    { title: t("WriteUs.title"), id: "write-us" },
     { title: t("Footer.contacts"), id: "contacts" },
   ];
 

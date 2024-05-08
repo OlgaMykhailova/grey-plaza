@@ -116,7 +116,7 @@ const config: Config = {
         gradient:
           "linear-gradient(to bottom, rgba(135, 134, 134, 0) 0%, rgba(89, 114, 134, 0.66) 55%, rgba(4, 44, 74, 1) 100%)",
         headerGradient:
-          "linear-gradient(to bottom, rgba(27, 68, 90, 1) 0%, rgba(27, 68, 90, 0.95) 50%, rgba(27, 68, 90, 0.8) 100%)",
+          "linear-gradient(to bottom, rgba(27, 68, 90, 1) 0%, rgba(27, 68, 90, 0.95) 50%, rgba(27, 68, 90, 0.9) 100%)",
       },
       transitionTimingFunction: {
         "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",

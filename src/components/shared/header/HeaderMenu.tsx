@@ -16,7 +16,7 @@ export default function HeaderMenu({
   isHeaderMenuOpened = false,
   setIsHeaderMenuOpened,
 }: HeaderMenuProps) {
-  const t = useTranslations("WriteUs");
+  const t = useTranslations("Buttons");
   const locale = useLocale();
 
   return (
@@ -29,8 +29,11 @@ export default function HeaderMenu({
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
         <Link href={`/${locale}#write-us`} className="outline-none">
-          <Button onClick={() => setIsHeaderMenuOpened(false)}>
-            {t("title")}
+          <Button
+            variant="secondary"
+            onClick={() => setIsHeaderMenuOpened(false)}
+          >
+            {t("callBack")}
           </Button>
         </Link>
       </Container>
