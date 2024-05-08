@@ -2,20 +2,29 @@
 import {
   Modal,
   ModalBody,
-  ModalHeader,
   ModalContent,
   useDisclosure,
 } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 import Button from "../Button";
+import CloseButton from "../CloseButton";
 
-export default function CallBackModal() {
+interface CallBackModalProps {
+  closeHeaderMenu?: () => void;
+}
+
+export default function CallBackModal({ closeHeaderMenu }: CallBackModalProps) {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
   const t = useTranslations("Buttons");
 
+  const handleOpen = () => {
+    closeHeaderMenu?.();
+    onOpen();
+  };
+
   return (
     <div>
-      <Button variant="secondary" onClick={onOpen}>
+      <Button variant="secondary" onClick={handleOpen}>
         {t("callBack")}
       </Button>
       <Modal
@@ -24,20 +33,11 @@ export default function CallBackModal() {
         placement="center"
         radius="none"
         hideCloseButton={true}
-        className="max-w-[360px] min-h-[411px] py-10 px-5"
-        classNames={{ backdrop: "bg-primary bg-opacity-80" }}
+        className="max-w-[360px] min-h-[411px] py-10 px-5 text-white-text"
+        classNames={{ backdrop: "bg-primary bg-opacity-60" }}
       >
-        <ModalContent className="">
-          <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="close button"
-              className="cursor-pointer flex justify-center items-center absolute top-[2px] right-4 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple"
-            >
-              <IconCloseX />
-            </button>
-          </ModalHeader>
+        <ModalContent className="relative bg-primary">
+          <CloseButton onClick={onClose} />
           <ModalBody>
             <div>Test</div>
           </ModalBody>

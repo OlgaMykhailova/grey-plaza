@@ -27,7 +27,7 @@ export default function HeaderMenu({
       <Container className="flex flex-col items-center gap-y-10 h-full py-10 overflow-y-auto">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
-        <CallBackModal />
+        <CallBackModal closeHeaderMenu={() => setIsHeaderMenuOpened(false)} />
       </Container>
     </div>
   );

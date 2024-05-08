@@ -1,16 +1,16 @@
 import IconClose from "./icons/IconClose";
 
 interface CloseButtonProps {
-  onClose?: () => void;
+  onClick?: () => void;
 }
 
-export default function CloseButton({ onClose }: CloseButtonProps) {
+export default function CloseButton({ onClick }: CloseButtonProps) {
   return (
     <button
       type="button"
-      onClick={onClose}
+      onClick={onClick}
       aria-label="close button"
-      className="flex justify-center items-center absolute h-10 w-10 p-2"
+      className="absolute top-2 right-2 flex justify-center items-center h-10 w-10 p-2"
     >
       <IconClose />
     </button>
