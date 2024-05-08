@@ -9,7 +9,7 @@ export default function TextButton({ children, className }: TextButtonProps) {
   return (
     <button
       type="button"
-      className={`w-[320px] h-10 border-y-[1px] border-primary ${className}`}
+      className={`w-[320px] h-10 border-y border-primary ${className}`}
     >
       {children}
     </button>
