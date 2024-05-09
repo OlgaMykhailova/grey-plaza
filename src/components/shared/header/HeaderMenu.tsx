@@ -1,9 +1,8 @@
 import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
-import Button from "../Button";
 import Container from "../Container";
 import SocialLinks from "../socialLinks/SocialLinks";
 import HeaderNavigationMenu from "./HeaderNavigationMenu";
+import CallBackModal from "./callBack/CallBackModal";
 
 interface HeaderMenuProps {
   isHeaderMenuOpened: boolean;
@@ -16,7 +15,7 @@ export default function HeaderMenu({
   isHeaderMenuOpened = false,
   setIsHeaderMenuOpened,
 }: HeaderMenuProps) {
-  const t = useTranslations("WriteUs");
+  const t = useTranslations("Buttons");
   const locale = useLocale();
 
   return (
@@ -28,11 +27,7 @@ export default function HeaderMenu({
       <Container className="flex flex-col items-center gap-y-10 h-full py-10 overflow-y-auto">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
-        <Link href={`/${locale}#write-us`} className="outline-none">
-          <Button onClick={() => setIsHeaderMenuOpened(false)}>
-            {t("title")}
-          </Button>
-        </Link>
+        <CallBackModal closeHeaderMenu={() => setIsHeaderMenuOpened(false)} />
       </Container>
     </div>
   );

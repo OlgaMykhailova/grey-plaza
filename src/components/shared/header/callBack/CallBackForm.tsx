@@ -2,33 +2,28 @@
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Field, Form, Formik, ErrorMessage } from "formik";
-import MaskedInput from "react-text-mask";
 import Link from "next/link";
-import Button from "../Button";
+import MaskedInput from "react-text-mask";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
-import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
+import { CallBackValidation } from "@/src/schemas/callBackFormValidation";
+import Button from "../../Button";
 
-export default function WriteUsForm() {
+export default function CallBackForm() {
   const [isLoading, setIsLoading] = useState(false);
   const locale = useLocale();
   const t = useTranslations("");
 
   const initialValues = {
     name: "",
-    email: "",
     phone: "",
-    message: "",
   };
 
-  const validationSchema = WriteUsValidation();
+  const validationSchema = CallBackValidation();
 
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
     "absolute left-4 transition-translate duration-300 ease-out-quart text-grey bg-white-bg";
   const fieldStyles = "outline-none w-full h-full text-black bg-white-bg";
-  const teaxtAreaLabelStyles = "relative w-full h-[116px] p-4 bg-white-bg";
-  const textAreaStyles =
-    "outline-none w-full h-full resize-none text-black bg-white-bg";
   const errorStyles =
     "absolute bottom-[-16px] right-0 text-2xs text-error-text";
 
@@ -76,40 +71,6 @@ export default function WriteUsForm() {
           </label>
           <label
             className={`${labelStyles} ${
-              errors.email && touched.email
-                ? "border-[1px] border-error-input"
-                : ""
-            }`}
-          >
-            <p
-              className={`${textLabelStyles} ${
-                values.email || status === "email"
-                  ? "top-[-8px] px-1.5 text-xs"
-                  : "top-[14px] text-base"
-              }`}
-            >
-              {t("WriteUs.email")}
-            </p>
-            <Field
-              name="email"
-              type="email"
-              autoComplete="on"
-              placeholder={
-                status === "email" ? t("WriteUs.emailPlaceholder") : ""
-              }
-              onFocus={() => setStatus("email")}
-              className={`${fieldStyles} ${
-                errors.email && touched.email ? "text-error-input" : ""
-              }`}
-            ></Field>
-            <ErrorMessage
-              name="email"
-              component="p"
-              className={errorStyles}
-            ></ErrorMessage>
-          </label>
-          <label
-            className={`${labelStyles} ${
               errors.phone && touched.phone
                 ? "border-[1px] border-error-input"
                 : ""
@@ -122,7 +83,7 @@ export default function WriteUsForm() {
                   : "top-[14px] text-base"
               }`}
             >
-              {t("WriteUs.phone")}
+              {t("WriteUs.phone")}*
             </p>
             <Field
               as={MaskedInput}
@@ -140,41 +101,6 @@ export default function WriteUsForm() {
             ></Field>
             <ErrorMessage
               name="phone"
-              component="p"
-              className={errorStyles}
-            ></ErrorMessage>
-          </label>
-          <label
-            className={`${teaxtAreaLabelStyles} ${
-              errors.message && touched.message
-                ? "border-[1px] border-error-input"
-                : ""
-            }`}
-          >
-            <p
-              className={`${textLabelStyles} ${
-                values.message || status === "message"
-                  ? "top-[-8px] px-1.5 text-xs"
-                  : "top-[16px] left-0 text-base"
-              }`}
-            >
-              {t("WriteUs.message")}
-            </p>
-            <Field
-              as="textarea"
-              name="message"
-              type="text"
-              autoComplete="on"
-              placeholder={
-                status === "message" ? t("WriteUs.messagePlaceholder") : ""
-              }
-              onFocus={() => setStatus("message")}
-              className={`${textAreaStyles} ${
-                errors.message && touched.message ? "text-error-input" : ""
-              }`}
-            ></Field>
-            <ErrorMessage
-              name="message"
               component="p"
               className={errorStyles}
             ></ErrorMessage>

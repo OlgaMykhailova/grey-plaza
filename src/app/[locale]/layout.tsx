@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Fira_Sans } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import Providers from "@/src/components/providers/Providers";
 import Header from "@/src/components/shared/header/Header";
 import Footer from "@/src/components/shared/footer/Footer";
 import "./globals.css";
@@ -35,10 +36,14 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${fira.variable} bg-white-bg font-fira text-black`}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+        <body
+          className={`${fira.variable} relative z-[1] bg-white-bg font-fira text-black`}
+        >
+          <Providers>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </Providers>
         </body>
       </NextIntlClientProvider>
     </html>
