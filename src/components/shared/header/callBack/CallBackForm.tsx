@@ -5,6 +5,7 @@ import { Field, Form, Formik, ErrorMessage } from "formik";
 import Link from "next/link";
 import MaskedInput from "react-text-mask";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
+import { CallBackValidation } from "@/src/schemas/callBackFormValidation";
 import Button from "../../Button";
 
 export default function CallBackForm() {
@@ -17,6 +18,8 @@ export default function CallBackForm() {
     phone: "",
   };
 
+  const validationSchema = CallBackValidation();
+
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
     "absolute left-4 transition-translate duration-300 ease-out-quart text-grey bg-white-bg";
@@ -28,6 +31,7 @@ export default function CallBackForm() {
     <Formik
       initialValues={initialValues}
       onSubmit={(values) => console.log(values)}
+      validationSchema={validationSchema}
     >
       {({ values, errors, touched, status, setStatus }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full text-base">
