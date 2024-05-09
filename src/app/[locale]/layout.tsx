@@ -36,11 +36,13 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${fira.variable} bg-white-bg font-fira text-black`}>
+        <body
+          className={`${fira.variable} relative z-[1] bg-white-bg font-fira text-black`}
+        >
           <Providers>
             <Header />
             <main>{children}</main>
-            {/* <Footer /> */}
+            <Footer />
           </Providers>
         </body>
       </NextIntlClientProvider>
