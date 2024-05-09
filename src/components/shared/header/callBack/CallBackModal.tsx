@@ -36,7 +36,7 @@ export default function CallBackModal({ closeHeaderMenu }: CallBackModalProps) {
         radius="none"
         hideCloseButton={true}
         className="max-w-[360px] min-h-[564px] py-10 px-5 text-white-text"
-        classNames={{ backdrop: "bg-primary bg-opacity-60" }}
+        classNames={{ backdrop: "bg-primary bg-opacity-80" }}
       >
         <ModalContent className="relative bg-primary">
           <CloseButton onClick={onClose} />
