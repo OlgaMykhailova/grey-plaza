@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import HeroSlider from "./HeroSlider";
+import HeroInfoList from "./HeroInfoList";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -15,6 +16,7 @@ export default function Hero() {
           <p className="text-2xlb">{t("pageTitle2").toUpperCase()}</p>
         </h1>
         <p>{t("description").toUpperCase()}</p>
+        <HeroInfoList />
       </div>
       <HeroSlider />
     </section>
