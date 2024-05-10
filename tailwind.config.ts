@@ -106,7 +106,7 @@ const config: Config = {
       colors: {
         primary: "#042C4A",
         secondary: "#ACC8E5",
-        accent: "#F23E02",
+        accent: "#E1300B",
         black: "#080000",
         blue: "#1b445a",
         disabled: "#8B8B8B",
