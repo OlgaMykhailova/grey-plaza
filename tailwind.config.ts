@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 import { nextui } from "@nextui-org/react";
 
 const config: Config = {
@@ -123,8 +124,37 @@ const config: Config = {
       transitionTimingFunction: {
         "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
       },
+      keyframes: {
+        opacityChange: {
+          "0%": {
+            opacity: "0",
+          },
+          "24%": {
+            opacity: "1",
+          },
+          "48%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "0",
+          },
+        },
+      },
+      animation: { hero: "opacityChange 12000ms ease-in infinite" },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui(),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "animate-delay": (value) => ({
+            animationDelay: value,
+          }),
+        },
+        { values: theme("transitionDelay") }
+      );
+    }),
+  ],
 };
 export default config;
