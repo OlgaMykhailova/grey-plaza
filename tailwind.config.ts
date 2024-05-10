@@ -96,7 +96,7 @@ const config: Config = {
             fontWeight: "600",
           },
         ],
-        xxlb: [
+        "2xlb": [
           "44px",
           {
             lineHeight: "48px",

@@ -9,13 +9,19 @@ const heroImages = [
 
 export default function HeroSlider() {
   return (
-    <ul className="relative w-full aspect-[360/677] min-h-[677px]">
+    <ul className="absolute top-0 left-0 z[-10] w-full h-full">
       {heroImages.map(({ image }, idx) => (
         <li
           key={idx}
-          className={`absolute top-0 left-0 w-full h-full ${
+          className={`absolute z[-10] w-full h-full ${
             idx === 0 ? "opacity-1" : "opacity-0"
-          } animate-hero animate-delay-[calc(${idx}*4000ms)]`}
+          } animate-hero ${
+            idx === 0
+              ? "animate-delay-[0ms]"
+              : idx === 1
+              ? "animate-delay-[4000ms]"
+              : "animate-delay-[8000ms]"
+          }`}
         >
           <Image
             src={`/images/heroImages/${image}.jpg`}
@@ -27,33 +33,6 @@ export default function HeroSlider() {
           />
         </li>
       ))}
-      {/* <div className="absolute top-0 left-0 animate-hero">
-        <Image
-          src={`/images/heroImages/heroFirst.jpg`}
-          width="360"
-          height="677"
-          sizes="100%"
-          alt="building"
-        />
-      </div>
-      <div className="absolute top-0 left-0 opacity-0 animate-hero animate-delay-[4000ms]">
-        <Image
-          src={`/images/heroImages/heroSecond.jpg`}
-          width="360"
-          height="677"
-          sizes="100%"
-          alt="building"
-        />
-      </div>
-      <div className="absolute top-0 left-0 opacity-0 animate-hero animate-delay-[8000ms]">
-        <Image
-          src={`/images/heroImages/heroThird.jpg`}
-          width="360"
-          height="677"
-          sizes="100%"
-          alt="building"
-        />
-      </div> */}
     </ul>
   );
 }
