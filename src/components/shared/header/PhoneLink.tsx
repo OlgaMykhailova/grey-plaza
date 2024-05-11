@@ -6,7 +6,7 @@ export default function PhoneLink() {
 
   return (
     <a
-      href={`tel:+${t("phone").replace(/\D/g, "")}`}
+      href={`tel:+${t("phoneFirst").replace(/\D/g, "")}`}
       rel="noopener noreferrer"
       className="p-2 outline-none text-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
       transition-[color] duration-[300ms] ease-out-quart"
