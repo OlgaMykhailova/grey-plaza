@@ -20,7 +20,7 @@ export default function Map() {
           <TextButton className="mb-5">{t("route")}</TextButton>{" "}
         </a>
       </Container>
-      <div className="relative">
+      <div className="relative max-w-[560px] mx-auto">
         <Image
           src={`/images/map.jpg`}
           width="0"
