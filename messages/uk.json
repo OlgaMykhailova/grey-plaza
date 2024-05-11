@@ -73,7 +73,8 @@
     "subway": "Найближча станція метро - Почайна"
   },
   "Footer": {
-    "phone": "+38 (050) 444 8694",
+    "phoneFirst": "+38 (050) 444 8694",
+    "phoneSecond": "+38 (097) 966 2904",
     "email": "plaza.annaploskonos@gmail.com",
     "address": "м. Київ, проспект Степана Бандери, 9",
     "contacts": "Контакти",

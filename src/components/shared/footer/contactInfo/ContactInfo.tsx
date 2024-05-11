@@ -12,8 +12,13 @@ export default function ContactInfo() {
   const contactsList = [
     {
       icon: <IconPhone />,
-      url: `tel:+${t("phone").replace(/\D/g, "")}`,
-      name: t("phone"),
+      url: `tel:+${t("phoneFirst").replace(/\D/g, "")}`,
+      name: t("phoneFirst"),
+    },
+    {
+      icon: <IconPhone />,
+      url: `tel:+${t("phoneSecond").replace(/\D/g, "")}`,
+      name: t("phoneSecond"),
     },
     { icon: <IconEmail />, url: `mailto:${t("email")}`, name: t("email") },
     {
