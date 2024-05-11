@@ -9,7 +9,7 @@ export default function Offers() {
   const locale = useLocale();
 
   return (
-    <section>
+    <section className="mb-10">
       <Link href={`/${locale}#write-us`}>
         <Marquee
           autoFill={true}
