@@ -10,7 +10,7 @@ export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
   const { title, description, icon } = benefit;
   const { ref, inView } = useInView({
     threshold: 0.01,
-    rootMargin: "-35% 0% -63% 0%",
+    rootMargin: "-45% 0% -54% 0%",
   });
 
   return (

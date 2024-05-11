@@ -9,7 +9,7 @@ export default function Location() {
   const t = useTranslations("Location");
 
   return (
-    <section className="relative pt-[80px] pb-10 mb-10 scroll-mt-[72px]">
+    <section className="relative z-10 pt-[80px] pb-10 mb-10 scroll-mt-[72px]">
       <SectionHexagonBgImage />
       <Container className="flex flex-col items-center">
         <SectionTitle>{t("title")}</SectionTitle>
