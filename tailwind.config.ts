@@ -147,7 +147,7 @@ const config: Config = {
       },
 
       animation: {
-        hero: "opacityChange 12000ms ease-out-quart infinite",
+        hero: "opacityChange 12000ms ease-out infinite",
         benefit: "smoothBounce 1500ms ease-out 1",
       },
     },
