@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Image from "next/image";
 
 interface ContactInfoItemProps {
   contact: { icon: ReactNode; url: string; name: string };

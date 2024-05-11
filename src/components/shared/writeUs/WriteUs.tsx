@@ -8,7 +8,10 @@ export default function WriteUs() {
   const t = useTranslations("WriteUs");
 
   return (
-    <section id="write-us" className="min-h-[792px] mb-10 scroll-mt-[72px]">
+    <section
+      id="write-us"
+      className="relative z-[1] min-h-[792px] mb-10 scroll-mt-[72px]"
+    >
       <Image
         src={`/images/bgImages/writeUsBgImageMobile.webp`}
         width="0"
