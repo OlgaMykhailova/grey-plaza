@@ -140,7 +140,7 @@ const config: Config = {
           },
         },
       },
-      animation: { hero: "opacityChange 12000ms ease-out-quart infinite" },
+      animation: { hero: "opacityChange 12000ms ease-out infinite" },
     },
   },
   plugins: [
