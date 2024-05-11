@@ -29,7 +29,7 @@ export default function HeroSlider() {
             height="0"
             sizes="100%"
             alt="building"
-            className="min-w-[360px] min-h-[677px] w-full h-auto"
+            className="min-w-[360px] h-[677px] w-full object-cover"
           />
         </li>
       ))}
