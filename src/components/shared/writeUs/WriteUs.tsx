@@ -10,7 +10,7 @@ export default function WriteUs() {
   return (
     <section
       id="write-us"
-      className="relative z-[1] min-h-[792px] mb-10 scroll-mt-[72px]"
+      className="relative z-10 min-h-[792px] mb-10 scroll-mt-[72px]"
     >
       <Image
         src={`/images/bgImages/writeUsBgImageMobile.webp`}
