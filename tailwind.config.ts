@@ -139,8 +139,17 @@ const config: Config = {
             opacity: "0",
           },
         },
+        smoothBounce: {
+          "25%": { transform: "translateY(-25%)" },
+          "75%": { transform: "translateY(25%) scale(0.75)" },
+          "100%": { transform: "translateY(0) scale(1)" },
+        },
       },
-      animation: { hero: "opacityChange 12000ms ease-out infinite" },
+
+      animation: {
+        hero: "opacityChange 12000ms ease-out-quart infinite",
+        benefit: "smoothBounce 1500ms ease-out 1",
+      },
     },
   },
   plugins: [
