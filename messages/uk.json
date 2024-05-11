@@ -19,7 +19,18 @@
   },
   "Header": {},
   "Hero": {
-    "title": "Про нас"
+    "title": "Про нас",
+    "pageTitle1": "Бізнес-центр класу “B” у Києві",
+    "pageTitle2": "Grey Plaza",
+    "description": "Простір вашого комфорту",
+    "floorsQuantity": "7",
+    "floorsDescription": "Поверхів",
+    "GLAQuantity": "33 000 м²",
+    "GLADescription": "GLA",
+    "parkingPlacesQuantity": "450",
+    "parkingPlacesDescription": "Паркомісць",
+    "buildingQuantity": "6",
+    "buildingDescription": "Корпусів"
   },
   "Offers": {
     "title": "Спеціальні умови при оренді від 200 м²"
