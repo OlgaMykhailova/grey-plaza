@@ -141,8 +141,8 @@ const config: Config = {
         },
         smoothBounce: {
           "25%": { transform: "translateY(-25%)" },
-          "75%": { transform: "translateY(25%)" },
-          "100%": { transform: "translateY(0)" },
+          "75%": { transform: "translateY(25%) scale(0.63)" },
+          "100%": { transform: "translateY(0) scale(1)" },
         },
       },
 
