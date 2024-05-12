@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --color-accent: #e1300b;
+  --color-secondary: #acc8e5;
 }
 
 :root:has(.no-doc-scroll) {

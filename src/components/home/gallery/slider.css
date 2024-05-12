@@ -1,0 +1,20 @@
+.swiper {
+  padding: 0 0 36px 0 !important;
+}
+
+.swiper-scrollbar-horizontal {
+  height: 4px;
+  border-radius: 0;
+  background-color: var(--color-secondary);
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  bottom: 0px;
+}
+
+.swiper-scrollbar-drag {
+  height: 4px;
+  border-radius: 0;
+  background-color: var(--color-accent);
+}
