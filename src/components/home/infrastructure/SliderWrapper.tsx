@@ -11,15 +11,18 @@ interface SliderWrapperProps {
 
 export default function SliderWrapper({ children }: SliderWrapperProps) {
   return (
-    <Swiper
-      modules={[Scrollbar]}
-      scrollbar={{ draggable: true }}
-      slidesPerView={1.14}
-      grabCursor={true}
-      speed={1000}
-      loop={true}
-    >
-      {children}
-    </Swiper>
+    <div className="pl-5">
+      <Swiper
+        modules={[Scrollbar]}
+        scrollbar={{ draggable: true }}
+        spaceBetween={12}
+        slidesPerView={1.07}
+        grabCursor={true}
+        speed={1000}
+        loop={true}
+      >
+        {children}
+      </Swiper>
+    </div>
   );
 }

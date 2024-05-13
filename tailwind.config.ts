@@ -120,6 +120,8 @@ const config: Config = {
           "linear-gradient(to bottom, rgba(135, 134, 134, 0) 0%, rgba(89, 114, 134, 0.66) 55%, rgba(4, 44, 74, 1) 100%)",
         headerGradient:
           "linear-gradient(to bottom, rgba(27, 68, 90, 1) 0%, rgba(27, 68, 90, 0.9) 50%, rgba(27, 68, 90, 0.85) 100%)",
+        cardGradient:
+          "linear-gradient(to bottom, rgba(89, 114, 134, 0) 0%, rgba(27, 63, 90, 0.27) 33%, rgba(4, 44, 74, 1) 100%)",
       },
       transitionTimingFunction: {
         "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
