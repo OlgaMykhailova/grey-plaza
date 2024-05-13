@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 
-interface GalleryWrapperProps {
+interface SlideWrapperProps {
   children: ReactNode;
 }
 
-export default function GalleryWrapper({ children }: GalleryWrapperProps) {
+export default function SlideWrapper({ children }: SlideWrapperProps) {
   return (
     <div className="relative p-4 border border-primary">
       <Image

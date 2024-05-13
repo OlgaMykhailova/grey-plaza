@@ -1,89 +1,25 @@
 "use client";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, EffectCreative, EffectCoverflow } from "swiper/modules";
-import Container from "../../shared/Container";
-import GalleryWrapper from "./GalleryWrapper";
-import "swiper/css";
-import "swiper/css/scrollbar";
-import "swiper/css/effect-creative";
-import "swiper/css/effect-coverflow";
-import "./slider.css";
+import { SwiperSlide } from "swiper/react";
+import SlideWrapper from "../../shared/slider/SlideWrapper";
+import GallerySliderCard from "./GallerySliderCard";
+import SliderWrapper from "../../shared/slider/SliderWrapper";
+
+const galleryList = [
+  { image: "first.jpg", alt: "" },
+  { image: "second.jpg", alt: "" },
+  { image: "third.jpg", alt: "" },
+];
 
 export default function GallerySlider() {
   return (
-    // <Container>
-    <Swiper
-      modules={[Scrollbar, EffectCreative, EffectCoverflow]}
-      scrollbar={{ draggable: true }}
-      slidesPerView={1.35}
-      grabCursor={true}
-      centeredSlides={true}
-      effect={"coverflow"}
-      coverflowEffect={{
-        rotate: 0,
-        scale: 0.7,
-        stretch: 32,
-        depth: 0,
-        modifier: 1,
-        slideShadows: false,
-      }}
-      // creativeEffect={{
-      //   prev: {
-      //     // will set `translateZ(-400px)` on previous slides
-      //     translate: [0, 0, -400],
-      //     scale: 0.5,
-      //   },
-      //   next: {
-      //     // will set `translateX(100%)` on next slides
-      //     translate: ["100%", 0, 0],
-      //     scale: 0.5,
-      //   },
-      // }}
-      speed={1000}
-      loop={true}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        <GalleryWrapper>
-          <Image
-            src={`/images/galleryImages/first.jpg`}
-            width="0"
-            height="0"
-            alt=""
-            sizes="100%"
-            className={`w-full h-full`}
-          />
-        </GalleryWrapper>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <GalleryWrapper>
-          <Image
-            src={`/images/galleryImages/second.jpg`}
-            width="0"
-            height="0"
-            alt=""
-            sizes="100%"
-            className={`w-full h-full`}
-          />
-        </GalleryWrapper>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <GalleryWrapper>
-          <Image
-            src={`/images/galleryImages/third.jpg`}
-            width="0"
-            height="0"
-            alt=""
-            sizes="100%"
-            className={`w-full h-full`}
-          />
-        </GalleryWrapper>
-      </SwiperSlide>
-    </Swiper>
-    // </Container>
+    <SliderWrapper>
+      {galleryList.map((galleryItem, idx) => (
+        <SwiperSlide key={idx}>
+          <SlideWrapper>
+            <GallerySliderCard galleryItem={galleryItem} />
+          </SlideWrapper>
+        </SwiperSlide>
+      ))}
+    </SliderWrapper>
   );
 }
