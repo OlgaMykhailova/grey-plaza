@@ -64,6 +64,7 @@ export default function InfrastructureSlider() {
         parallax={true}
         spaceBetween={22}
         slidesPerView={1.1}
+        scrollbar={true}
         grabCursor={true}
         speed={1000}
         loop={true}
