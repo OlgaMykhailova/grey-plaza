@@ -9,6 +9,7 @@ export default function Infrastructure() {
     <section id="infrastructure" className="py-10 mb-10 scroll-mt-[72px]">
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
+        <p className="text-base text-grey">{t("description")}</p>
       </Container>
     </section>
   );
