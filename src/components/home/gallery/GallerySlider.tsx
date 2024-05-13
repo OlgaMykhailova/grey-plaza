@@ -5,9 +5,17 @@ import GallerySliderCard from "./GallerySliderCard";
 import SliderWrapper from "../../shared/slider/SliderWrapper";
 
 const galleryList = [
-  { image: "first.jpg", alt: "" },
-  { image: "second.jpg", alt: "" },
-  { image: "third.jpg", alt: "" },
+  { image: "buildingTopView.jpg", alt: "Building To View" },
+  { image: "buildingFrontView.jpg", alt: "Building Front View" },
+  { image: "restGardenArea.jpg", alt: "Rest Garden Area" },
+  { image: "hammoks.jpg", alt: "Hammoks" },
+  { image: "gardenPath.jpg", alt: "Garden Path" },
+  { image: "gazebos.jpg", alt: "Gazebos" },
+  { image: "barbeque.jpg", alt: "Barbeque" },
+  { image: "cafeTerrace.jpg", alt: "Cafe Terrace" },
+  { image: "winterGarden.jpg", alt: "Winter Garden" },
+  { image: "stairs.jpg", alt: "Stairs" },
+  { image: "kitchen.jpg", alt: "Kitchen" },
 ];
 
 export default function GallerySlider() {
