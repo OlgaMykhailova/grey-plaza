@@ -5,13 +5,15 @@ import GallerySliderCard from "./GallerySliderCard";
 import SliderWrapper from "../../shared/slider/SliderWrapper";
 
 const galleryList = [
-  { image: "buildingTopView.jpg", alt: "Building To View" },
+  { image: "buildingTopView.jpg", alt: "Building Top View" },
   { image: "buildingFrontView.jpg", alt: "Building Front View" },
   { image: "restGardenArea.jpg", alt: "Rest Garden Area" },
   { image: "hammoks.jpg", alt: "Hammoks" },
   { image: "gardenPath.jpg", alt: "Garden Path" },
   { image: "gazebos.jpg", alt: "Gazebos" },
+  { image: "sportSimulators.jpg", alt: "Sport Simulators" },
   { image: "barbeque.jpg", alt: "Barbeque" },
+  { image: "hall.jpg", alt: "Hall" },
   { image: "cafeTerrace.jpg", alt: "Cafe Terrace" },
   { image: "winterGarden.jpg", alt: "Winter Garden" },
   { image: "stairs.jpg", alt: "Stairs" },
