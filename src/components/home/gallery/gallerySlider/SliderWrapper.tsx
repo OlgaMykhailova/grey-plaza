@@ -14,7 +14,6 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
   return (
     <Swiper
       modules={[Scrollbar, EffectCoverflow]}
-      scrollbar={{ draggable: true }}
       slidesPerView={1.35}
       grabCursor={true}
       centeredSlides={true}

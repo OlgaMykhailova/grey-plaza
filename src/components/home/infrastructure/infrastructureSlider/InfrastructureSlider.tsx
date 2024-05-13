@@ -58,48 +58,49 @@ export default function InfrastructureSlider() {
   ];
 
   return (
-    <Swiper
-      modules={[Scrollbar, Parallax]}
-      scrollbar={{ draggable: true }}
-      parallax={true}
-      spaceBetween={22}
-      slidesPerView={1.1}
-      grabCursor={true}
-      speed={1000}
-      loop={true}
-    >
-      {infrastructureList.map(({ image, alt, title, description }, idx) => (
-        <SwiperSlide key={idx}>
-          <SlideWrapper>
-            <div className="relative z-10 flex items-end w-full aspect-[1/1]">
-              <Image
-                src={`/images/infrastructureImages/${image}`}
-                width="0"
-                height="0"
-                alt={alt}
-                sizes="100%"
-                className={`absolute top-0 left-0 z-[-10] w-full h-full`}
-              />
-              <div className="w-full min-h-[88px] p-3 bg-cardGradient text-white-text">
-                <h3
-                  data-swiper-parallax-x="-200"
-                  data-swiper-parallax-opacity="0"
-                  className="text-mdb mb-1"
-                >
-                  {title}
-                </h3>
-                <p
-                  data-swiper-parallax-x="-200"
-                  data-swiper-parallax-opacity="0"
-                  className="text-xs"
-                >
-                  {description}
-                </p>
+    <div className="slider-wrapper">
+      <Swiper
+        modules={[Scrollbar, Parallax]}
+        parallax={true}
+        spaceBetween={22}
+        slidesPerView={1.1}
+        grabCursor={true}
+        speed={1000}
+        loop={true}
+      >
+        {infrastructureList.map(({ image, alt, title, description }, idx) => (
+          <SwiperSlide key={idx}>
+            <SlideWrapper>
+              <div className="relative z-10 flex items-end w-full aspect-[1/1]">
+                <Image
+                  src={`/images/infrastructureImages/${image}`}
+                  width="0"
+                  height="0"
+                  alt={alt}
+                  sizes="100%"
+                  className={`absolute top-0 left-0 z-[-10] w-full h-full`}
+                />
+                <div className="w-full min-h-[88px] p-3 bg-cardGradient text-white-text">
+                  <h3
+                    data-swiper-parallax-x="-200"
+                    data-swiper-parallax-opacity="0"
+                    className="text-mdb mb-1"
+                  >
+                    {title}
+                  </h3>
+                  <p
+                    data-swiper-parallax-x="-200"
+                    data-swiper-parallax-opacity="0"
+                    className="text-xs"
+                  >
+                    {description}
+                  </p>
+                </div>
               </div>
-            </div>
-          </SlideWrapper>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+            </SlideWrapper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
