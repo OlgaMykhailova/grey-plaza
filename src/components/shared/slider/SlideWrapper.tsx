@@ -7,7 +7,7 @@ interface SlideWrapperProps {
 
 export default function SlideWrapper({ children }: SlideWrapperProps) {
   return (
-    <div className="relative p-4 border border-primary">
+    <div className={`relative w-full h-fullp-4 border border-primary`}>
       <Image
         src={`/images/icons/corner.svg`}
         width="0"

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
+import InfrastructureSlider from "./InfrastructureSlider";
 
 export default function Infrastructure() {
   const t = useTranslations("Infrastructure");
@@ -11,6 +12,7 @@ export default function Infrastructure() {
         <SectionTitle>{t("title")}</SectionTitle>
         <p className="text-base text-grey">{t("description")}</p>
       </Container>
+      <InfrastructureSlider />
     </section>
   );
 }
