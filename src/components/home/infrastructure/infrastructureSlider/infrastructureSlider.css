@@ -5,7 +5,7 @@
 .swiper-scrollbar-horizontal {
   width: calc(100vw - 12px) !important;
   height: 4px;
-  margin: 0 4px 0 0 !important;
+  margin: 0 4px 0 2px !important;
   border-radius: 0;
   background-color: var(--color-secondary);
 }

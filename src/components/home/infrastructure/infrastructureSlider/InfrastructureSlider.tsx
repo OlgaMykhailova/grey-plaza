@@ -1,9 +1,13 @@
 "use client";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { SwiperSlide } from "swiper/react";
-import SliderWrapper from "./SliderWrapper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Scrollbar, Parallax } from "swiper/modules";
 import SlideWrapper from "../../../shared/slider/SlideWrapper";
-import InfrastructureSliderCard from "./InfrastructureSliderCard";
+import "swiper/css";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-coverflow";
+import "./infrastructureSlider.css";
 
 export default function InfrastructureSlider() {
   const t = useTranslations("Infrastructure");
@@ -54,14 +58,48 @@ export default function InfrastructureSlider() {
   ];
 
   return (
-    <SliderWrapper>
-      {infrastructureList.map((infrastructureItem, idx) => (
+    <Swiper
+      modules={[Scrollbar, Parallax]}
+      scrollbar={{ draggable: true }}
+      parallax={true}
+      spaceBetween={22}
+      slidesPerView={1.1}
+      grabCursor={true}
+      speed={1000}
+      loop={true}
+    >
+      {infrastructureList.map(({ image, alt, title, description }, idx) => (
         <SwiperSlide key={idx}>
           <SlideWrapper>
-            <InfrastructureSliderCard infrastructureItem={infrastructureItem} />
+            <div className="relative z-10 flex items-end w-full aspect-[1/1]">
+              <Image
+                src={`/images/infrastructureImages/${image}`}
+                width="0"
+                height="0"
+                alt={alt}
+                sizes="100%"
+                className={`absolute top-0 left-0 z-[-10] w-full h-full`}
+              />
+              <div className="w-full min-h-[88px] p-3 bg-cardGradient text-white-text">
+                <h3
+                  data-swiper-parallax-x="-200"
+                  data-swiper-parallax-opacity="0"
+                  className="text-mdb mb-1"
+                >
+                  {title}
+                </h3>
+                <p
+                  data-swiper-parallax-x="-200"
+                  data-swiper-parallax-opacity="0"
+                  className="text-xs"
+                >
+                  {description}
+                </p>
+              </div>
+            </div>
           </SlideWrapper>
         </SwiperSlide>
       ))}
-    </SliderWrapper>
+    </Swiper>
   );
 }
