@@ -1,8 +1,8 @@
 "use client";
 import { SwiperSlide } from "swiper/react";
-import SlideWrapper from "../../shared/slider/SlideWrapper";
+import SlideWrapper from "../../../shared/slider/SlideWrapper";
 import GallerySliderCard from "./GallerySliderCard";
-import SliderWrapper from "../../shared/slider/SliderWrapper";
+import SliderWrapper from "./SliderWrapper";
 
 const galleryList = [
   { image: "buildingTopView.jpg", alt: "Building Top View" },

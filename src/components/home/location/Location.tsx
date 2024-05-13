@@ -13,7 +13,7 @@ export default function Location() {
       <SectionHexagonBgImage />
       <Container className="flex flex-col items-center">
         <SectionTitle>{t("title")}</SectionTitle>
-        <p className="text-base mb-5">{t("description")}</p>
+        <p className="mb-5 text-base text-grey">{t("description")}</p>
         <LocationList />
       </Container>
       <Map />
