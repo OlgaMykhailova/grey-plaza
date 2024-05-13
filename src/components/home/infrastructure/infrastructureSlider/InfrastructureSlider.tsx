@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import { SwiperSlide } from "swiper/react";
 import SliderWrapper from "./SliderWrapper";
-import SlideWrapper from "../../shared/slider/SlideWrapper";
+import SlideWrapper from "../../../shared/slider/SlideWrapper";
 import InfrastructureSliderCard from "./InfrastructureSliderCard";
 
 export default function InfrastructureSlider() {
