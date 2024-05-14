@@ -55,6 +55,12 @@ export default function InfrastructureSlider() {
       title: t("postTitle"),
       description: t("postDescription"),
     },
+    {
+      image: "bank.jpg",
+      alt: "Bank",
+      title: t("bankTitle"),
+      description: t("bankDescription"),
+    },
   ];
 
   return (
@@ -83,14 +89,14 @@ export default function InfrastructureSlider() {
                 />
                 <div className="w-full min-h-[88px] p-3 bg-cardGradient text-white-text">
                   <h3
-                    data-swiper-parallax-x="-200"
+                    data-swiper-parallax-x="-35%"
                     data-swiper-parallax-opacity="0"
                     className="text-mdb mb-1"
                   >
                     {title}
                   </h3>
                   <p
-                    data-swiper-parallax-x="-200"
+                    data-swiper-parallax-x="-35%"
                     data-swiper-parallax-opacity="0"
                     className="text-xs"
                   >
