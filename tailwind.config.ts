@@ -112,7 +112,7 @@ const config: Config = {
         blue: "#1b445a",
         disabled: "#8B8B8B",
         grey: "#444444",
-        white: { bg: "#F6F6F6", text: "#FFFFFF" },
+        white: { bg: "#FCFCFC", bgSecondary: "#F6F6F6", text: "#FFFFFF" },
         error: { text: "#FF958F", input: "#DD4037" },
       },
       backgroundImage: {
