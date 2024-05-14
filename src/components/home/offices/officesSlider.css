@@ -2,12 +2,9 @@
   padding: 0 0 4px 0 !important;
 }
 
-.swiper-slide {
-  transition: opacity 300ms ease-out;
-}
-
 .thumb-slider .swiper-slide {
-  opacity: 0.5;
+  transition: opacity 1000ms ease-out;
+  opacity: 0.4;
 }
 
 .thumb-slider .swiper-slide-thumb-active {
