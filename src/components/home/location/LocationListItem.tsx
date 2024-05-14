@@ -7,7 +7,7 @@ interface LocationListItemProps {
 export default function LocationListItem({ location }: LocationListItemProps) {
   const { title, alt, icon } = location;
   return (
-    <li className="flex gap-2.5">
+    <li className="flex items-center gap-2.5">
       <Image
         src={`/images/icons/${icon}`}
         width="0"

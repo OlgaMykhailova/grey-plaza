@@ -10,10 +10,7 @@ export default function Offices() {
   const locale = useLocale();
 
   return (
-    <section
-      id="offices"
-      className="py-10 scroll-mt-[72px] bg-white-bgSecondary"
-    >
+    <section id="offices" className="py-10 scroll-mt-[72px]">
       <Container>
         <SectionTitle>{t("Offices.title")}</SectionTitle>
         <p className="text-base text-grey">{t("Offices.description")}</p>
