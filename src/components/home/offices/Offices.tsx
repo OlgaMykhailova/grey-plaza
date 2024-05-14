@@ -3,20 +3,18 @@ import Link from "next/link";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import Button from "../../shared/Button";
-import OfficesSlider from "./OfficesSlider";
+import OfficesCategoryList from "./OfficesCategoryList";
 
 export default function Offices() {
   const t = useTranslations("");
   const locale = useLocale();
 
   return (
-    <section id="offices" className="py-10 mb-10 scroll-mt-[72px]">
+    <section id="offices" className="py-10 scroll-mt-[72px]">
       <Container>
         <SectionTitle>{t("Offices.title")}</SectionTitle>
         <p className="text-base text-grey">{t("Offices.description")}</p>
-      </Container>
-      <OfficesSlider />
-      <Container>
+        <OfficesCategoryList />
         <Link href="/offices" locale={locale}>
           <Button className="mt-4 mx-auto">{t("Buttons.viewAll")}</Button>
         </Link>

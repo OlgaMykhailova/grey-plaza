@@ -9,34 +9,14 @@ import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import "./officesSlider.css";
 
-const officesList = [
-  {
-    image: "image1.jpg",
-    alt: "image1",
-  },
-  {
-    image: "image2.jpg",
-    alt: "image2",
-  },
-  {
-    image: "image3.jpg",
-    alt: "image3",
-  },
-  {
-    image: "image4.jpg",
-    alt: "image4",
-  },
-  {
-    image: "image5.jpg",
-    alt: "image5",
-  },
-  {
-    image: "image6.jpg",
-    alt: "image6",
-  },
-];
+interface OfficesSliderProps {
+  sliderList: {
+    image: string;
+    alt: string;
+  }[];
+}
 
-export default function OfficesSlider() {
+export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperProps | null>(null);
   return (
     <>
@@ -53,7 +33,7 @@ export default function OfficesSlider() {
         loop={true}
         className="offices-slider"
       >
-        {officesList.map(({ image, alt }, idx) => (
+        {sliderList.map(({ image, alt }, idx) => (
           <SwiperSlide key={idx}>
             <Image
               src={`/images/officesImages/${image}`}
@@ -75,7 +55,7 @@ export default function OfficesSlider() {
         modules={[Thumbs, FreeMode]}
         className="thumb-slider"
       >
-        {officesList.map(({ image, alt }, idx) => (
+        {sliderList.map(({ image, alt }, idx) => (
           <SwiperSlide key={idx}>
             <Image
               src={`/images/officesImages/${image}`}

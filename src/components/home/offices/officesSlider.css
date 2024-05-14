@@ -1,9 +1,5 @@
 .offices-slider.swiper {
-  padding: 0 20px 4px 20px !important;
-}
-
-.thumb-slider.swiper {
-  margin: 0 20px;
+  padding: 0 0 4px 0 !important;
 }
 
 .swiper-slide {
@@ -11,7 +7,7 @@
 }
 
 .thumb-slider .swiper-slide {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .thumb-slider .swiper-slide-thumb-active {
