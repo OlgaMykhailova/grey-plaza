@@ -22,12 +22,20 @@ export default function Map() {
       </Container>
       <div className="relative max-w-[560px] mx-auto">
         <Image
-          src={`/images/map.jpg`}
+          src={`/images/googleMap.jpg`}
           width="0"
           height="0"
           sizes="100%"
           alt="map"
           className="w-full h-auto"
+        />
+        <Image
+          src={`/images/icons/logoDark.svg`}
+          width="0"
+          height="0"
+          sizes="100%"
+          alt="location icon"
+          className="absolute top-[28.6%] left-[18.3%] w-[33.3%] h-auto"
         />
         <a
           href={MAP_URL}

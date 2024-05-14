@@ -1,10 +1,10 @@
+import { ReactNode } from "react";
 import { Swiper } from "swiper/react";
 import { Scrollbar, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
 import "./slider.css";
-import { ReactNode } from "react";
 
 interface SliderWrapperProps {
   children: ReactNode;
@@ -29,6 +29,7 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
       }}
       speed={1000}
       loop={true}
+      className="gallery-slider"
     >
       {children}
     </Swiper>
