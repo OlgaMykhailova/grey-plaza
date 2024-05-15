@@ -13,7 +13,7 @@ export default function Offices() {
     <section id="offices" className="py-10 scroll-mt-[72px]">
       <Container>
         <SectionTitle>{t("Offices.title")}</SectionTitle>
-        <p className="text-base text-grey">{t("Offices.description")}</p>
+        <p className="text-base">{t("Offices.description")}</p>
         <OfficesCategoryList />
         <Link href="/offices" locale={locale}>
           <Button className="mt-4 mx-auto">{t("Buttons.viewAll")}</Button>

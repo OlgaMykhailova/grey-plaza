@@ -8,7 +8,7 @@ export default function SectionTitle({
   className,
 }: SectionTitleProps) {
   return (
-    <h2 className={`mb-[20px] text-xlsb text-center ${className}`}>
+    <h2 className={`mb-[20px] text-xlsb text-center text-black ${className}`}>
       {children}
     </h2>
   );

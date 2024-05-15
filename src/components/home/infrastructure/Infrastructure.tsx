@@ -11,9 +11,7 @@ export default function Infrastructure() {
     <section id="infrastructure" className="pt-10 mb-10 scroll-mt-[72px]">
       <Container>
         <SectionTitle>{t("Infrastructure.title")}</SectionTitle>
-        <p className="mb-5 text-base text-grey">
-          {t("Infrastructure.description")}
-        </p>
+        <p className="mb-5 text-base">{t("Infrastructure.description")}</p>
       </Container>
       <InfrastructureSlider />
       <Container className="flex justify-center">
