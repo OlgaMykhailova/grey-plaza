@@ -6,7 +6,7 @@ import Link from "next/link";
 import MaskedInput from "react-text-mask";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
 import { CallBackValidation } from "@/src/schemas/callBackFormValidation";
-import Button from "../../Button";
+import Button from "../../buttons/Button";
 
 export default function CallBackForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -22,7 +22,7 @@ export default function CallBackForm() {
 
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
-    "absolute left-4 transition-translate duration-300 ease-out-quart text-grey bg-white-bg";
+    "absolute left-4 transition-translate duration-300 ease-out-quart bg-white-bg";
   const fieldStyles = "outline-none w-full h-full text-black bg-white-bg";
   const errorStyles =
     "absolute bottom-[-16px] right-0 text-2xs text-error-text";

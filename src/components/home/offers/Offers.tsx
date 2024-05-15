@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import Marquee from "react-fast-marquee";
-import Button from "../../shared/Button";
+import Button from "../../shared/buttons/Button";
 
 export default function Offers() {
   const t = useTranslations();
