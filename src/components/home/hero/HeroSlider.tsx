@@ -9,7 +9,7 @@ const heroImages = [
 
 export default function HeroSlider() {
   return (
-    <ul className="absolute top-0 left-0 z[-10] w-full h-full">
+    <ul className="absolute top-0 left-0 w-full h-full">
       {heroImages.map(({ image }, idx) => (
         <li
           key={idx}
@@ -29,8 +29,9 @@ export default function HeroSlider() {
             height="0"
             sizes="100%"
             alt="building"
-            className="min-w-[360px] h-[677px] w-full object-cover"
+            className="absolute z[-10] min-w-[360px] min-h-[508px] w-full h-auto object-cover"
           />
+          <div className="absolute min-w-[360px] min-h-[508px] w-full h-full bg-heroGradient"></div>
         </li>
       ))}
     </ul>
