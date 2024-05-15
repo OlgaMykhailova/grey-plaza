@@ -36,9 +36,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body
-          className={`${fira.variable} text-grey bg-white-bg font-fira text-black`}
-        >
+        <body className={`${fira.variable} text-grey bg-white-bg font-fira`}>
           <Providers>
             <Header />
             <main>{children}</main>
