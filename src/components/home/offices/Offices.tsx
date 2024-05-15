@@ -15,7 +15,7 @@ export default function Offices() {
         <SectionTitle>{t("Offices.title")}</SectionTitle>
         <p className="text-base">{t("Offices.description")}</p>
         <OfficesCategoryList />
-        <Link href="/offices" locale={locale}>
+        <Link href="/rent" locale={locale}>
           <Button className="mt-4 mx-auto">{t("Buttons.viewAll")}</Button>
         </Link>
       </Container>
