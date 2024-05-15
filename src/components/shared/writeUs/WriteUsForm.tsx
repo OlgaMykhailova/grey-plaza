@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import MaskedInput from "react-text-mask";
 import Link from "next/link";
-import Button from "../Button";
+import Button from "../buttons/Button";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
 

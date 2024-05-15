@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import InfrastructureSlider from "./infrastructureSlider/InfrastructureSlider";
-import TextButton from "../../shared/TextButton";
+import TextButton from "../../shared/buttons/TextButton";
 
 export default function Infrastructure() {
   const t = useTranslations();

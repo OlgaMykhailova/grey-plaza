@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import TextButton from "../../shared/TextButton";
+import TextButton from "../../shared/buttons/TextButton";
 import Container from "../../shared/Container";
 
 const MAP_URL = "https://maps.app.goo.gl/XdyPTk5aaQVUhvH78";

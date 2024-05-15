@@ -2,7 +2,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
-import Button from "../../shared/Button";
+import Button from "../../shared/buttons/Button";
 import OfficesCategoryList from "./OfficesCategoryList";
 
 export default function Offices() {

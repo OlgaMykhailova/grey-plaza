@@ -6,8 +6,8 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import Button from "../../Button";
-import CloseButton from "../../CloseButton";
+import Button from "../../buttons/Button";
+import CloseButton from "../../buttons/CloseButton";
 import CallBackForm from "./CallBackForm";
 import SectionTitle from "../../SectionTitle";
 
