@@ -29,6 +29,7 @@ export default function HeroSlider() {
             height="0"
             sizes="100%"
             alt="building"
+            priority
             className="absolute z[-10] min-w-[360px] min-h-[508px] w-full h-auto object-cover"
           />
           <div className="absolute min-w-[360px] min-h-[508px] w-full h-full bg-heroGradient"></div>
