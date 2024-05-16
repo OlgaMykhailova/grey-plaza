@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import OfficesCategory from "./OfficesCategory";
 
 const officesList = [
