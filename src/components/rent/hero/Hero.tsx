@@ -11,6 +11,7 @@ export default function Hero() {
           height="0"
           alt="building"
           sizes="100%"
+          priority
           className={`absolute top-0 left-0 z-[-10] w-full h-full`}
         />
         <HeroTitle />
