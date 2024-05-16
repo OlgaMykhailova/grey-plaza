@@ -29,7 +29,7 @@ const officesList = [
 ];
 
 export default function OfficesCategoryList() {
-  const t = useTranslations("Offices");
+  const t = useTranslations("Rent");
   return (
     <div className="flex flex-col gap-y-5 py-5">
       <OfficesCategory

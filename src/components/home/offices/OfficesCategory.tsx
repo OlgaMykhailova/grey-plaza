@@ -1,4 +1,4 @@
-import NavigationButton from "../../shared/buttons/NavigationButton";
+import FilterButton from "../../shared/buttons/FilterButton";
 import OfficesSlider from "./OfficesSlider";
 
 interface OfficesCategoryProps {
@@ -16,7 +16,7 @@ export default function OfficesCategory({
   return (
     <div>
       <OfficesSlider sliderList={sliderList} />
-      <NavigationButton className="mt-3">{categoryName}</NavigationButton>
+      <FilterButton className="mt-3">{categoryName}</FilterButton>
     </div>
   );
 }

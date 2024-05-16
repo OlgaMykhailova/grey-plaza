@@ -1,12 +1,12 @@
-interface NavigationButtonProps {
+interface FilterButtonProps {
   children: string;
   className?: string;
 }
 
-export default function NavigationButton({
+export default function FilterButton({
   children,
   className = "",
-}: NavigationButtonProps) {
+}: FilterButtonProps) {
   return (
     <button
       type="button"
