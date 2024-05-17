@@ -1,3 +1,4 @@
+import FilterButton from "../../shared/buttons/FilterButton";
 import OfficesSlider from "./OfficesSlider";
 
 interface OfficesCategoryProps {
@@ -15,9 +16,7 @@ export default function OfficesCategory({
   return (
     <div>
       <OfficesSlider sliderList={sliderList} />
-      <div className="flex items-center justify-center w-full h-10 mt-3 text-baseb text-primary border border-primary">
-        {categoryName}
-      </div>
+      <FilterButton className="mt-3">{categoryName}</FilterButton>
     </div>
   );
 }
