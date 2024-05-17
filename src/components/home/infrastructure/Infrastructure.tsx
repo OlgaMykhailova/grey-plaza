@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import InfrastructureSlider from "./infrastructureSlider/InfrastructureSlider";
-import TextButton from "../../shared/buttons/TextButton";
+import MapSchemeModal from "./MapSchemeModal";
 
 export default function Infrastructure() {
   const t = useTranslations();
@@ -15,7 +15,7 @@ export default function Infrastructure() {
       </Container>
       <InfrastructureSlider />
       <Container className="flex justify-center">
-        <TextButton className="mt-16">{t("Buttons.schema")}</TextButton>
+        <MapSchemeModal />
       </Container>
     </section>
   );
