@@ -18,14 +18,14 @@ export default function FilterButtonsList() {
   return (
     <ul className="flex flex-wrap gap-x-[13.1%] gap-y-4">
       {filtersList.map(({ title }, idx) => (
-        <FilterButton
-          key={idx}
-          className="w-[42.2%]"
-          handleCLick={() => setCurrentCategory(title)}
-          currentCategory={currentCategory}
-        >
-          {title}
-        </FilterButton>
+        <li key={idx} className="w-[42.2%]">
+          <FilterButton
+            handleCLick={() => setCurrentCategory(title)}
+            currentCategory={currentCategory}
+          >
+            {title}
+          </FilterButton>
+        </li>
       ))}
     </ul>
   );
