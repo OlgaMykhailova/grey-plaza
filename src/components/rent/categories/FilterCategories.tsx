@@ -15,7 +15,7 @@ export default function FilterCategories() {
           <h2 className="mb-3 text-black text-lgb">{t("chooseCategory")}</h2>
           <FilterButtonsList />
         </div>
-        <Link href={`/${locale}/rent#categories`}>
+        <Link href={`/rent#categories`} locale={locale}>
           <TextButton className="mt-8">{t("chooseAnotherCategory")}</TextButton>
         </Link>
       </Container>

@@ -10,7 +10,7 @@ export default function Offers() {
 
   return (
     <section className="mb-10">
-      <Link href={`/${locale}#write-us`}>
+      <Link href={`/#write-us`} locale={locale}>
         <Marquee
           autoFill={true}
           pauseOnHover={true}

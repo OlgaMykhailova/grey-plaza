@@ -1,4 +1,3 @@
-import { useTranslations, useLocale } from "next-intl";
 import Container from "../Container";
 import SocialLinks from "../socialLinks/SocialLinks";
 import HeaderNavigationMenu from "./HeaderNavigationMenu";
@@ -15,9 +14,6 @@ export default function HeaderMenu({
   isHeaderMenuOpened = false,
   setIsHeaderMenuOpened,
 }: HeaderMenuProps) {
-  const t = useTranslations("Buttons");
-  const locale = useLocale();
-
   return (
     <div
       className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-headerGradient ${

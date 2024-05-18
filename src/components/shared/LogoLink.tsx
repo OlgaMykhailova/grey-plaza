@@ -10,7 +10,7 @@ export default function LogoLink({ className }: LogoLinkProps) {
   const locale = useLocale();
 
   return (
-    <Link href={`/${locale}#top`} className="group outline-none">
+    <Link href={`/`} locale={locale} className="group outline-none">
       <Image
         src={`/images/icons/logoWhite.svg`}
         width="0"
