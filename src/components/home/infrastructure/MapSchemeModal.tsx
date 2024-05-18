@@ -28,7 +28,7 @@ export default function MapSchemeModal() {
         placement="center"
         radius="none"
         hideCloseButton={true}
-        className="max-w-[560px] max-h-[420px] aspect-[360/270] "
+        className="max-w-[560px] max-h-[311px] aspect-[360/200] "
         classNames={{ backdrop: "bg-primary bg-opacity-60" }}
       >
         <ModalContent className="relative bg-primary">
@@ -39,7 +39,7 @@ export default function MapSchemeModal() {
           />
           <ModalBody className="overflow-auto touch-auto p-0">
             <Image
-              src={`/images/infrastructureImages/mapScheme.jpg`}
+              src={`/images/infrastructureImages/mapScheme.webp`}
               width="0"
               height="0"
               alt="Map scheme"
