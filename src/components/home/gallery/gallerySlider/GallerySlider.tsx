@@ -26,9 +26,11 @@ export default function GallerySlider() {
     <SliderWrapper>
       {galleryList.map((galleryItem, idx) => (
         <SwiperSlide key={idx}>
+          <div className="swiper-slide-transform">
           <SlideWrapper>
             <GallerySliderCard galleryItem={galleryItem} />
           </SlideWrapper>
+          </div>
         </SwiperSlide>
       ))}
     </SliderWrapper>

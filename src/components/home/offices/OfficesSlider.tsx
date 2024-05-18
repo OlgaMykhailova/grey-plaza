@@ -31,18 +31,21 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
         }}
         speed={1000}
         loop={true}
+        cssMode={true}
         className="offices-slider"
       >
         {sliderList.map(({ image, alt }, idx) => (
           <SwiperSlide key={idx}>
-            <Image
-              src={`/images/officesImages/${image}`}
-              width="0"
-              height="0"
-              alt={alt}
-              sizes="100%"
-              className={`w-full h-full`}
-            />
+            <div className="swiper-slide-transform">
+              <Image
+                src={`/images/officesImages/${image}`}
+                width="0"
+                height="0"
+                alt={alt}
+                sizes="100%"
+                className={`w-full h-full`}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -57,14 +60,16 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
       >
         {sliderList.map(({ image, alt }, idx) => (
           <SwiperSlide key={idx}>
-            <Image
-              src={`/images/officesImages/${image}`}
-              width="0"
-              height="0"
-              alt={alt}
-              sizes="100%"
-              className={`w-full h-full`}
-            />
+            <div className="swiper-slide-transform">
+              <Image
+                src={`/images/officesImages/${image}`}
+                width="0"
+                height="0"
+                alt={alt}
+                sizes="100%"
+                className={`w-full h-full`}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
