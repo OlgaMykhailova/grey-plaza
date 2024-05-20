@@ -8,7 +8,7 @@ export default function Hero() {
       id="about-us"
       className="relative w-full aspect-[360/508] mobileXl:aspect-[768/828] scroll-mt-[72px] mb-10 bg-primary"
     >
-      <div className="absolute z-10 w-full h-full py-[11.11%] px-5 text-white-text text-center">
+      <div className="absolute z-10 w-full h-full py-[11.11%] mobileXl:py-[9.7%] px-5 text-white-text text-center">
         <HeroTitle />
         <HeroInfoList />
       </div>
