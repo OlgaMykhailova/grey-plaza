@@ -1,16 +1,20 @@
 import React from "react";
 import Image from "next/image";
 
-const heroImages = [
-  { image: "heroFirst" },
-  { image: "heroSecond" },
-  { image: "heroThird" },
-];
+interface HeroSliderListProps {
+  imagesList: { image: string }[];
+  className?: string;
+}
 
-export default function HeroSlider() {
+export default function HeroSliderList({
+  imagesList,
+  className,
+}: HeroSliderListProps) {
   return (
-    <ul className="absolute top-0 left-0 w-full h-full">
-      {heroImages.map(({ image }, idx) => (
+    <ul
+      className={`absolute top-0 left-0 w-full h-full aspect-[360/508] mobileXl:aspect-[768/828] ${className}`}
+    >
+      {imagesList.map(({ image }, idx) => (
         <li
           key={idx}
           className={`absolute z[-10] w-full h-full ${
@@ -24,15 +28,15 @@ export default function HeroSlider() {
           }`}
         >
           <Image
-            src={`/images/heroImages/${image}.jpg`}
+            src={`/images/heroImages/${image}`}
             width="0"
             height="0"
             sizes="100%"
             alt="building"
             priority={idx === 0}
-            className="absolute z[-10] min-w-[360px] min-h-[508px] w-full h-auto object-cover"
+            className="absolute z[-10] w-full h-auto object-cover"
           />
-          <div className="absolute min-w-[360px] min-h-[508px] w-full h-full bg-heroGradient"></div>
+          <div className="absolute w-full h-full bg-heroGradient"></div>
         </li>
       ))}
     </ul>
