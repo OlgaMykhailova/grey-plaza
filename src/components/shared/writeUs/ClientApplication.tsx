@@ -10,7 +10,6 @@ export default function ClientApplication() {
   return (
     <>
       <WriteUsForm
-        isError={isError}
         setIsError={setIsError}
         setIsNotificationShawn={setIsNotificationShawn}
       />

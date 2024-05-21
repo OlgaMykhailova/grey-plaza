@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Field, Form, Formik, ErrorMessage, FormikHelpers } from "formik";
 import MaskedInput from "react-text-mask";
+import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import Button from "../buttons/Button";
@@ -17,7 +18,6 @@ interface ValuesWriteUsFormType {
 }
 
 interface WriteUsFormProps {
-  isError: boolean;
   setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
   setIsNotificationShawn: (
     value: boolean | ((prev: boolean) => boolean)
@@ -25,12 +25,10 @@ interface WriteUsFormProps {
 }
 
 export default function WriteUsForm({
-  isError,
   setIsError,
   setIsNotificationShawn,
 }: WriteUsFormProps) {
   const [isLoading, setIsLoading] = useState(false);
-
   const locale = useLocale();
   const t = useTranslations("");
 
@@ -45,10 +43,9 @@ export default function WriteUsForm({
 
   const submitForm = async (
     values: ValuesWriteUsFormType,
-    actions: FormikHelpers<ValuesWriteUsFormType>
+    { resetForm }: FormikHelpers<ValuesWriteUsFormType>
   ) => {
     try {
-      console.log("start");
       setIsLoading(true);
       const data = {
         name: values.name.trim(),
@@ -56,7 +53,7 @@ export default function WriteUsForm({
         phone: values.phone.trim(),
         message: values.message.trim(),
       };
-      const res = await axios({
+      await axios({
         method: "post",
         url: "/api/sendDataTelegram",
         data,
@@ -64,14 +61,11 @@ export default function WriteUsForm({
           "Content-Type": "application/json",
         },
       });
-      console.log(res);
-      actions.resetForm();
+      resetForm();
     } catch (error) {
       setIsError(true);
-      console.error(error);
       return error;
     } finally {
-      console.log("end");
       setIsLoading(false);
       setIsNotificationShawn(true);
     }
@@ -93,7 +87,7 @@ export default function WriteUsForm({
       onSubmit={submitForm}
       validationSchema={validationSchema}
     >
-      {({ values, errors, touched, status, setStatus }) => (
+      {({ values, errors, touched, status, setStatus, dirty, isValid }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full text-base">
           <label
             className={`${labelStyles} ${
@@ -250,7 +244,21 @@ export default function WriteUsForm({
               </Link>
             </p>
           </div>
-          <Button type="submit">{t("Buttons.send")}</Button>
+          <div className="relative">
+            <Button type="submit" disabled={!(dirty && isValid) || isLoading}>
+              {t("Buttons.send")}
+            </Button>
+            <Image
+              src={`/images/icons/loader.svg`}
+              width="0"
+              height="0"
+              alt="loader icon"
+              sizes="100%"
+              className={`${
+                isLoading ? "block" : "hidden"
+              } absolute top-3 left-2 w-8 h-8 animate-rotation`}
+            />
+          </div>
         </Form>
       )}
     </Formik>
