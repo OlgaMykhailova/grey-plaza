@@ -1,14 +1,33 @@
 "use client";
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Field, Form, Formik, ErrorMessage } from "formik";
+import { Field, Form, Formik, ErrorMessage, FormikHelpers } from "formik";
 import MaskedInput from "react-text-mask";
+import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
 import Button from "../buttons/Button";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
 
-export default function WriteUsForm() {
+interface ValuesWriteUsFormType {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+interface WriteUsFormProps {
+  setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+  setIsNotificationShawn: (
+    value: boolean | ((prev: boolean) => boolean)
+  ) => void;
+}
+
+export default function WriteUsForm({
+  setIsError,
+  setIsNotificationShawn,
+}: WriteUsFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const locale = useLocale();
   const t = useTranslations("");
@@ -21,6 +40,36 @@ export default function WriteUsForm() {
   };
 
   const validationSchema = WriteUsValidation();
+
+  const submitForm = async (
+    values: ValuesWriteUsFormType,
+    { resetForm }: FormikHelpers<ValuesWriteUsFormType>
+  ) => {
+    try {
+      setIsLoading(true);
+      const data = {
+        name: values.name.trim(),
+        email: values.email.toLowerCase().trim(),
+        phone: values.phone.trim(),
+        message: values.message.trim(),
+      };
+      await axios({
+        method: "post",
+        url: "/api/sendDataTelegram",
+        data,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      resetForm();
+    } catch (error) {
+      setIsError(true);
+      return error;
+    } finally {
+      setIsLoading(false);
+      setIsNotificationShawn(true);
+    }
+  };
 
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
@@ -35,10 +84,10 @@ export default function WriteUsForm() {
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={(values) => console.log(values)}
+      onSubmit={submitForm}
       validationSchema={validationSchema}
     >
-      {({ values, errors, touched, status, setStatus }) => (
+      {({ values, errors, touched, status, setStatus, dirty, isValid }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full text-base">
           <label
             className={`${labelStyles} ${
@@ -195,7 +244,21 @@ export default function WriteUsForm() {
               </Link>
             </p>
           </div>
-          <Button type="submit">{t("Buttons.send")}</Button>
+          <div className="relative">
+            <Button type="submit" disabled={!(dirty && isValid) || isLoading}>
+              {t("Buttons.send")}
+            </Button>
+            <Image
+              src={`/images/icons/loader.svg`}
+              width="0"
+              height="0"
+              alt="loader icon"
+              sizes="100%"
+              className={`${
+                isLoading ? "block" : "hidden"
+              } absolute top-3 left-2 w-8 h-8 animate-rotation`}
+            />
+          </div>
         </Form>
       )}
     </Formik>

@@ -92,7 +92,7 @@ const config: Config = {
         xlsb: [
           "28px",
           {
-            lineHeight: "32px",
+            lineHeight: "36px",
             fontWeight: "600",
           },
         ],
@@ -148,11 +148,20 @@ const config: Config = {
           "75%": { transform: "translateY(25%) scale(0.75)" },
           "100%": { transform: "translateY(0) scale(1)" },
         },
+        rotate: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
       },
 
       animation: {
         hero: "opacityChange 12000ms ease-out infinite",
         benefit: "smoothBounce 1500ms ease-out 1",
+        rotation: "rotate 1500ms linear infinite",
       },
     },
   },
