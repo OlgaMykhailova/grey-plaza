@@ -35,6 +35,9 @@ export default function LocaleLayout({
 
   return (
     <html lang={locale} className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${fira.variable} text-grey bg-white-bg font-fira`}>
           <Providers>
