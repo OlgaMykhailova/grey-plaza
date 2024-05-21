@@ -92,7 +92,7 @@ const config: Config = {
         xlsb: [
           "28px",
           {
-            lineHeight: "32px",
+            lineHeight: "36px",
             fontWeight: "600",
           },
         ],

@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Container from "../Container";
 import SectionTitle from "../../shared/SectionTitle";
-import WriteUsForm from "./WriteUsForm";
+import ClientApplication from "./ClientApplication";
 
 export default function WriteUs() {
   const t = useTranslations("WriteUs");
@@ -28,7 +28,7 @@ export default function WriteUs() {
           <p className="mb-5 text-base text-white-text text-center">
             {t("leaveRequest")}
           </p>
-          <WriteUsForm />
+          <ClientApplication />
         </Container>
       </div>
     </section>

@@ -27,7 +27,7 @@ export const NotificationModal = ({
   setIsNotificationShawn,
 }: NotififcationModalProps) => {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
-  const getTranslation = useTranslations("Notifications");
+  const t = useTranslations("Notifications");
 
   useEffect(() => {
     if (isNotificationShawn) {
@@ -50,52 +50,44 @@ export const NotificationModal = ({
       hideCloseButton={true}
       isDismissable={false}
       isKeyboardDismissDisabled={true}
-      className="justify-between min-w-[320px] max-w-[360px] tab:min-w-[464px] max-h-[420px] tab:min-h-[434px] pc:min-h-[474px]
-            p-[16px] m-0 overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
+      className="justify-between max-w-[360px] max-h-[318px]
+            px-5 py-10 m-0 overflow-y-auto tab:overflow-y-visible bg-primary"
       classNames={{
-        backdrop: `${
-          isError
-            ? "bg-backdrop bg-opacity-0"
-            : "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
-        }`,
+        backdrop: `bg-primary ${isError ? "bg-opacity-0" : "bg-opacity-60"}`,
       }}
     >
-      <ModalContent className="relative w-full h-full m-0">
-        <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
-          <button
-            type="button"
-            onClick={closeNotification}
-            aria-label="close button"
-            className="cursor-pointer flex justify-center items-center absolute top-[2px] right-4 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple"
-          >
-            <IconClose />
-          </button>
-        </ModalHeader>
-        <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
-          <h3
-            className={`font-caviar text-3xl text-purple-200 dark:text-white-200 mt-6 mb-4 tab:text-4xl ${
-              isError ? "pc:text-5xl" : "pc:text-6xl"
-            }`}
-          >
-            {isError
-              ? getTranslation("somethingWrong")
-              : getTranslation("thankYou")}
-          </h3>
-          <p className="text-base text-center">
-            {isError
-              ? getTranslation("tryAgain")
-              : getTranslation("waitResponse")}
-          </p>
+      <ModalContent className="relative w-full h-full m-0 text-white-bg">
+        <button
+          type="button"
+          onClick={closeNotification}
+          aria-label="close button"
+          className="cursor-pointer flex justify-center items-center absolute top-2 right-2 h-10 w-10 p-2"
+        >
+          <IconClose />
+        </button>
 
+        <ModalBody className="flex flex-col items-center gap-0 p-0">
+          <h3 className={`text-xlsb mb-5`}>
+            {isError ? t("error") : t("success")}
+          </h3>
+          <p className="mb-10 text-base text-center">
+            {isError ? t("errorDescription") : t("successDescription")}
+          </p>
           <Image
-            src="/images/bgImagesNotification/brokenHeart.svg"
-            alt="background"
+            src="/images/icons/error.svg"
+            alt="error icon"
             width="0"
             height="0"
             sizes="100%"
-            className={`${
-              isError ? "block" : "hidden"
-            } w-[177px] h-[129px] tab:w-[192px] tab:h-[127px] pc:w-[238px] pc:h-[157px] mt-[52px] tab:mt-[46px] pc:mt-[53px]`}
+            className={`${isError ? "block" : "hidden"} w-[100px] h-[100px]`}
+          />
+          <Image
+            src="/images/icons/success.svg"
+            alt="success icon"
+            width="0"
+            height="0"
+            sizes="100%"
+            className={`${isError ? "hidden" : "block"} w-[100px] h-[100px]`}
           />
         </ModalBody>
       </ModalContent>

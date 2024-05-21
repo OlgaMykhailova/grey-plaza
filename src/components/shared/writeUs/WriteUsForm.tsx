@@ -9,17 +9,28 @@ import Button from "../buttons/Button";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
 
-export interface ValuesWriteUsFormType {
+interface ValuesWriteUsFormType {
   name: string;
   email: string;
   phone: string;
   message: string;
 }
 
-export default function WriteUsForm() {
+interface WriteUsFormProps {
+  isError: boolean;
+  setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+  setIsNotificationShawn: (
+    value: boolean | ((prev: boolean) => boolean)
+  ) => void;
+}
+
+export default function WriteUsForm({
+  isError,
+  setIsError,
+  setIsNotificationShawn,
+}: WriteUsFormProps) {
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
-  const [isNotificationShawn, setIsNotificationShawn] = useState(false);
+
   const locale = useLocale();
   const t = useTranslations("");
 
