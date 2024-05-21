@@ -1,15 +1,25 @@
 "use client";
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Field, Form, Formik, ErrorMessage } from "formik";
+import { Field, Form, Formik, ErrorMessage, FormikHelpers } from "formik";
 import MaskedInput from "react-text-mask";
 import Link from "next/link";
+import axios from "axios";
 import Button from "../buttons/Button";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidation";
 
+export interface ValuesWriteUsFormType {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
 export default function WriteUsForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isNotificationShawn, setIsNotificationShawn] = useState(false);
   const locale = useLocale();
   const t = useTranslations("");
 
@@ -21,6 +31,40 @@ export default function WriteUsForm() {
   };
 
   const validationSchema = WriteUsValidation();
+
+  const submitForm = async (
+    values: ValuesWriteUsFormType,
+    actions: FormikHelpers<ValuesWriteUsFormType>
+  ) => {
+    try {
+      console.log("start");
+      setIsLoading(true);
+      const data = {
+        name: values.name.trim(),
+        email: values.email.toLowerCase().trim(),
+        phone: values.phone.trim(),
+        message: values.message.trim(),
+      };
+      const res = await axios({
+        method: "post",
+        url: "/api/sendDataTelegram",
+        data,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log(res);
+      actions.resetForm();
+    } catch (error) {
+      setIsError(true);
+      console.error(error);
+      return error;
+    } finally {
+      console.log("end");
+      setIsLoading(false);
+      setIsNotificationShawn(true);
+    }
+  };
 
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
@@ -35,7 +79,7 @@ export default function WriteUsForm() {
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={(values) => console.log(values)}
+      onSubmit={submitForm}
       validationSchema={validationSchema}
     >
       {({ values, errors, touched, status, setStatus }) => (
