@@ -6,16 +6,24 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import Button from "../../buttons/Button";
-import CloseButton from "../../buttons/CloseButton";
+import Button from "../buttons/Button";
+import CloseButton from "../buttons/CloseButton";
 import CallBackForm from "./CallBackForm";
-import SectionTitle from "../../SectionTitle";
+import SectionTitle from "../SectionTitle";
 
 interface CallBackModalProps {
   closeHeaderMenu?: () => void;
+  setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+  setIsNotificationShawn: (
+    value: boolean | ((prev: boolean) => boolean)
+  ) => void;
 }
 
-export default function CallBackModal({ closeHeaderMenu }: CallBackModalProps) {
+export default function CallBackModal({
+  closeHeaderMenu,
+  setIsError,
+  setIsNotificationShawn,
+}: CallBackModalProps) {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
   const t = useTranslations();
 
@@ -36,7 +44,7 @@ export default function CallBackModal({ closeHeaderMenu }: CallBackModalProps) {
         radius="none"
         hideCloseButton={true}
         className="max-w-[360px] min-h-[564px] py-10 px-5 text-white-text"
-        classNames={{ backdrop: "bg-primary bg-opacity-60" }}
+        classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
           <CloseButton onClick={onClose} />
@@ -47,7 +55,11 @@ export default function CallBackModal({ closeHeaderMenu }: CallBackModalProps) {
             <p className="mb-5 text-base text-white-text text-center">
               {t("WriteUs.leaveRequest")}
             </p>
-            <CallBackForm />
+            <CallBackForm
+              onClose={onClose}
+              setIsError={setIsError}
+              setIsNotificationShawn={setIsNotificationShawn}
+            />
           </ModalBody>
         </ModalContent>
       </Modal>

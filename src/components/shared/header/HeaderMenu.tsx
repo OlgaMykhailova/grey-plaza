@@ -2,7 +2,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Container from "../Container";
 import SocialLinks from "../socialLinks/SocialLinks";
 import HeaderNavigationMenu from "./HeaderNavigationMenu";
-import CallBackModal from "./callBack/CallBackModal";
+import CallBack from "../callBack/CallBack";
 
 interface HeaderMenuProps {
   isHeaderMenuOpened: boolean;
@@ -27,7 +27,7 @@ export default function HeaderMenu({
       <Container className="flex flex-col items-center gap-y-10 h-full py-10 overflow-y-auto">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
         <SocialLinks />
-        <CallBackModal closeHeaderMenu={() => setIsHeaderMenuOpened(false)} />
+        <CallBack closeHeaderMenu={() => setIsHeaderMenuOpened(false)} />
       </Container>
     </div>
   );

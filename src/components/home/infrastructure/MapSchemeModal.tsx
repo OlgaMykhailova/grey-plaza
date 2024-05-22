@@ -29,7 +29,7 @@ export default function MapSchemeModal() {
         radius="none"
         hideCloseButton={true}
         className="max-w-[560px] max-h-[311px] aspect-[360/200] "
-        classNames={{ backdrop: "bg-primary bg-opacity-60" }}
+        classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
           <CloseButtonSecondary onClick={onClose} />
