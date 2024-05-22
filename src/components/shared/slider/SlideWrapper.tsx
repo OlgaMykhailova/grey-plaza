@@ -3,11 +3,17 @@ import { ReactNode } from "react";
 
 interface SlideWrapperProps {
   children: ReactNode;
+  className?: string;
 }
 
-export default function SlideWrapper({ children }: SlideWrapperProps) {
+export default function SlideWrapper({
+  children,
+  className = "",
+}: SlideWrapperProps) {
   return (
-    <div className={`relative w-full h-full p-4 border border-primary`}>
+    <div
+      className={`relative w-full h-full p-4 border border-primary ${className}`}
+    >
       <Image
         src={`/images/icons/corner.svg`}
         width="0"
