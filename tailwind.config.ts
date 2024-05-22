@@ -114,6 +114,7 @@ const config: Config = {
         grey: "#444444",
         white: { bg: "#FCFCFC", bgSecondary: "#F6F6F6", text: "#FFFFFF" },
         error: { text: "#FF958F", input: "#DD4037" },
+        backdrop: "#507091",
       },
       backgroundImage: {
         gradient:

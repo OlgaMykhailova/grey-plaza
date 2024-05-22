@@ -47,12 +47,12 @@ export default function WriteUsForm({
   ) => {
     try {
       setIsLoading(true);
-      const data = {
-        name: values.name.trim(),
-        email: values.email.toLowerCase().trim(),
-        phone: values.phone.trim(),
-        message: values.message.trim(),
-      };
+      const data =
+        `<b>Нова заявка</b>\n` +
+        `Ім'я: ${values.name.trim()}\n` +
+        `Email: ${values.email.toLowerCase().trim()}\n` +
+        `Телефон: ${values.phone.trim()}\n` +
+        `Повідомлення: ${values.message.trim()}\n`;
       await axios({
         method: "post",
         url: "/api/sendDataTelegram",

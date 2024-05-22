@@ -53,7 +53,7 @@ export const NotificationModal = ({
       className="justify-between max-w-[360px] max-h-[318px]
             px-5 py-10 m-0 overflow-y-auto tab:overflow-y-visible bg-primary"
       classNames={{
-        backdrop: `bg-secondary ${isError ? "bg-opacity-0" : "bg-opacity-90"}`,
+        backdrop: `bg-backdrop bg-opacity-90`,
       }}
     >
       <ModalContent className="relative w-full h-full m-0 text-white-bg">
