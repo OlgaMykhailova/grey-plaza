@@ -56,6 +56,7 @@ export default function CallBackModal({
               {t("WriteUs.leaveRequest")}
             </p>
             <CallBackForm
+              onClose={onClose}
               setIsError={setIsError}
               setIsNotificationShawn={setIsNotificationShawn}
             />

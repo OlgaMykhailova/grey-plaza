@@ -16,6 +16,7 @@ interface ValuesWriteUsFormType {
 }
 
 interface CallBackFormProps {
+  onClose?: () => void;
   setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
   setIsNotificationShawn: (
     value: boolean | ((prev: boolean) => boolean)
@@ -23,6 +24,7 @@ interface CallBackFormProps {
 }
 
 export default function CallBackForm({
+  onClose,
   setIsError,
   setIsNotificationShawn,
 }: CallBackFormProps) {
@@ -56,6 +58,7 @@ export default function CallBackForm({
         },
       });
       resetForm();
+      onClose?.();
     } catch (error) {
       setIsError(true);
       return error;
