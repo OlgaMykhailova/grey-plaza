@@ -14,14 +14,14 @@ export default function MarqueeLine() {
         pauseOnHover={true}
         className="h-[72px] bg-accent"
       >
-        <h2 className="flex items-center text-lgb text-white-text">
+        <h2 className="flex items-center text-lgb tablet:text-xlsb text-white-text">
           {t("pageNotFound")}
-          <span className="text-3xs">
-            &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
+          <span className="text-3xs tablet:text-xs">
+            &nbsp; &nbsp; ⬢ &nbsp; &nbsp;
           </span>
           {t("returnToHome")}
-          <span className="text-3xs">
-            &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
+          <span className="text-3xs tablet:text-xs">
+            &nbsp; &nbsp; ⬢ &nbsp; &nbsp;
           </span>
         </h2>
       </Marquee>
