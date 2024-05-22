@@ -6,10 +6,10 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import Button from "../../buttons/Button";
-import CloseButton from "../../buttons/CloseButton";
+import Button from "../buttons/Button";
+import CloseButton from "../buttons/CloseButton";
 import CallBackForm from "./CallBackForm";
-import SectionTitle from "../../SectionTitle";
+import SectionTitle from "../SectionTitle";
 
 interface CallBackModalProps {
   closeHeaderMenu?: () => void;
@@ -36,7 +36,7 @@ export default function CallBackModal({ closeHeaderMenu }: CallBackModalProps) {
         radius="none"
         hideCloseButton={true}
         className="max-w-[360px] min-h-[564px] py-10 px-5 text-white-text"
-        classNames={{ backdrop: "bg-primary bg-opacity-60" }}
+        classNames={{ backdrop: "bg-secondary bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
           <CloseButton onClick={onClose} />

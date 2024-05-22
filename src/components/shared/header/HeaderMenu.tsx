@@ -2,7 +2,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Container from "../Container";
 import SocialLinks from "../socialLinks/SocialLinks";
 import HeaderNavigationMenu from "./HeaderNavigationMenu";
-import CallBackModal from "./callBack/CallBackModal";
+import CallBackModal from "../callBack/CallBackModal";
 
 interface HeaderMenuProps {
   isHeaderMenuOpened: boolean;

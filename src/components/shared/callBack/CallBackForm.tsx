@@ -6,7 +6,7 @@ import Link from "next/link";
 import MaskedInput from "react-text-mask";
 import { PHONE_NUMBER_MASK } from "@/src/constants/phoneNumberMask";
 import { CallBackValidation } from "@/src/schemas/callBackFormValidation";
-import Button from "../../buttons/Button";
+import Button from "../buttons/Button";
 
 export default function CallBackForm() {
   const [isLoading, setIsLoading] = useState(false);
