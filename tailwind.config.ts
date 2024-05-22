@@ -82,6 +82,13 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        lg: [
+          "20px",
+          {
+            lineHeight: "28px",
+            fontWeight: "400",
+          },
+        ],
         lgb: [
           "20px",
           {

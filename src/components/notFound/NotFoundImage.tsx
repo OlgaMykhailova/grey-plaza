@@ -3,7 +3,7 @@ import SlideWrapper from "../shared/slider/SlideWrapper";
 
 export default function NotFoundImage() {
   return (
-    <div className="flex items-center justify-center gap-x-3 tablet:gap-x-[25px] mb-[90px] tablet:mb-[56px]">
+    <div className="flex items-center justify-center gap-x-3 tablet:gap-x-[25px] w-[320px] tablet:w-[712px] laptop:w-[806px] mx-auto mb-[90px] tablet:mb-[56px]">
       <Image
         src={`/images/icons/4.svg`}
         width="0"
@@ -12,7 +12,7 @@ export default function NotFoundImage() {
         sizes="100%"
         className="w-[77px] tablet:w-[171px] h-[103px] tablet:h-[230px]"
       />
-      <SlideWrapper className="w-[140px] tablet:w-[319px] h-[126px] tablet:h-[287px] py-2.5 tablet:py-[23px] px-8 tablet:px-[75px]">
+      <SlideWrapper className="py-2.5 tablet:py-[23px] px-8 tablet:px-[75px]">
         <Image
           src={`/images/icons/0.svg`}
           width="0"
