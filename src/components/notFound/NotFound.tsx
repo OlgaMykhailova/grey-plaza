@@ -25,6 +25,14 @@ export default function NotFoundPage() {
         sizes="100%"
         className="hidden tablet:block laptop:hidden absolute z-[-10] bottom-0 left-0 min-h-[677px] w-full h-auto object-cover object-center"
       />
+      <Image
+        src={`/images/bgImages/notFoundBgTablet.webp`}
+        width="0"
+        height="0"
+        alt="building background"
+        sizes="100%"
+        className="hidden laptop:block absolute z-[-10] bottom-0 left-0 aspect-[1920/1080] min-h-[720px] w-full h-auto object-cover object-center"
+      />
       <Container>
         <p className="w-[236px] tablet:w-[307px] mb-[100px] tablet:mb-[84px] laptop:mb-[76px] text-base tablet:text-md laptop:text-lg">
           {t("notFounDescription")}
