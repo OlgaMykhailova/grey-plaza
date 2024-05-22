@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import Marquee from "react-fast-marquee";
-import Button from "../../shared/buttons/Button";
 
 export default function Offers() {
   const t = useTranslations();
@@ -14,7 +13,7 @@ export default function Offers() {
         <Marquee
           autoFill={true}
           pauseOnHover={true}
-          className="h-[72px] bg-accent"
+          className="h-[64px] bg-accent"
         >
           <h2 className="flex items-center text-lgb text-white-text">
             {t("Offers.title")}
