@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function MarqueeLine() {
-  const t = useTranslations();
+  const t = useTranslations("NotFound");
   const locale = useLocale();
 
   return (
@@ -15,7 +15,11 @@ export default function MarqueeLine() {
         className="h-[72px] bg-accent"
       >
         <h2 className="flex items-center text-lgb text-white-text">
-          {t("Offers.title")}
+          {t("pageNotFound")}
+          <span className="text-3xs">
+            &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
+          </span>
+          {t("returnToHome")}
           <span className="text-3xs">
             &nbsp; &nbsp; &nbsp; ⬢ &nbsp; &nbsp; &nbsp;
           </span>
