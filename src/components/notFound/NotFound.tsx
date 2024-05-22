@@ -8,7 +8,7 @@ export default function NotFoundPage() {
   const t = useTranslations("NotFound");
 
   return (
-    <section className="relative z-10 pt-[132px] tablet:pt-[112px] pb-[102px] tablet:pb-[74px]">
+    <section className="relative z-10 pt-[132px] tablet:pt-[112px] pb-[102px] tablet:pb-[74px] laptop:pb-[68px]">
       <Image
         src={`/images/bgImages/notFoundBgMobile.webp`}
         width="0"
@@ -26,7 +26,7 @@ export default function NotFoundPage() {
         className="hidden tablet:block laptop:hidden absolute z-[-10] bottom-0 left-0 min-h-[677px] w-full h-auto object-cover object-center"
       />
       <Container>
-        <p className="w-[236px] tablet:w-[307px] mb-[100px] tablet:mb-[84px] text-base tablet:text-md laptop:text-lb">
+        <p className="w-[236px] tablet:w-[307px] mb-[100px] tablet:mb-[84px] laptop:mb-[76px] text-base tablet:text-md laptop:text-lg">
           {t("notFounDescription")}
         </p>
         <NotFoundImage />

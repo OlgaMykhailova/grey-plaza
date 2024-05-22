@@ -103,7 +103,14 @@ const config: Config = {
             fontWeight: "600",
           },
         ],
-        "2xlb": [
+        "2xlsb": [
+          "32px",
+          {
+            lineHeight: "40px",
+            fontWeight: "600",
+          },
+        ],
+        "3xlb": [
           "44px",
           {
             lineHeight: "48px",
