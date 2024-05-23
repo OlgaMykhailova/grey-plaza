@@ -42,6 +42,7 @@ export default function CallBackModal({
         onOpenChange={onOpenChange}
         placement="center"
         radius="none"
+        scrollBehavior="outside"
         hideCloseButton={true}
         className="max-w-[360px] min-h-[564px] py-10 px-5 text-white-text"
         classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}

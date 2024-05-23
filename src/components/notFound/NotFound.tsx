@@ -15,6 +15,7 @@ export default function NotFoundPage() {
         height="0"
         alt="building background"
         sizes="100%"
+        priority
         className="tablet:hidden absolute z-[-10] bottom-0 left-0 min-h-[605px] w-full h-auto object-cover object-center"
       />
       <Image
@@ -23,6 +24,7 @@ export default function NotFoundPage() {
         height="0"
         alt="building background"
         sizes="100%"
+        priority
         className="hidden tablet:block laptop:hidden absolute z-[-10] bottom-0 left-0 min-h-[677px] w-full h-auto object-cover object-center"
       />
       <Image
@@ -31,6 +33,7 @@ export default function NotFoundPage() {
         height="0"
         alt="building background"
         sizes="100%"
+        priority
         className="hidden laptop:block absolute z-[-10] bottom-0 left-0 aspect-[1920/1080] min-h-[720px] w-full h-auto object-cover object-center"
       />
       <Container>
