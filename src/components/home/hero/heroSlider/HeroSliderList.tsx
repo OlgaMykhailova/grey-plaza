@@ -12,7 +12,7 @@ export default function HeroSliderList({
 }: HeroSliderListProps) {
   return (
     <ul
-      className={`absolute top-0 left-0 w-full h-full aspect-[360/508] mobileXl:aspect-[768/828] ${className}`}
+      className={`absolute top-0 left-0 w-full h-full aspect-[360/508] mobileXl:aspect-[768/660] ${className}`}
     >
       {imagesList.map(({ image }, idx) => (
         <li

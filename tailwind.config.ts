@@ -12,7 +12,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        mobileXl: "460px",
+        mobileXl: "520px",
         tablet: "768px",
         laptop: "1280px",
       },
@@ -115,6 +115,13 @@ const config: Config = {
           "44px",
           {
             lineHeight: "48px",
+            fontWeight: "700",
+          },
+        ],
+        "4xlb": [
+          "48px",
+          {
+            lineHeight: "52px",
             fontWeight: "700",
           },
         ],
