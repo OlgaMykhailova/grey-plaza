@@ -131,5 +131,10 @@
     "category100": "100-200 м²",
     "categoryLess100": "до 100 м²",
     "chooseAnotherCategory": "Обрати іншу категорію"
+  },
+  "NotFound": {
+    "notFounDescription": "Ми не змогли знайти сторінку, яку ви шукаєте. Можливо, сталася помилка",
+    "pageNotFound": "Сторінка не знайдена",
+    "returnToHome": "Повернутись на головну"
   }
 }

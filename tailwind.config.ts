@@ -20,6 +20,7 @@ const config: Config = {
         center: true,
         padding: {
           DEFAULT: "20px",
+          xl: "38px",
         },
       },
       fontFamily: {
@@ -82,6 +83,13 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        lg: [
+          "20px",
+          {
+            lineHeight: "28px",
+            fontWeight: "400",
+          },
+        ],
         lgb: [
           "20px",
           {
@@ -96,7 +104,14 @@ const config: Config = {
             fontWeight: "600",
           },
         ],
-        "2xlb": [
+        "2xlsb": [
+          "32px",
+          {
+            lineHeight: "40px",
+            fontWeight: "600",
+          },
+        ],
+        "3xlb": [
           "44px",
           {
             lineHeight: "48px",
