@@ -15,7 +15,7 @@ export default function HeroInfoList() {
   ];
 
   return (
-    <ul className="mt-7">
+    <ul>
       {heroList.map((item, idx) => (
         <HeroInfoItem key={idx} heroInfoItem={item}></HeroInfoItem>
       ))}

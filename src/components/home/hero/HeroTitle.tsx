@@ -7,7 +7,9 @@ export default function HeroTitle() {
     <>
       <h1 className="text-base">
         {t("pageTitle1")}
-        <p className="text-3xlb">{t("pageTitle2").toUpperCase()}</p>
+        <p className="text-3xlb mobileXl:text-4xlb">
+          {t("pageTitle2").toUpperCase()}
+        </p>
       </h1>
       <p>{t("description").toUpperCase()}</p>
     </>
