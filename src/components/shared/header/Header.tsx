@@ -12,10 +12,10 @@ export default function Header() {
   const toggleHeaderMenuOpen = () => setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
   return (
-    <header className="fixed top-0 left-0 z-20 w-[100vw] h-[72px] bg-blue">
-      <Container className="flex justify-between items-center px-5 py-4">
-        <LogoLink className="w-[78px] h-[40px]" />
-        <div className="flex items-center gap-y-5">
+    <header className="fixed top-0 left-0 z-20 w-[100vw] h-[72px] tablet:h-20 bg-blue">
+      <Container className="flex justify-between items-center h-full">
+        <LogoLink className="w-[78px] tablet:w-[110px] h-10 tablet:h-14" />
+        <div className="flex items-center tablet:gap-x-5">
           <PhoneLink />
           <BurgerMenuButton
             isHeaderMenuOpened={isHeaderMenuOpened}
