@@ -1,10 +1,16 @@
 .infrastructure-slider.swiper {
-  padding: 0 0 36px 20px !important;
+  padding: 0 0 24px 20px !important;
+  @media screen and (min-width: 768px) {
+    padding: 0 0 28px 20px !important;
+  }
 }
 
 .swiper-scrollbar-horizontal {
   width: calc(100vw - 12px) !important;
-  height: 4px;
+  height: 4px !important;
+  @media screen and (min-width: 768px) {
+    height: 8px !important;
+  }
   margin: 0 4px 0 2px !important;
   border-radius: 0;
   background-color: var(--color-secondary);
@@ -16,7 +22,10 @@
 }
 
 .swiper-scrollbar-drag {
-  height: 4px;
+  height: 4px !important;
+  @media screen and (min-width: 768px) {
+    height: 8px !important;
+  }
   border-radius: 0;
   background-color: var(--color-accent);
 }
