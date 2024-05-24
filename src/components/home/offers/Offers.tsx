@@ -13,7 +13,7 @@ export default function Offers() {
         <Marquee
           autoFill={true}
           pauseOnHover={true}
-          className="h-[64px] bg-accent"
+          className="h-[64px] tablet:h-[72px] bg-accent"
         >
           <h2 className="flex items-center text-lgb text-white-text">
             {t("Offers.title")}
