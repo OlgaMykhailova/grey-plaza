@@ -15,7 +15,7 @@ export default function NotFoundImage() {
         sizes="100%"
         className="w-[77px] tablet:w-[171px] h-[103px] tablet:h-[230px]"
       />
-      <SlideWrapper className="py-2.5 tablet:py-[23px] laptop:py-[43px] px-8 tablet:px-[75px] laptop:px-[93px]">
+      <SlideWrapper className="w-full py-2.5 tablet:py-[23px] laptop:py-[43px] px-8 tablet:px-[75px] laptop:px-[93px]">
         <Image
           src={`/images/icons/0.svg`}
           width="0"
