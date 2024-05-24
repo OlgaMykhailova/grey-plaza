@@ -2,9 +2,9 @@ import React from "react";
 import HeroSliderList from "./HeroSliderList";
 
 const heroImagesMob = [
-  { image: "heroFirstMob.jpg" },
-  { image: "heroSecondMob.jpg" },
-  { image: "heroThirdMob.jpg" },
+  { image: "heroFirstMob.webp" },
+  { image: "heroSecondMob.webp" },
+  { image: "heroThirdMob.webp" },
 ];
 
 const heroImagesTab = [

@@ -1,7 +1,6 @@
 import HeroSlider from "./heroSlider/HeroSlider";
 import HeroInfoList from "./heroInfo/HeroInfoList";
 import HeroTitle from "./HeroTitle";
-import { NotificationModal } from "../../shared/notifications/NotificationModal";
 
 export default function Hero() {
   return (
