@@ -10,7 +10,10 @@ export default function EquipmentListItem({
   const { title, icon, alt } = equipment;
 
   return (
-    <li className="flex flex-col items-center justify-center gap-4 p-4 text-black [&:not(:last-child)]:mb-2 after::content-[''] after:w-[185px] after:h-[1px] after:bg-accent">
+    <li
+      className="flex flex-col items-center justify-center tablet:justify-between gap-4 p-4 tablet:w-[46.4%] text-black [&:not(:last-child)]:mb-2 tablet:[&:not(:last-child)]:mb-0 
+    after::content-[''] after:w-[185px] after:h-[1px] after:bg-accent"
+    >
       <Image
         src={`/images/icons/${icon}`}
         width="0"
@@ -18,7 +21,7 @@ export default function EquipmentListItem({
         alt={alt}
         className={`w-[64px] h-[64px]`}
       />
-      <h3 className="text-mdb text-center">{title}</h3>
+      <h3 className="text-mdb text-center tablet:w-[78.4%]">{title}</h3>
     </li>
   );
 }
