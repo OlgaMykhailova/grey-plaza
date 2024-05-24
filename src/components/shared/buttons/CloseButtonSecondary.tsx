@@ -12,7 +12,7 @@ export default function CloseButtonSecondary({
       type="button"
       onClick={onClick}
       aria-label="close button"
-      className="absolute top-2 right-2 flex justify-center items-center h-8 w-8"
+      className="absolute top-2 right-2 flex justify-center items-center h-8 w-8 tablet:h-10 tablet:w-10"
     >
       <Image
         src={`/images/icons/close.svg`}

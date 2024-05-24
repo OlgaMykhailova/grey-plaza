@@ -11,7 +11,7 @@ export default function ZoomButton({ onClick, isZoomed }: ZoomButtonProps) {
       type="button"
       onClick={onClick}
       aria-label="zoom button"
-      className="absolute bottom-2 right-2 flex justify-center items-center h-8 w-8"
+      className="absolute bottom-2 right-2 flex justify-center items-center h-8 w-8 tablet:h-10 tablet:w-10"
     >
       <Image
         src={`${

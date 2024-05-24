@@ -28,7 +28,7 @@ export default function MapSchemeModal() {
         placement="center"
         radius="none"
         hideCloseButton={true}
-        className="max-w-[560px] max-h-[311px] aspect-[360/200] "
+        className="max-w-[560px] max-h-[311px] tablet:max-w-[728px] tablet:max-h-[404px] tablet:min-w-[728px] tablet:min-h-[404px] aspect-[360/200] tablet:aspect-[728/404]"
         classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
