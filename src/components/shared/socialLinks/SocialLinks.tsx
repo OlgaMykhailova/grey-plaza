@@ -16,7 +16,7 @@ export default function SocialLinks() {
   ];
 
   return (
-    <ul className="flex justify-between gap-4">
+    <ul className="flex justify-center tablet:justify-start gap-4">
       {socialList.map((social, idx) => (
         <SocialLinkItem key={idx} social={social} />
       ))}

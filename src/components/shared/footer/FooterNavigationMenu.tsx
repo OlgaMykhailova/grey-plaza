@@ -13,5 +13,5 @@ export default function FooterNavigationMenu() {
     { title: t("WriteUs.title"), id: "#write-us" },
   ];
 
-  return <NavigationMenu menuList={menuList} />;
+  return <NavigationMenu menuList={menuList} className="tablet:items-start" />;
 }

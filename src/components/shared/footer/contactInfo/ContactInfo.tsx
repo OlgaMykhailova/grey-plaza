@@ -29,7 +29,10 @@ export default function ContactInfo() {
   ];
 
   return (
-    <ul id="contacts" className="flex flex-col items-center">
+    <ul
+      id="contacts"
+      className="flex flex-col items-center tablet:items-start tablet:gap-y-3"
+    >
       {contactsList.map((contact, idx) => (
         <ContactInfoItem key={idx} contact={contact} />
       ))}
