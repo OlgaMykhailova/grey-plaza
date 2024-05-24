@@ -38,7 +38,7 @@ export default function BenefitsList() {
   ];
 
   return (
-    <ul>
+    <ul className="tablet:flex tablet:flex-wrap">
       {benefitsList.map((benefit, idx) => (
         <BenefitsListItem key={idx} benefit={benefit} />
       ))}

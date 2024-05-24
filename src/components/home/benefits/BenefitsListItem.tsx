@@ -16,7 +16,7 @@ export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
   return (
     <li
       ref={ref}
-      className="flex gap-4 px-3 py-4 [&:not(:last-child)]:mb-2 text-white-text"
+      className="flex gap-4 tablet:w-[46.4%] px-3 py-4 [&:not(:last-child)]:mb-2 tablet:[&:not(:last-child)]:mb-0 text-white-text"
     >
       <Image
         src={`/images/icons/${icon}`}
