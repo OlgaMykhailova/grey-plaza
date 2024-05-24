@@ -1,5 +1,8 @@
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 import OfficesCategory from "./OfficesCategory";
+import Button from "../../shared/buttons/Button";
+import SlideWrapper from "../../shared/slider/SlideWrapper";
 
 const officesList = [
   {
@@ -29,21 +32,31 @@ const officesList = [
 ];
 
 export default function OfficesCategoryList() {
-  const t = useTranslations("Rent");
+  const t = useTranslations("");
+  const locale = useLocale();
+
   return (
-    <div className="flex flex-col gap-y-5 py-5">
+    <div className="flex flex-col gap-y-5 tablet:flex-row tablet:flex-wrap tablet:gap-x-4">
       <OfficesCategory
         sliderList={officesList}
-        categoryName={t("category1000")}
+        categoryName={t("Rent.category1000")}
       />
       <OfficesCategory
         sliderList={officesList}
-        categoryName={t("category500")}
+        categoryName={t("Rent.category500")}
       />
       <OfficesCategory
         sliderList={officesList}
-        categoryName={t("category300")}
+        categoryName={t("Rent.category300")}
       />
+      <Link href="/rent" locale={locale} className="tablet:hidden mt-4 mx-auto">
+        <Button>{t("Buttons.viewAll")}</Button>
+      </Link>
+      <SlideWrapper className="hidden tablet:flex justify-center items-center w-[48.9%] aspect-[356/314]">
+        <Link href="/rent" locale={locale}>
+          <Button>{t("Buttons.viewAll")}</Button>
+        </Link>
+      </SlideWrapper>
     </div>
   );
 }
