@@ -11,9 +11,7 @@ export default function SlideWrapper({
   className = "",
 }: SlideWrapperProps) {
   return (
-    <div
-      className={`relative w-full h-full p-4 border border-primary ${className}`}
-    >
+    <div className={`relative h-full p-4 border border-primary ${className}`}>
       <Image
         src={`/images/icons/corner.svg`}
         width="0"

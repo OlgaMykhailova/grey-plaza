@@ -80,7 +80,7 @@ export default function InfrastructureSlider() {
       {infrastructureList.map(({ image, alt, title, description }, idx) => (
         <SwiperSlide key={idx}>
           <div className="swiper-slide-transform">
-            <SlideWrapper>
+            <SlideWrapper className="w-full">
               <div className="relative z-10 flex items-end w-full aspect-[1/1]">
                 <Image
                   src={`/images/infrastructureImages/${image}`}
