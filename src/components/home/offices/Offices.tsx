@@ -1,23 +1,17 @@
-import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
-import Button from "../../shared/buttons/Button";
 import OfficesCategoryList from "./OfficesCategoryList";
 
 export default function Offices() {
-  const t = useTranslations("");
-  const locale = useLocale();
+  const t = useTranslations("Offices");
 
   return (
     <section id="offices" className="py-10 scroll-mt-[72px]">
       <Container>
-        <SectionTitle>{t("Offices.title")}</SectionTitle>
-        <p className="text-base">{t("Offices.description")}</p>
+        <SectionTitle>{t("title")}</SectionTitle>
+        <p className="mb-5 text-base">{t("description")}</p>
         <OfficesCategoryList />
-        <Link href="/rent" locale={locale}>
-          <Button className="mt-4 mx-auto">{t("Buttons.viewAll")}</Button>
-        </Link>
       </Container>
     </section>
   );

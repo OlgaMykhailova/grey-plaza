@@ -14,7 +14,7 @@ export default function OfficesCategory({
   categoryName,
 }: OfficesCategoryProps) {
   return (
-    <div>
+    <div className="tablet:w-[48.9%]">
       <OfficesSlider sliderList={sliderList} />
       <FilterButton className="mt-3">{categoryName}</FilterButton>
     </div>
