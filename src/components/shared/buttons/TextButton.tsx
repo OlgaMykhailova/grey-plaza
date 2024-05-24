@@ -15,8 +15,9 @@ export default function TextButton({
     <button
       type="button"
       onClick={onClick}
-      className={`w-[320px] h-10 outline-none border-y border-primary text-baseb text-black laptop:hover:text-primary 
-      laptop:focus-visible:text-primary transition-[color] duration-[300ms] ease-out-quart ${className}`}
+      className={`w-[320px] h-10 outline-none border-y border-primary text-baseb text-black laptop:hover:text-accent 
+      laptop:focus-visible:text-accent laptop:hover:border-accent laptop:focus-visible:border-accent transition-[color] 
+      duration-[300ms] ease-out-quart ${className}`}
     >
       {children}
     </button>
