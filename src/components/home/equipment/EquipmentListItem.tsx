@@ -21,7 +21,7 @@ export default function EquipmentListItem({
         alt={alt}
         className={`w-[64px] h-[64px]`}
       />
-      <h3 className="tablet:flex tablet:items-end tablet:justify-center tablet:w-[78.4%] tablet:min-h-12 text-mdb text-center">
+      <h3 className="tablet:flex tablet:items-start tablet:justify-center tablet:w-[78.4%] tablet:min-h-12 text-mdb text-center">
         {title}
       </h3>
     </li>
