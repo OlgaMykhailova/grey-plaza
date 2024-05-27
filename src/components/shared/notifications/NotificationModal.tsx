@@ -50,8 +50,8 @@ export const NotificationModal = ({
       hideCloseButton={true}
       isDismissable={false}
       isKeyboardDismissDisabled={true}
-      className="justify-between max-w-[360px] max-h-[318px]
-            px-5 py-10 m-0 overflow-y-auto tab:overflow-y-visible bg-primary"
+      className="justify-between max-w-[360px] max-h-[318px] tablet:max-w-[440px] tablet:min-w-[440px] tablet:max-h-[378px]
+            px-5 py-10 tablet:p-[60px] m-0 overflow-y-auto tab:overflow-y-visible bg-primary"
       classNames={{
         backdrop: `bg-backdrop bg-opacity-90`,
       }}
@@ -67,10 +67,10 @@ export const NotificationModal = ({
         </button>
 
         <ModalBody className="flex flex-col items-center gap-0 p-0">
-          <h3 className={`text-xlsb mb-5`}>
+          <h3 className={`mb-5 text-xlsb tablet:text-2xlsb`}>
             {isError ? t("error") : t("success")}
           </h3>
-          <p className="mb-10 text-base text-center">
+          <p className="mb-10 tablet:mb-14 text-base text-center">
             {isError ? t("errorDescription") : t("successDescription")}
           </p>
           <Image
