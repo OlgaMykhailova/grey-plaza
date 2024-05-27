@@ -7,7 +7,10 @@ export default function Offices() {
   const t = useTranslations("Offices");
 
   return (
-    <section id="offices" className="py-10 scroll-mt-[72px]">
+    <section
+      id="offices"
+      className="py-10 tablet:py-5 tablet:mb-5 scroll-mt-[72px]"
+    >
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
         <p className="mb-5 text-base">{t("description")}</p>
