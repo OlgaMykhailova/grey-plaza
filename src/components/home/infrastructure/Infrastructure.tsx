@@ -14,7 +14,10 @@ export default function Infrastructure() {
     >
       <Container>
         <SectionTitle>{t("Infrastructure.title")}</SectionTitle>
-        <p className="mb-5 text-base">{t("Infrastructure.description")}</p>
+        <div className="tablet:w-[553px] mb-5 tablet:mx-auto text-base">
+          <span>{t("Infrastructure.descriptionPartOne")}</span>
+          <span>{t("Infrastructure.descriptionPartTwo")}</span>
+        </div>
       </Container>
       <InfrastructureSlider />
       <Container className="flex justify-center">

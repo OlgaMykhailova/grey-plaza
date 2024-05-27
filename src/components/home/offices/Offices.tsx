@@ -13,7 +13,10 @@ export default function Offices() {
     >
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
-        <p className="mb-5 text-base">{t("description")}</p>
+        <div className="tablet:flex tablet:gap-x-4 mb-5 text-base">
+          <p className="w-full">{t("descriptionPartOne")}</p>
+          <p className="w-full">{t("descriptionPartTwo")}</p>
+        </div>
         <OfficesCategoryList />
       </Container>
     </section>
