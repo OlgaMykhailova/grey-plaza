@@ -44,7 +44,7 @@ export default function CallBackModal({
         radius="none"
         scrollBehavior="outside"
         hideCloseButton={true}
-        className="max-w-[360px] min-h-[564px] py-10 px-5 text-white-text"
+        className="max-w-[360px] min-h-[564px] tablet:max-w-[440px] tablet:min-w-[440px] tablet:min-h-[480px] py-10 px-5 text-white-text"
         classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
