@@ -35,7 +35,6 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
       }}
       speed={1000}
       loop={true}
-      cssMode={true}
       className="gallery-slider"
     >
       {children}
