@@ -140,7 +140,9 @@ const config: Config = {
       },
       backgroundImage: {
         gradient:
-          "linear-gradient(to bottom, rgba(135, 134, 134, 0) 0%, rgba(89, 114, 134, 0.66) 55%, rgba(4, 44, 74, 1) 100%)",
+          "linear-gradient(to bottom, rgba(135, 134, 134, 0) 0%, rgba(89, 114, 134, 0.59) 55%, rgba(4, 44, 74, 0.9) 100%)",
+        writeUsGradientTablet:
+          "linear-gradient(to right, rgba(86, 88, 102, 0) 0%, rgba(43, 69, 90, 0.59) 32%, rgba(4, 44, 74, 0.9) 56%)",
         heroGradient:
           "linear-gradient(to top, rgba(135, 134, 134, 0) 0%, rgba(89, 114, 134, 0.66) 55%, rgba(4, 44, 74, 1) 100%)",
         headerGradient:

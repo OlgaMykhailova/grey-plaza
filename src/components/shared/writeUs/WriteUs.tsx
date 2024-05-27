@@ -10,7 +10,7 @@ export default function WriteUs() {
   return (
     <section
       id="write-us"
-      className="relative z-10 min-h-[792px] tablet:min-h-[594px] mb-10 scroll-mt-[72px]"
+      className="relative z-10 min-h-[792px] tablet:min-h-[614px] mb-10 scroll-mt-[72px]"
     >
       <Image
         src={`/images/bgImages/writeUsBgImageMobile.webp`}
@@ -26,16 +26,18 @@ export default function WriteUs() {
         height="0"
         alt="building background"
         sizes="100%"
-        className="hidden tablet:block laptop:hidden absolute z-[-10] min-h-[594px] w-full h-auto object-cover object-left"
+        className="hidden tablet:block laptop:hidden absolute z-[-10] min-h-[614px] w-full h-auto object-cover object-left"
       />
-      <div className="h-full bg-gradient bg-opacity-90">
-        <Container className="flex flex-col items-center justify-between h-full py-10">
-          <SectionTitle className="text-white-text">
-            {t("subTitle")}
-          </SectionTitle>
-          <p className="mb-5 text-base text-white-text text-center">
-            {t("leaveRequest")}
-          </p>
+      <div className="h-full min-h-[792px] tablet:min-h-[614px] bg-gradient tablet:bg-writeUsGradientTablet">
+        <Container className="flex flex-col tablet:flex-row items-center tablet:items-start justify-between tablet:gap-x-4 h-full py-10">
+          <div>
+            <SectionTitle className="tablet:w-[92.7%] text-white-text">
+              {t("subTitle")}
+            </SectionTitle>
+            <p className="mb-5 text-base text-white-text text-center">
+              {t("leaveRequest")}
+            </p>
+          </div>
           <ClientApplication />
         </Container>
       </div>
