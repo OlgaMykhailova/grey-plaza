@@ -21,12 +21,13 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
       effect={"coverflow"}
       coverflowEffect={{
         rotate: 0,
-        scale: 0.7,
+        scale: 0.75,
         stretch: 32,
         depth: 0,
         modifier: 1,
         slideShadows: false,
       }}
+      breakpoints={{ 768: { slidesPerView: 1.25 } }}
       speed={1000}
       loop={true}
       cssMode={true}
