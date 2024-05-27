@@ -8,7 +8,10 @@ export default function Infrastructure() {
   const t = useTranslations();
 
   return (
-    <section id="infrastructure" className="pt-10 mb-10 scroll-mt-[72px]">
+    <section
+      id="infrastructure"
+      className="pt-10 mb-10 tablet:mb-[60px] scroll-mt-[72px]"
+    >
       <Container>
         <SectionTitle>{t("Infrastructure.title")}</SectionTitle>
         <p className="mb-5 text-base">{t("Infrastructure.description")}</p>

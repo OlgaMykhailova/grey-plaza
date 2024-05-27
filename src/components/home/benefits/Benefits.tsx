@@ -7,7 +7,10 @@ export default function Benefits() {
   const t = useTranslations("Benefits");
 
   return (
-    <section id="benefits" className="py-10 mb-10 scroll-mt-[72px] bg-primary">
+    <section
+      id="benefits"
+      className="py-10 mb-10 tablet:mb-[60px] scroll-mt-[72px] bg-primary"
+    >
       <Container>
         <SectionTitle className="text-white-text">{t("title")}</SectionTitle>
         <BenefitsList />
