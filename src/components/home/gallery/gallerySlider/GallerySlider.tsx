@@ -52,7 +52,7 @@ export default function GallerySlider() {
       {galleryList.map((galleryItem, idx) => (
         <SwiperSlide key={idx}>
           <div className="swiper-slide-transform">
-            <SlideWrapper className="w-full">
+            <SlideWrapper className="w-full aspect-[262/262] tablet:aspect-[668/322]">
               <GallerySliderCard galleryItem={galleryItem} />
             </SlideWrapper>
           </div>
