@@ -24,7 +24,7 @@ export default function HeaderNavigationMenu({
   return (
     <NavigationMenu
       menuList={menuList}
-      className="text-baseb"
+      className="laptop:flex-row laptop:gap-x-4 text-baseb laptop:text-xsb"
       onClick={onClick}
     />
   );
