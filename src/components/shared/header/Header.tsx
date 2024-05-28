@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <HeaderMobTab />
-      <HeaderLaptop />
+      {/* <HeaderLaptop /> */}
     </>
   );
 }

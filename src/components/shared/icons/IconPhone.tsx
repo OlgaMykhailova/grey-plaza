@@ -5,12 +5,12 @@ interface IconPhoneProps {
 export default function IconPhone({ className }: IconPhoneProps) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="0"
+      height="0"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      className={`w-full h-auto ${className}`}
       aria-label="icon phone"
     >
       <path

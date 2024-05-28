@@ -31,7 +31,9 @@ export default function Button({
       className={`group relative flex justify-center items-center ${
         variant === "primary" ? primaryColor : secondaryColor
       } ${
-        size === "big" ? "w-[180px] h-[56px]" : "w-[162px] h-[40px]"
+        size === "big"
+          ? "w-[180px] h-[56px] laptop:w-[207px]"
+          : "w-[162px] h-[40px]"
       }  outline-none text-baseb text-white-text ${className}`}
     >
       {children}
