@@ -11,14 +11,16 @@ export default function SlideWrapper({
   className = "",
 }: SlideWrapperProps) {
   return (
-    <div className={`relative h-full p-4 border border-primary ${className}`}>
+    <div
+      className={`relative h-full p-4 laptop:p-5 border border-primary ${className}`}
+    >
       <Image
         src={`/images/icons/corner.svg`}
         width="0"
         height="0"
         alt=""
         sizes="100%"
-        className={`absolute top-0 left-0 w-16 h-16`}
+        className={`absolute top-0 left-0 w-16 h-16 laptop:w-20 laptop:h-20`}
       />
       <Image
         src={`/images/icons/corner.svg`}
@@ -26,7 +28,7 @@ export default function SlideWrapper({
         height="0"
         alt=""
         sizes="100%"
-        className={`absolute bottom-0 right-0 w-16 h-16 rotate-180`}
+        className={`absolute bottom-0 right-0 w-16 h-16 laptop:w-20 laptop:h-20 rotate-180`}
       />
       {children}
     </div>

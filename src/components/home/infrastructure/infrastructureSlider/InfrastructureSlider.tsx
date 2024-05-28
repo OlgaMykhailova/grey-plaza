@@ -103,7 +103,7 @@ export default function InfrastructureSlider() {
                   <p
                     data-swiper-parallax-x="-35%"
                     data-swiper-parallax-opacity="0"
-                    className="text-xs"
+                    className="text-xs laptop:text-base"
                   >
                     {description}
                   </p>
