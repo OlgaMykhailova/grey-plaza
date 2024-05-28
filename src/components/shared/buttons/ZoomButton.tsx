@@ -1,4 +1,6 @@
 import Image from "next/image";
+import IconZoomIn from "../icons/IconZoomIn";
+import IconZoomOut from "../icons/IconZoomOut";
 
 interface ZoomButtonProps {
   onClick?: () => void;
@@ -11,18 +13,14 @@ export default function ZoomButton({ onClick, isZoomed }: ZoomButtonProps) {
       type="button"
       onClick={onClick}
       aria-label="zoom button"
-      className="absolute bottom-2 right-2 flex justify-center items-center h-8 w-8 tablet:h-10 tablet:w-10"
+      className="absolute bottom-2 right-2 flex justify-center items-center h-8 w-8 tablet:h-10 tablet:w-10 text-primary laptop:hover:text-accent
+      laptop:focus-visible:text-accent transition-[color] duration-[300ms] ease-out-quart"
     >
-      <Image
-        src={`${
-          isZoomed ? "/images/icons/zoomOut.svg" : "/images/icons/zoomIn.svg"
-        }`}
-        width="0"
-        height="0"
-        alt="zoom icon"
-        sizes="100%"
-        className="w-full h-full"
-      />
+      {isZoomed ? (
+        <IconZoomOut className="w-full h-full" />
+      ) : (
+        <IconZoomIn className="w-full h-full" />
+      )}
     </button>
   );
 }
