@@ -69,12 +69,14 @@ export default function InfrastructureSlider() {
       parallax={true}
       spaceBetween={22}
       slidesPerView={1.1}
-      breakpoints={{ 768: { slidesPerView: 2.1, parallax: false } }}
+      breakpoints={{
+        768: { slidesPerView: 2.1, parallax: false },
+        1280: { slidesPerView: 3.1, spaceBetween: 40, parallax: false },
+      }}
       scrollbar={true}
       grabCursor={true}
       speed={1000}
       loop={true}
-      cssMode={true}
       className="infrastructure-slider"
     >
       {infrastructureList.map(({ image, alt, title, description }, idx) => (
