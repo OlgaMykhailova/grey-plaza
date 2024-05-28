@@ -83,6 +83,13 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        mdsb: [
+          "18px",
+          {
+            lineHeight: "24px",
+            fontWeight: "600",
+          },
+        ],
         lg: [
           "20px",
           {
@@ -123,6 +130,13 @@ const config: Config = {
           {
             lineHeight: "52px",
             fontWeight: "700",
+          },
+        ],
+        "4xlsb": [
+          "48px",
+          {
+            lineHeight: "52px",
+            fontWeight: "600",
           },
         ],
       },
