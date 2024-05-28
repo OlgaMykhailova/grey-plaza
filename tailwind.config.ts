@@ -125,6 +125,13 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        "4xlsb": [
+          "48px",
+          {
+            lineHeight: "52px",
+            fontWeight: "600",
+          },
+        ],
       },
       colors: {
         primary: "#042C4A",

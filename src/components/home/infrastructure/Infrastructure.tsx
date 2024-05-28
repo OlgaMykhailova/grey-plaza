@@ -14,7 +14,7 @@ export default function Infrastructure() {
     >
       <Container>
         <SectionTitle>{t("Infrastructure.title")}</SectionTitle>
-        <div className="tablet:w-[553px] mb-5 tablet:mx-auto text-base">
+        <div className="tablet:w-[553px] mb-5 laptop:mb-12 tablet:mx-auto text-base">
           <span>{t("Infrastructure.descriptionPartOne")}</span>
           <span>{t("Infrastructure.descriptionPartTwo")}</span>
         </div>
