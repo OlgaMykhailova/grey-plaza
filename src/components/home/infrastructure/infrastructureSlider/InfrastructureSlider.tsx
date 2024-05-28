@@ -71,7 +71,7 @@ export default function InfrastructureSlider() {
       slidesPerView={1.1}
       breakpoints={{
         768: { slidesPerView: 2.1, parallax: false },
-        1280: { slidesPerView: 3.1, spaceBetween: 40, parallax: false },
+        1280: { slidesPerView: 3.14, spaceBetween: 39, parallax: false },
       }}
       scrollbar={true}
       grabCursor={true}
