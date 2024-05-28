@@ -22,13 +22,13 @@ export default function LogoLink({ className }: LogoLinkProps) {
         alt="logo"
         className={`w-full h-auto`}
       />
-      <div className="flex items-center justify-center absolute top-[-9px] left-[-11px] z-[-10] w-[72px] h-[72px]">
+      <div className="hidden laptop:flex items-center justify-center absolute top-[-9px] left-[-11px] z-[-10] w-[72px] h-[72px]">
         <Image
           src={`/images/icons/logoHover.svg`}
           width="0"
           height="0"
           alt="logo hover effect"
-          className={`group-hover:w-[72px] h-auto transition-[width] duration-[600ms] ease-out-in`}
+          className={`laptop:group-hover:w-[72px] h-auto transition-[width] duration-[600ms] ease-out-in`}
         />
       </div>
     </Link>
