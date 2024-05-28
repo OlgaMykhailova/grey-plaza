@@ -83,6 +83,13 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        mdsb: [
+          "18px",
+          {
+            lineHeight: "24px",
+            fontWeight: "600",
+          },
+        ],
         lg: [
           "20px",
           {
