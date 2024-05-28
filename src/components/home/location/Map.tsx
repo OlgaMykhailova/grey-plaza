@@ -25,7 +25,7 @@ export default function Map() {
         <a
           href={MAP_URL}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className="outline-none"
         >
           <Image
@@ -58,7 +58,7 @@ export default function Map() {
         <a
           href={MAP_URL}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className="outline-none"
         >
           <Image

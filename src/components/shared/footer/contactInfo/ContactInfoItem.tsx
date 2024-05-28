@@ -11,7 +11,7 @@ export default function ContactInfoItem({ contact }: ContactInfoItemProps) {
       <a
         href={url}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer nofollow"
         className="flex justify-center items-center gap-2 outline-none text-base text-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
         transition-[color] duration-[300ms] ease-out-quart"
       >

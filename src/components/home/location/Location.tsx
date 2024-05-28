@@ -24,7 +24,7 @@ export default function Location() {
           <a
             href={MAP_URL}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="flex items-center justify-center mb-5 tablet:mb-0 outline-none"
           >
             <TextButton>{t("Buttons.route")}</TextButton>
