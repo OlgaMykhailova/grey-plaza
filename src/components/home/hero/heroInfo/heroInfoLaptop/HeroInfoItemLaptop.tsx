@@ -1,0 +1,27 @@
+import Image from "next/image";
+interface HeroInfoItemProps {
+  heroInfoItem: { quantity: string; description: string };
+}
+
+export default function HeroInfoItemLaptop({
+  heroInfoItem,
+}: HeroInfoItemProps) {
+  const { quantity, description } = heroInfoItem;
+
+  return (
+    <li
+      className="absolute first:left-0 first:top-0 [&:nth-child(2)]:left-[130px] [&:nth-child(2)]:top-0 [&:nth-child(3)]:right-[130px] 
+      [&:nth-child(3)]:top-0 last:top-0 last:right-0 flex flex-col items-center justify-center w-[110px] h-[130px]"
+    >
+      <Image
+        src={`/images/icons/hexagon.svg`}
+        width="0"
+        height="0"
+        alt="hexagone image"
+        className="absolute top-0 left-0 w-full h-full"
+      />
+      <span className="mb-2 text-lgb">{quantity}</span>
+      <span className="text-md">{description}</span>
+    </li>
+  );
+}

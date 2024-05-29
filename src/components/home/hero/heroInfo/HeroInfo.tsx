@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
-import HeroInfoItem from "./HeroInfoItem";
+import HeroInfoListLaptop from "./heroInfoLaptop/HeroInfoListLaptop";
+import HeroInfoListMobTab from "./heroInfoMobTab/HeroInfoListMobTab";
 
-export default function HeroInfoList() {
+export default function HeroInfo() {
   const t = useTranslations("Hero");
 
   const heroList = [
@@ -13,12 +14,10 @@ export default function HeroInfoList() {
     },
     { quantity: t("buildingQuantity"), description: t("buildingDescription") },
   ];
-
   return (
-    <ul>
-      {heroList.map((item, idx) => (
-        <HeroInfoItem key={idx} heroInfoItem={item}></HeroInfoItem>
-      ))}
-    </ul>
+    <>
+      <HeroInfoListMobTab heroList={heroList} />
+      <HeroInfoListLaptop heroList={heroList} />
+    </>
   );
 }
