@@ -18,7 +18,7 @@ export default function EquipmentList() {
     },
   ];
   return (
-    <ul className="tablet:flex flex-wrap gap-4">
+    <ul className="tablet:flex tablet:flex-wrap gap-4 laptop:flex-nowrap">
       {equipmentList.map((equipment, idx) => (
         <EquipmentListItem key={idx} equipment={equipment} />
       ))}
