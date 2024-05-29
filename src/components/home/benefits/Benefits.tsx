@@ -9,7 +9,7 @@ export default function Benefits() {
   return (
     <section
       id="benefits"
-      className="py-10 mb-10 tablet:mb-[60px] scroll-mt-[72px] bg-primary"
+      className="py-10 mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20 bg-primary"
     >
       <Container>
         <SectionTitle className="text-white-text">{t("title")}</SectionTitle>
