@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSliderList from "./HeroSliderList";
 
 const heroImagesMob = [
@@ -13,6 +12,12 @@ const heroImagesTab = [
   { image: "heroThirdTab.webp" },
 ];
 
+const heroImagesLaptop = [
+  { image: "heroFirstLaptop.webp" },
+  { image: "heroSecondLaptop.webp" },
+  { image: "heroThirdLaptop.webp" },
+];
+
 export default function HeroSlider() {
   return (
     <>
@@ -20,6 +25,10 @@ export default function HeroSlider() {
       <HeroSliderList
         imagesList={heroImagesTab}
         className="hidden mobileXl:block laptop:hidden"
+      />
+      <HeroSliderList
+        imagesList={heroImagesLaptop}
+        className="hidden laptop:block"
       />
     </>
   );

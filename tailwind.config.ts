@@ -139,6 +139,13 @@ const config: Config = {
             fontWeight: "600",
           },
         ],
+        "5xlb": [
+          "56px",
+          {
+            lineHeight: "72px",
+            fontWeight: "700",
+          },
+        ],
       },
       colors: {
         primary: "#042C4A",
