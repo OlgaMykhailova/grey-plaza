@@ -39,10 +39,11 @@ export default function Button({
       {children}
       <div
         data-label={children}
-        className={`absolute z-10 flex justify-center items-center bg-white-bg ${
-          variant === "primary" ? "text-accent" : "text-primary"
-        } overflow-hidden h-0 w-full group-enabled:laptop:group-focus:h-full group-enabled:laptop:group-hover:h-full before:content-[attr(data-label)]
-        transition-[height] duration-[300ms] ease-out-quart`}
+        className={`absolute z-10 flex justify-center items-center bg-white-bg group-enabled:laptop:group-hover:border group-enabled:laptop:group-focus:border
+         border-accent ${
+           variant === "primary" ? "text-accent" : "text-primary"
+         } overflow-hidden h-0 w-full group-enabled:laptop:group-focus:h-full 
+         group-enabled:laptop:group-hover:h-full before:content-[attr(data-label)] transition-[height] duration-[300ms] ease-out-quart`}
       ></div>
     </button>
   );
