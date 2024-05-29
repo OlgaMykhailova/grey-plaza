@@ -4,7 +4,7 @@ export default function HeroTitle() {
   const t = useTranslations("Hero");
 
   return (
-    <div className="laptop:w-[500px] px-[94px] mb-8">
+    <div className="laptop:w-[500px] laptop:px-[94px] laptop:mb-8">
       <h1 className="text-base laptop:text-md text-center">
         {t("pageTitle1")}
         <p className="text-3xlb mobileXl:text-4xlb laptop:text-5xlb">
