@@ -31,7 +31,6 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
         }}
         speed={1000}
         loop={true}
-        cssMode={true}
         className="offices-slider"
       >
         {sliderList.map(({ image, alt }, idx) => (

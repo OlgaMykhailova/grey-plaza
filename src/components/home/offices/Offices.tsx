@@ -9,11 +9,11 @@ export default function Offices() {
   return (
     <section
       id="offices"
-      className="py-10 tablet:py-5 tablet:mb-5 scroll-mt-[72px]"
+      className="py-10 tablet:py-5 tablet:mb-5 laptop:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20"
     >
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
-        <div className="tablet:flex tablet:gap-x-4 mb-5 text-base">
+        <div className="tablet:flex tablet:gap-x-4 laptop:w-[798px] laptop:mx-auto mb-5 laptop:mb-10 text-base laptop:text-lg">
           <p className="w-full">{t("descriptionPartOne")}</p>
           <p className="w-full">{t("descriptionPartTwo")}</p>
         </div>

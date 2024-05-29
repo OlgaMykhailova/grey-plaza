@@ -15,7 +15,7 @@ export default function FilterButton({
     <button
       type="button"
       onClick={handleCLick}
-      className={`flex items-center justify-center w-full h-10 text-baseb border ${
+      className={`flex items-center justify-center w-full h-10 text-baseb laptop:text-mdb border ${
         currentCategory === children
           ? "text-white-bgSecondary bg-primary"
           : "text-primary border-primary bg-white-bgSecondary"
