@@ -10,7 +10,7 @@ export default function Equipment() {
   return (
     <section
       id="equipment"
-      className="relative z-10 pt-20 tablet:pt-10 pb-10 mb-10 scroll-mt-[72px]"
+      className="relative z-10 pt-20 tablet:pt-10 pb-10 mb-10 scroll-mt-[72px] tablet:mt-20"
     >
       <SectionHexagonBgImage />
       <Container>

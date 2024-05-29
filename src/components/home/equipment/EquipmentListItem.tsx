@@ -11,7 +11,7 @@ export default function EquipmentListItem({
 
   return (
     <li
-      className="flex flex-col items-center justify-center tablet:justify-between gap-4 p-4 tablet:w-[46.4%] text-black [&:not(:last-child)]:mb-2 tablet:[&:not(:last-child)]:mb-0 
+      className="flex flex-col items-center justify-center tablet:justify-between gap-4 px-4 pt-4 laptop:px-0 tablet:w-[46.4%] text-black [&:not(:last-child)]:mb-2 tablet:[&:not(:last-child)]:mb-0 
     after::content-[''] after:w-[185px] after:h-[1px] after:bg-accent"
     >
       <Image
