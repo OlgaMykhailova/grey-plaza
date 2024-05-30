@@ -5,7 +5,7 @@ interface IconHexagonProps {
 export default function IconHexagon({ className }: IconHexagonProps) {
   return (
     <svg
-      width="88"
+      width="89"
       height="102"
       viewBox="0 0 88 102"
       fill="none"
