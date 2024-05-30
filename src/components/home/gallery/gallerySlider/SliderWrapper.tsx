@@ -32,6 +32,10 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
           slidesPerView: 1.12,
           coverflowEffect: { scale: 0.75, stretch: 72 },
         },
+        1280: {
+          slidesPerView: 1.35,
+          coverflowEffect: { scale: 0.75, stretch: 96 },
+        },
       }}
       speed={1000}
       loop={true}
