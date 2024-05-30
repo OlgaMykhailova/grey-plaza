@@ -20,7 +20,7 @@ export default function HeroInfoItemMobTab({
         src={`/images/icons/hexagon.svg`}
         width="0"
         height="0"
-        alt="hexagone image"
+        alt="hexagon image"
         className="absolute top-0 left-0 w-full h-full"
       />
       <span className="mb-2 text-xsb mobileXl:text-baseb">{quantity}</span>
