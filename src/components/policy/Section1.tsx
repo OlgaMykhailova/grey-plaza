@@ -6,15 +6,15 @@ export default function Section1() {
   const t = useTranslations("Policy");
 
   return (
-    <li>
+    <li className="mb-4 laptop:mb-6">
       <SectionTitle>{t("terms")}</SectionTitle>
       <SectionSubTitle>{t("termsPartOne")}</SectionSubTitle>
-      <ul>
+      <ul className="mb-3 laptop:mb-4">
         <li>{t("goals")}</li>
         <li>{t("scope")}</li>
       </ul>
       <SectionSubTitle>{t("termsPartTwo")}</SectionSubTitle>
-      <ul>
+      <ul className="mb-3 laptop:mb-4">
         <li>{t("personalData")}</li>
         <li>{t("collection")}</li>
         <li>{t("usage")}</li>
