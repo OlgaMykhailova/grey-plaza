@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import SectionTitle from "./SectionTitle";
+import SectionSubTitle from "./SectionSubTitle";
 
 export default function Section1() {
   const t = useTranslations("Policy");
@@ -7,12 +8,12 @@ export default function Section1() {
   return (
     <li>
       <SectionTitle>{t("terms")}</SectionTitle>
-      <h3>{t("termsPartOne")}</h3>
+      <SectionSubTitle>{t("termsPartOne")}</SectionSubTitle>
       <ul>
         <li>{t("goals")}</li>
         <li>{t("scope")}</li>
       </ul>
-      <h3>{t("termsPartTwo")}</h3>
+      <SectionSubTitle>{t("termsPartTwo")}</SectionSubTitle>
       <ul>
         <li>{t("personalData")}</li>
         <li>{t("collection")}</li>
@@ -20,7 +21,7 @@ export default function Section1() {
         <li>{t("processing")}</li>
         <li>{t("cookiesDescription")}</li>
       </ul>
-      <h3>{t("termsPartThree")}</h3>
+      <SectionSubTitle>{t("termsPartThree")}</SectionSubTitle>
       <ul>
         <li>{t("agreement")}</li>
         <li>{t("disagreement")}</li>
