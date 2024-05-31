@@ -42,7 +42,7 @@ export default function WriteUs() {
             <SectionTitle className="tablet:w-[92.7%] text-white-text">
               {t("subTitle")}
             </SectionTitle>
-            <p className="mb-5 text-base text-white-text text-center">
+            <p className="mb-5 text-base laptop:text-lg text-white-text text-center">
               {t("leaveRequest")}
             </p>
           </div>
