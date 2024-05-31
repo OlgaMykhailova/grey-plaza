@@ -18,7 +18,7 @@ export default function Location() {
       <SectionTitle className="w-1/2 mx-auto">
         {t("Location.title")}
       </SectionTitle>
-      <div className="flex flex-col tablet:hidden">
+      <div className="flex flex-col">
         <Container className="tablet:flex items-center justify-between">
           <div className="tablet:flex flex-col justify-between w-[95%] laptop:w-[48%] h-full">
             <p className="mb-5 laptop:mb-10 text-base laptop:text-lg">
