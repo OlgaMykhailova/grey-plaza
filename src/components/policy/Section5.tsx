@@ -1,13 +1,13 @@
 import { useTranslations } from "next-intl";
+import SectionTitle from "./SectionTitle";
 
 export default function Section5() {
   const t = useTranslations("Policy");
 
   return (
-    <li>
-      <h2>{t("userRights")}</h2>
-
-      <ul>
+    <li className="mb-4 laptop:mb-6">
+      <SectionTitle>{t("userRights")}</SectionTitle>
+      <ul className="mb-3 laptop:mb-4">
         <li>{t("userRightsDescription")}</li>
       </ul>
     </li>
