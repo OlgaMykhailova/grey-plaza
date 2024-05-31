@@ -7,7 +7,7 @@ export default function Section5() {
   return (
     <li className="mb-4 laptop:mb-6">
       <SectionTitle>{t("userRights")}</SectionTitle>
-      <ul className="mb-3 laptop:mb-4">
+      <ul>
         <li>{t("userRightsDescription")}</li>
       </ul>
     </li>

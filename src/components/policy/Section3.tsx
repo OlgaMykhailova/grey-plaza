@@ -16,7 +16,7 @@ export default function Section3() {
         <li>{t("thirdPartyCookies")}</li>
       </ul>
       <SectionSubTitle>{t("cookiesControl")}</SectionSubTitle>
-      <ul className="mb-3 laptop:mb-4">
+      <ul>
         <li>{t("cookiesControlDescription")}</li>
       </ul>
     </li>
