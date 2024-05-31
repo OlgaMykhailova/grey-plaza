@@ -128,14 +128,14 @@ const config: Config = {
         "4xlb": [
           "48px",
           {
-            lineHeight: "52px",
+            lineHeight: "56px",
             fontWeight: "700",
           },
         ],
         "4xlsb": [
           "48px",
           {
-            lineHeight: "52px",
+            lineHeight: "56px",
             fontWeight: "600",
           },
         ],
