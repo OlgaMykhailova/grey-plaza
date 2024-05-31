@@ -5,6 +5,7 @@ import Section2 from "@/src/components/policy/Section2";
 import Section3 from "@/src/components/policy/Section3";
 import Section4 from "@/src/components/policy/Section4";
 import Section5 from "@/src/components/policy/Section5";
+import Section6 from "@/src/components/policy/Section6";
 import Container from "@/src/components/shared/Container";
 
 export default function Policy() {
@@ -18,6 +19,7 @@ export default function Policy() {
         <Section3 />
         <Section4 />
         <Section5 />
+        <Section6 />
       </ul>
     </Container>
   );
