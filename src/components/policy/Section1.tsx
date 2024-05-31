@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
+import SectionTitle from "./SectionTitle";
 
 export default function Section1() {
   const t = useTranslations("Policy");
 
   return (
     <li>
-      <h2>{t("terms")}</h2>
+      <SectionTitle>{t("terms")}</SectionTitle>
       <h3>{t("termsPartOne")}</h3>
       <ul>
         <li>{t("goals")}</li>

@@ -3,5 +3,5 @@ import { useTranslations } from "next-intl";
 export default function PolicyVersion() {
   const t = useTranslations("Policy");
 
-  return <p>{t("version")}</p>;
+  return <p className="mb-5">{t("version")}</p>;
 }
