@@ -10,7 +10,7 @@ export default function Infrastructure() {
   return (
     <section
       id="infrastructure"
-      className="pt-10 mb-10 tablet:mb-[60px] laptop:mb-[100px] scroll-mt-[72px] tablet:scroll-mt-20"
+      className="pt-10 mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20"
     >
       <Container>
         <SectionTitle>{t("Infrastructure.title")}</SectionTitle>
