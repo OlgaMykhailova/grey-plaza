@@ -2,6 +2,7 @@ import PolicyTitle from "@/src/components/policy/PolicyTitle";
 import PolicyVersion from "@/src/components/policy/PolicyVersion";
 import Section1 from "@/src/components/policy/Section1";
 import Section2 from "@/src/components/policy/Section2";
+import Section3 from "@/src/components/policy/Section3";
 import Container from "@/src/components/shared/Container";
 
 export default function Policy() {
@@ -12,6 +13,7 @@ export default function Policy() {
       <ul>
         <Section1 />
         <Section2 />
+        <Section3 />
       </ul>
     </Container>
   );
