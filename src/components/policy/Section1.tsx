@@ -19,6 +19,11 @@ export default function Section1() {
         <li>{t("processing")}</li>
         <li>{t("cookiesDescription")}</li>
       </ul>
+      <h3>{t("termsPartThree")}</h3>
+      <ul>
+        <li>{t("agreement")}</li>
+        <li>{t("disagreement")}</li>
+      </ul>
     </li>
   );
 }
