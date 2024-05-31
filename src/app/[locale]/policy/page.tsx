@@ -11,7 +11,7 @@ import Container from "@/src/components/shared/Container";
 
 export default function Policy() {
   return (
-    <Container className="pt-[112px] pb-[60px] tablet:pt-[120px]">
+    <Container className="pt-[132px] pb-[60px] tablet:pt-[140px] text-base laptop:text-lg">
       <PolicyTitle />
       <PolicyVersion />
       <ul>
