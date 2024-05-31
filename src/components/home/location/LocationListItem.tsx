@@ -16,7 +16,7 @@ export default function LocationListItem({ location }: LocationListItemProps) {
         className="w-[32px] h-[32px]"
       />
       <div>
-        <h3 className="text-base">{title}</h3>
+        <h3 className="text-base laptop:text-md">{title}</h3>
       </div>
     </li>
   );

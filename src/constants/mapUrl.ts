@@ -1,0 +1,1 @@
+export const MAP_URL = "https://maps.app.goo.gl/XdyPTk5aaQVUhvH78";
