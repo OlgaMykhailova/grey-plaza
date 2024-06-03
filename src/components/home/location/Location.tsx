@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { MAP_URL } from "@/src/constants/mapUrl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import LocationList from "./LocationList";
@@ -6,8 +7,6 @@ import SectionHexagonBgImage from "../../shared/SectionHexagonBgImage";
 import TextButton from "../../shared/buttons/TextButton";
 import MapMob from "./MapMob";
 import MapTabLaptop from "./MapTabLaptop";
-
-const MAP_URL = "https://maps.app.goo.gl/XdyPTk5aaQVUhvH78";
 
 export default function Location() {
   const t = useTranslations("");
