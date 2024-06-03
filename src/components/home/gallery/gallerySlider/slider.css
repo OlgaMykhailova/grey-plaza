@@ -3,6 +3,9 @@
   @media screen and (min-width: 768px) {
     padding: 0 0 28px 0 !important;
   }
+  @media screen and (min-width: 1280px) {
+    padding: 0 0 40px 0 !important;
+  }
 }
 
 .swiper-scrollbar-horizontal {
@@ -19,4 +22,53 @@
   height: 4px;
   border-radius: 0;
   background-color: var(--color-accent);
+}
+.gallery-slider .swiper-button-prev,
+.gallery-slider .swiper-button-next {
+  width: 104px;
+  height: 104px;
+}
+
+.gallery-slider .swiper-button-prev {
+  transform: translateY(-40px) translateX(170%);
+}
+
+.gallery-slider .swiper-button-next {
+  transform: translateY(-40px) translateX(-170%);
+}
+
+.gallery-slider .swiper-button-prev::after,
+.gallery-slider .swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+}
+.gallery-slider .swiper-button-prev:hover::after {
+  color: var(--color-accent);
+  fill: var(--color-primary);
+}
+
+.gallery-slider .swiper-button-next::after {
+  background-image: url("/images/icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-slider .swiper-button-prev::after {
+  background-image: url("/images/icons/arrow.svg");
+  transform: rotate(-180deg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-slider .swiper-button-next:hover::after {
+  background-image: url("/images/icons/arrowHover.svg");
+}
+
+.gallery-slider .swiper-button-prev:hover::after {
+  background-image: url("/images/icons/arrowHover.svg");
+  transform: rotate(-180deg);
 }

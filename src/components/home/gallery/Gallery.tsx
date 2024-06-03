@@ -9,7 +9,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-10 tablet:py-5 mb-10 tablet:mb-[60px] scroll-mt-[72px]"
+      className="py-10 tablet:py-5 laptop:py-10 mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20"
     >
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
