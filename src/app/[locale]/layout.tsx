@@ -44,7 +44,7 @@ export default function LocaleLayout({
         >
           <Providers>
             <Header />
-            <main className="min-h-[calc(100vh-72px-748px)] tablet:min-h-[calc(100vh-80px-484px)] laptop:min-h-[calc(100vh-80px-428px)]">
+            <main className="min-h-[calc(100vh-72px-748px)] tablet:min-h-[calc(100vh-80px-488px)] laptop:min-h-[calc(100vh-80px-448px)]">
               {children}
             </main>
             <Footer />
