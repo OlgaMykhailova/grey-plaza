@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 import { Swiper } from "swiper/react";
-import { Scrollbar, EffectCoverflow } from "swiper/modules";
+import { Navigation, Scrollbar, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
 import "./slider.css";
@@ -13,7 +14,8 @@ interface SliderWrapperProps {
 export default function SliderWrapper({ children }: SliderWrapperProps) {
   return (
     <Swiper
-      modules={[Scrollbar, EffectCoverflow]}
+      modules={[Navigation, Scrollbar, EffectCoverflow]}
+      navigation={true}
       slidesPerView={1.3}
       scrollbar={true}
       grabCursor={true}
