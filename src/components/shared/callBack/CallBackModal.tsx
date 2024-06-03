@@ -44,7 +44,8 @@ export default function CallBackModal({
         radius="none"
         scrollBehavior="outside"
         hideCloseButton={true}
-        className="max-w-[360px] min-h-[564px] tablet:max-w-[440px] tablet:min-w-[440px] tablet:min-h-[480px] py-10 px-5 text-white-text"
+        className="max-w-[360px] min-h-[564px] tablet:max-w-[440px] tablet:min-w-[440px] tablet:min-h-[480px] laptop:max-w-[664px] 
+        laptop:tablet:min-w-[664px] laptop:min-h-[654px] py-10 laptop:p-20 px-5 text-white-text"
         classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
@@ -53,7 +54,7 @@ export default function CallBackModal({
             <SectionTitle className="text-white-text">
               {t("Buttons.callBack")}
             </SectionTitle>
-            <p className="mb-5 text-base text-white-text text-center">
+            <p className="mb-5 text-base laptop:text-lg text-white-text text-center">
               {t("WriteUs.leaveRequest")}
             </p>
             <CallBackForm
