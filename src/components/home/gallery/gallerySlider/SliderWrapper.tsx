@@ -32,7 +32,7 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
       breakpoints={{
         320: { navigation: { enabled: false } },
         768: {
-          slidesPerView: 1.12,
+          slidesPerView: 1.16,
           coverflowEffect: { scale: 0.75, stretch: 72 },
           navigation: { enabled: false },
         },
