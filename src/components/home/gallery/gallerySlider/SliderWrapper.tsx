@@ -15,7 +15,7 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
   return (
     <Swiper
       modules={[Navigation, Scrollbar, EffectCoverflow]}
-      navigation={true}
+      navigation
       slidesPerView={1.3}
       scrollbar={true}
       grabCursor={true}
@@ -30,13 +30,16 @@ export default function SliderWrapper({ children }: SliderWrapperProps) {
         slideShadows: false,
       }}
       breakpoints={{
+        320: { navigation: { enabled: false } },
         768: {
           slidesPerView: 1.12,
           coverflowEffect: { scale: 0.75, stretch: 72 },
+          navigation: { enabled: false },
         },
         1280: {
           slidesPerView: 1.35,
           coverflowEffect: { scale: 0.75, stretch: 96 },
+          navigation: { enabled: true },
         },
       }}
       speed={1000}
