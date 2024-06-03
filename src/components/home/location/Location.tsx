@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { MAP_URL } from "@/src/constants/mapUrl";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import LocationList from "./LocationList";
@@ -7,15 +8,13 @@ import TextButton from "../../shared/buttons/TextButton";
 import MapMob from "./MapMob";
 import MapTabLaptop from "./MapTabLaptop";
 
-const MAP_URL = "https://maps.app.goo.gl/XdyPTk5aaQVUhvH78";
-
 export default function Location() {
   const t = useTranslations("");
 
   return (
     <section className="relative z-10 pt-20 tablet:pt-10 laptop:pt-[96px] mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20">
       <SectionHexagonBgImage />
-      <SectionTitle className="w-1/2 mx-auto">
+      <SectionTitle className="w-1/2 mx-auto laptop:w-[430px]">
         {t("Location.title")}
       </SectionTitle>
       <div className="flex flex-col">

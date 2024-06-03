@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { MAP_URL } from "@/src/constants/mapUrl";
 import ContactInfoItem from "./ContactInfoItem";
 import IconPhone from "../../icons/IconPhone";
 import IconEmail from "../../icons/IconEmail";
@@ -23,7 +24,7 @@ export default function ContactInfo() {
     { icon: <IconEmail />, url: `mailto:${t("email")}`, name: t("email") },
     {
       icon: <IconLocationSmall />,
-      url: "https://maps.app.goo.gl/XdyPTk5aaQVUhvH78",
+      url: MAP_URL,
       name: t("address"),
     },
   ];

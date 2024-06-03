@@ -4,12 +4,11 @@ import { useTranslations } from "next-intl";
 import {
   Modal,
   ModalContent,
-  ModalHeader,
   ModalBody,
   useDisclosure,
 } from "@nextui-org/react";
 import Image from "next/image";
-import IconClose from "../icons/IconClose";
+import CloseButton from "../buttons/CloseButton";
 
 interface NotififcationModalProps {
   isNotificationShawn: boolean;
@@ -50,27 +49,21 @@ export const NotificationModal = ({
       hideCloseButton={true}
       isDismissable={false}
       isKeyboardDismissDisabled={true}
-      className="justify-between max-w-[360px] max-h-[318px] tablet:max-w-[440px] tablet:min-w-[440px] tablet:max-h-[378px]
-            px-5 py-10 tablet:p-[60px] m-0 overflow-y-auto tab:overflow-y-visible bg-primary"
+      className="justify-between max-w-[360px] max-h-[318px] tablet:max-w-[440px] tablet:min-w-[440px] tablet:max-h-[378px] laptopt:max-w-[664px] laptop:min-w-[664px] laptop:max-h-[516px]
+            px-5 py-10 tablet:p-[60px] laptop:p-20 m-0 overflow-y-auto tab:overflow-y-visible bg-primary"
       classNames={{
         backdrop: `bg-backdrop bg-opacity-90`,
       }}
     >
       <ModalContent className="relative w-full h-full m-0 text-white-bg">
-        <button
-          type="button"
-          onClick={closeNotification}
-          aria-label="close button"
-          className="cursor-pointer flex justify-center items-center absolute top-2 right-2 h-10 w-10 p-2"
-        >
-          <IconClose />
-        </button>
-
+        <CloseButton onClick={closeNotification} />
         <ModalBody className="flex flex-col items-center gap-0 p-0">
-          <h3 className={`mb-5 text-xlsb tablet:text-2xlsb`}>
+          <h3
+            className={`mb-5 laptop:mb-3 text-xlsb tablet:text-2xlsb laptop:text-4xlsb`}
+          >
             {isError ? t("error") : t("success")}
           </h3>
-          <p className="mb-10 tablet:mb-14 text-base text-center">
+          <p className="mb-10 tablet:mb-14 text-base laptop:text-lg text-center">
             {isError ? t("errorDescription") : t("successDescription")}
           </p>
           <Image
@@ -79,7 +72,9 @@ export const NotificationModal = ({
             width="0"
             height="0"
             sizes="100%"
-            className={`${isError ? "block" : "hidden"} w-[100px] h-[100px]`}
+            className={`${
+              isError ? "block" : "hidden"
+            } w-[100px] h-[100px] laptop:w-[176px] laptop:h-[176px]`}
           />
           <Image
             src="/images/icons/success.svg"
@@ -87,7 +82,9 @@ export const NotificationModal = ({
             width="0"
             height="0"
             sizes="100%"
-            className={`${isError ? "hidden" : "block"} w-[100px] h-[100px]`}
+            className={`${
+              isError ? "hidden" : "block"
+            } w-[100px] h-[100px] laptop:w-[176px] laptop:h-[176px]`}
           />
         </ModalBody>
       </ModalContent>
