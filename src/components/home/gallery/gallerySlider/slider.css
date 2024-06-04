@@ -25,8 +25,12 @@
 }
 .gallery-slider .swiper-button-prev,
 .gallery-slider .swiper-button-next {
+  display: none !important;
   width: 104px;
   height: 104px;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
 
 .gallery-slider .swiper-button-prev {
