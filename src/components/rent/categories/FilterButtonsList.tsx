@@ -16,9 +16,9 @@ export default function FilterButtonsList() {
   const [currentCategory, setCurrentCategory] = useState(t("category1000"));
 
   return (
-    <ul className="flex flex-wrap gap-x-[13.1%] gap-y-4">
+    <ul className="flex flex-wrap gap-x-[13.1%] tablet:gap-x-[5%] gap-y-4">
       {filtersList.map(({ title }, idx) => (
-        <li key={idx} className="w-[42.2%]">
+        <li key={idx} className="w-[42.2%] tablet:w-[30%]">
           <FilterButton
             handleCLick={() => setCurrentCategory(title)}
             currentCategory={currentCategory}
