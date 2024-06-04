@@ -50,10 +50,6 @@
   border-radius: 100%;
   background-color: var(--color-secondary);
 }
-.gallery-slider .swiper-button-prev:hover::after {
-  color: var(--color-accent);
-  fill: var(--color-primary);
-}
 
 .gallery-slider .swiper-button-next::after {
   background-image: url("/images/icons/arrow.svg");

@@ -3,6 +3,7 @@
 }
 
 .thumb-slider .swiper-slide {
+  cursor: pointer;
   transition: opacity 1000ms ease-out;
   opacity: 0.4;
 }

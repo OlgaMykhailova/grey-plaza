@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
-import "./slider.css";
+import "./gallerySlider.css";
 
 interface SliderWrapperProps {
   children: ReactNode;
