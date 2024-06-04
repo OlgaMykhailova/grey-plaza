@@ -11,8 +11,10 @@ export default function FilterCategories() {
   return (
     <section id="categories" className="py-10 scroll-mt-[72px]">
       <Container className="flex flex-col items-center">
-        <div>
-          <h2 className="mb-3 text-black text-lgb">{t("chooseCategory")}</h2>
+        <div className="w-full tablet:w-[70%] laptop:w-full">
+          <h2 className="mb-3 tablet:mb-4 laptop:mb-8 text-black text-lgb tablet:text-xlsb laptop:text-2xlsb">
+            {t("chooseCategory")}
+          </h2>
           <FilterButtonsList />
         </div>
         <Link href={`/${locale}/rent#categories`}>
