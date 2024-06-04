@@ -25,8 +25,12 @@
 }
 .gallery-slider .swiper-button-prev,
 .gallery-slider .swiper-button-next {
+  display: none !important;
   width: 104px;
   height: 104px;
+  @media screen and (min-width: 1280px) {
+    display: flex !important;
+  }
 }
 
 .gallery-slider .swiper-button-prev {
@@ -45,10 +49,6 @@
   height: 72px;
   border-radius: 100%;
   background-color: var(--color-secondary);
-}
-.gallery-slider .swiper-button-prev:hover::after {
-  color: var(--color-accent);
-  fill: var(--color-primary);
 }
 
 .gallery-slider .swiper-button-next::after {
