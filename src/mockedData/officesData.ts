@@ -6,7 +6,12 @@ export const officesData = [
         area: "2062,50",
         building: "4",
         purpose: "Офісне приміщення",
-        photos: ["", "", "", ""],
+        photos: [
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717611487/136_gwrh3p.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717611486/127_ocwwrk.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717611486/132_zqhppf.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717611831/4_%D0%90_%D0%92_%D0%A1_-301_%D0%A4__page-0001_1_hoigit.jpg",
+        ],
       },
       {
         id: "4(А,В,С)-601(Ф)",
@@ -20,7 +25,12 @@ export const officesData = [
         area: "1868,45",
         building: "5",
         purpose: "Офісне приміщення",
-        photos: ["", "", "", ""],
+        photos: [
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717612726/IMG_2144_vrm35c.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717612723/IMG_1023_j8qzfw.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717612725/IMG_2147_qvbpxh.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717612876/5_%D0%90_-201_%D0%91__page-0001_dls1wj.jpg",
+        ],
       },
       {
         id: "5(А)-301",
@@ -34,7 +44,12 @@ export const officesData = [
         area: "1744,74",
         building: "5",
         purpose: "Офісне приміщення",
-        photos: ["", "", "", ""],
+        photos: [
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717613200/218_ajfrj5.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717613198/212_rpmati.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717613198/212_rpmati.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717613358/5_%D0%90_-401_%D0%91_3__page-0001_kftqfa.jpg",
+        ],
       },
     ],
   },
