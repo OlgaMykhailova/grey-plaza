@@ -18,7 +18,12 @@ export const officesData = [
         area: "2062,94",
         building: "4",
         purpose: "Офісне приміщення",
-        photos: ["", "", "", ""],
+        photos: [
+          "",
+          "",
+          "",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717685018/4_%D0%90_%D0%92_%D0%A1_-601_%D0%A4_oav0lo.jpg",
+        ],
       },
       {
         id: "5(А)-201(Б)",
@@ -109,6 +114,7 @@ export const officesData = [
           "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717666564/143_m7aihy.jpg",
           "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717666566/144_yfd4rp.jpg",
           "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717666567/147_ssmqm8.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717684812/4_%D0%90_-502_%D0%A4_1_wryclq.jpg",
         ],
       },
       {
@@ -186,6 +192,7 @@ export const officesData = [
           "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674968/181_kjgduz.jpg",
           "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674966/175_nebi8a.jpg",
           "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674966/173_qpiy0d.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717684908/4%D0%92-203_%D0%A4___1_n3trsu.jpg",
         ],
       },
     ],
