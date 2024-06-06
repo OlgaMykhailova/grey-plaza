@@ -1,5 +1,5 @@
 import FilterButton from "../../shared/buttons/FilterButton";
-import OfficesSlider from "./OfficesSlider";
+import OfficesSlider from "../../shared/officesSlider/OfficesSlider";
 
 interface OfficesCategoryProps {
   categoryName: string;

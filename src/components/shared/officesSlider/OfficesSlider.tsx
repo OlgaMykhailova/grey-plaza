@@ -37,12 +37,12 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
           <SwiperSlide key={idx}>
             <div className="swiper-slide-transform">
               <Image
-                src={`/images/officesImages/${image}`}
+                src={image}
                 width="0"
                 height="0"
                 alt={alt}
                 sizes="100%"
-                className={`w-full h-full`}
+                className={`w-full h-full object-cover`}
               />
             </div>
           </SwiperSlide>
@@ -52,7 +52,6 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
         onSwiper={setThumbsSwiper}
         spaceBetween={4}
         slidesPerView={4}
-        freeMode={true}
         watchSlidesProgress={true}
         modules={[Thumbs, FreeMode]}
         className="thumb-slider"
@@ -61,12 +60,12 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
           <SwiperSlide key={idx}>
             <div className="swiper-slide-transform">
               <Image
-                src={`/images/officesImages/${image}`}
+                src={image}
                 width="0"
                 height="0"
                 alt={alt}
                 sizes="100%"
-                className={`w-full h-full`}
+                className={`w-full h-full object-cover`}
               />
             </div>
           </SwiperSlide>
