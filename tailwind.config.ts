@@ -176,7 +176,7 @@ const config: Config = {
         heroGradient:
           "linear-gradient(to top, rgba(135, 134, 134, 0) 0%, rgba(89, 114, 134, 0.66) 55%, rgba(4, 44, 74, 1) 100%)",
         headerGradient:
-          "linear-gradient(to bottom, rgba(27, 68, 90, 1) 0%, rgba(27, 68, 90, 0.9) 50%, rgba(27, 68, 90, 0.85) 100%)",
+          "linear-gradient(to bottom, rgba(27, 68, 90, 1) 0%, rgba(27, 68, 90, 0.85) 50%, rgba(27, 68, 90, 0.7) 100%)",
         cardGradient:
           "linear-gradient(to bottom, rgba(89, 114, 134, 0) 0%, rgba(27, 63, 90, 0.27) 33%, rgba(4, 44, 74, 1) 100%)",
       },
