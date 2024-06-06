@@ -37,7 +37,16 @@ export const officesData = [
         area: "1760,65",
         building: "5",
         purpose: "Офісне приміщення",
-        photos: ["", "", "", ""],
+        photos: [
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678476/204_kp2jfs.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678473/203_da3l0z.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678471/202_reyv7s.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678467/201_d2twu3.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678465/200_zqvmyf.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678463/199_oo2yiq.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678462/197_ntd55j.jpg",
+          "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678481/5-301_page-0001_uldr5y.jpg",
+        ],
       },
       {
         id: "5(А)-401(Б)",
