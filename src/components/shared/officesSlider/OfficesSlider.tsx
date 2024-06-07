@@ -33,15 +33,26 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
       >
         {sliderList.map((photo, idx) => (
           <SwiperSlide key={idx}>
-            <div className="swiper-slide-transform">
-              <Image
-                src={photo}
-                width="0"
-                height="0"
-                alt="office photo"
-                sizes="100%"
-                className={`w-full h-full aspect-[296/169] object-cover`}
-              />
+            <div className="swiper-slide-transform flex justify-center items-center w-full h-full aspect-[296/169] bg-secondary bg-opacity-[43%]">
+              {photo ? (
+                <Image
+                  src={photo}
+                  width="0"
+                  height="0"
+                  alt="office photo"
+                  sizes="100%"
+                  className={`w-full h-full aspect-[296/169] object-cover`}
+                />
+              ) : (
+                <Image
+                  src={`/images/icons/logoBlue.svg`}
+                  width="0"
+                  height="0"
+                  alt="blue logo"
+                  sizes="100%"
+                  className={`w-[85px] laptop:w-[105px] h-auto`}
+                />
+              )}
             </div>
           </SwiperSlide>
         ))}
@@ -56,15 +67,26 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
       >
         {sliderList.map((photo, idx) => (
           <SwiperSlide key={idx}>
-            <div className="swiper-slide-transform">
-              <Image
-                src={photo}
-                width="0"
-                height="0"
-                alt="small office photo"
-                sizes="100%"
-                className={`w-full h-full aspect-[296/169] object-cover`}
-              />
+            <div className="swiper-slide-transform flex justify-center items-center w-full h-full aspect-[296/169] bg-secondary bg-opacity-[43%]">
+              {photo ? (
+                <Image
+                  src={photo}
+                  width="0"
+                  height="0"
+                  alt="small office photo"
+                  sizes="100%"
+                  className={`w-full h-full aspect-[296/169] object-cover`}
+                />
+              ) : (
+                <Image
+                  src={`/images/icons/logoBlue.svg`}
+                  width="0"
+                  height="0"
+                  alt="blue logo"
+                  sizes="100%"
+                  className={`w-[35px] h-auto`}
+                />
+              )}
             </div>
           </SwiperSlide>
         ))}
