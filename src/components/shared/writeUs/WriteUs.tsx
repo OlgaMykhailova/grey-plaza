@@ -4,12 +4,16 @@ import Container from "../Container";
 import SectionTitle from "../../shared/SectionTitle";
 import ClientApplication from "./ClientApplication";
 
-export default function WriteUs() {
+interface WriteUsProps {
+  id: string;
+}
+
+export default function WriteUs({ id }: WriteUsProps) {
   const t = useTranslations("WriteUs");
 
   return (
     <section
-      id="write-us"
+      id={id}
       className="relative z-10 min-h-[792px] tablet:min-h-[614px] laptop:min-h-[594px] mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20"
     >
       <Image

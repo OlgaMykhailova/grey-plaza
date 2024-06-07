@@ -18,7 +18,7 @@ export default function Home() {
       <Benefits />
       <Offices />
       <Gallery />
-      <WriteUs />
+      <WriteUs id="write-us" />
       <Location />
     </div>
   );
