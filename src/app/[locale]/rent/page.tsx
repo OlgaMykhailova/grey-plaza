@@ -7,7 +7,7 @@ export default function Offices() {
     <div className="pt-[72px]">
       <Hero />
       <OfficesCategoriesSection />
-      <WriteUs />
+      <WriteUs id={"rent-write-us"} />
     </div>
   );
 }

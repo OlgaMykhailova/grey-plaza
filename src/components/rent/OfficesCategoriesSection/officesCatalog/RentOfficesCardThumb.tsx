@@ -1,4 +1,5 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Button from "../../../shared/buttons/Button";
 
 interface RentOfficesCardThumbProps {
@@ -15,6 +16,7 @@ export default function RentOfficesCardThumb({
   office,
 }: RentOfficesCardThumbProps) {
   const t = useTranslations("");
+  const locale = useLocale();
   const { area, building, purpose } = office;
 
   return (
@@ -33,7 +35,9 @@ export default function RentOfficesCardThumb({
         </p>
         <p>{purpose}</p>
       </div>
-      <Button size="small">{t("Buttons.leaveRequest")}</Button>
+      <Link href={`/${locale}/rent#rent-write-us`}>
+        <Button size="small">{t("Buttons.leaveRequest")}</Button>
+      </Link>
     </div>
   );
 }
