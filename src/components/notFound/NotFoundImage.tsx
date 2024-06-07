@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SlideWrapper from "../shared/slider/SlideWrapper";
+import SlideWrapper from "../shared/SlideWrapper";
 
 export default function NotFoundImage() {
   return (

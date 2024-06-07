@@ -2,7 +2,7 @@
 import { SwiperSlide } from "swiper/react";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import SlideWrapper from "../../../shared/slider/SlideWrapper";
+import SlideWrapper from "../../../shared/SlideWrapper";
 import GallerySliderCard from "./GallerySliderCard";
 import SliderWrapper from "./SliderWrapper";
 

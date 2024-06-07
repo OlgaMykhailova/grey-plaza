@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 interface FilterButtonProps {
   children: string;
   className?: string;
@@ -11,12 +13,14 @@ export default function FilterButton({
   handleCLick,
   currentCategory,
 }: FilterButtonProps) {
+  const t = useTranslations("Rent");
+
   return (
     <button
       type="button"
       onClick={handleCLick}
       className={`group relative flex items-center justify-center w-full h-10 text-baseb laptop:text-mdb outline-none laptop:hover border ${
-        currentCategory === children
+        t(currentCategory) === children
           ? "text-white-bgSecondary bg-primary"
           : "text-primary border-primary bg-white-bgSecondary"
       } ${className}`}

@@ -1,4 +1,21 @@
-export const officesData = {
+type OfficeItem = {
+  id: string;
+  area: string;
+  building: string;
+  purpose: string;
+  photos: string[];
+};
+
+type OfficesData = {
+  category1000: OfficeItem[];
+  category500: OfficeItem[];
+  category300: OfficeItem[];
+  category200: OfficeItem[];
+  category100: OfficeItem[];
+  categoryLess100: OfficeItem[];
+};
+
+export const officesData: OfficesData = {
   category1000: [
     {
       id: "4(А,В,С)-301(Ф)",

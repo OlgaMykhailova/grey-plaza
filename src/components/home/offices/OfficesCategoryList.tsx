@@ -3,7 +3,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { officesData } from "@/src/mockedData/officesData";
 import OfficesCategory from "./OfficesCategory";
 import Button from "../../shared/buttons/Button";
-import SlideWrapper from "../../shared/slider/SlideWrapper";
+import SlideWrapper from "../../shared/SlideWrapper";
 
 export default function OfficesCategoryList() {
   const t = useTranslations("");

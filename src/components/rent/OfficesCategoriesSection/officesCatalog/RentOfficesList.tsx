@@ -1,10 +1,17 @@
 import { officesData } from "@/src/mockedData/officesData";
 import RentOfficesCard from "./RentOfficesCard";
+import { CategoryType } from "@/src/types/categoryType";
 
-export default function RentOfficesList() {
+interface RentOfficesListProps {
+  currentCategory: CategoryType;
+}
+
+export default function RentOfficesList({
+  currentCategory,
+}: RentOfficesListProps) {
   return (
     <ul className="flex flex-col tablet:flex-row flex-wrap gap-5 tablet:gap-4">
-      {officesData.category300.map((office) => (
+      {officesData[currentCategory].map((office) => (
         <li
           key={office.id}
           className="w-full tablet:w-[calc((100%-16px)/2)] laptop:w-[calc((100%-32px)/3)]"

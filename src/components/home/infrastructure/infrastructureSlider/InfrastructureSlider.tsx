@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Parallax } from "swiper/modules";
-import SlideWrapper from "../../../shared/slider/SlideWrapper";
+import SlideWrapper from "../../../shared/SlideWrapper";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
