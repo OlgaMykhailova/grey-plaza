@@ -18,19 +18,21 @@ export default function RentOfficesCardThumb({
   const { area, building, purpose } = office;
 
   return (
-    <div className="mt-2 text-xs text-black">
-      <p className="mb-1">
-        {t("Rent.area")}
-        <span className="text-xsb">
-          {area}
-          {t("Rent.m2")}
-        </span>
-      </p>
-      <p className="mb-1">
-        {t("Rent.building")}
-        <span className="text-xsb">{building}</span>
-      </p>
-      <p className="mb-3">{purpose}</p>
+    <div className="flex flex-wrap justify-between items-center gap-x-5 gap-y-3 mt-3 laptop:mt-4 text-xs laptop:text-base text-black">
+      <div>
+        <p className="mb-1">
+          {t("Rent.area")}
+          <span className="text-xsb laptop:text-baseb">
+            {area}
+            {t("Rent.m2")}
+          </span>
+        </p>
+        <p className="mb-1">
+          {t("Rent.building")}
+          <span className="text-xsb laptop:text-baseb">{building}</span>
+        </p>
+        <p>{purpose}</p>
+      </div>
       <Button size="small">{t("Buttons.leaveRequest")}</Button>
     </div>
   );

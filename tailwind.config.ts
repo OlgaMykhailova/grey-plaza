@@ -12,6 +12,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        mobileMd: "400px",
         mobileXl: "520px",
         tablet: "768px",
         laptop: "1280px",

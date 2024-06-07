@@ -13,10 +13,10 @@ interface RentOfficesCardProps {
 }
 
 export default function RentOfficesCard({ office }: RentOfficesCardProps) {
-    const { photos } = office;
+  const { photos } = office;
   return (
     <div>
-      <SlideWrapper className="p-3">
+      <SlideWrapper className="p-3 laptop:p-5">
         <OfficesSlider sliderList={photos} />
         <RentOfficesCardThumb office={office} />
       </SlideWrapper>
