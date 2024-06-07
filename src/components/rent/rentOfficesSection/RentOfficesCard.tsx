@@ -20,7 +20,7 @@ export default function RentOfficesCard({ office }: RentOfficesCardProps) {
 
   return (
     <div>
-      <SlideWrapper>
+      <SlideWrapper className="p-3">
         <OfficesSlider sliderList={sliderList} />
         <RentOfficesCardThumb office={office} />
       </SlideWrapper>

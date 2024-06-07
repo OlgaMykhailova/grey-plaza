@@ -56,7 +56,7 @@ export default function OfficesCategoryList() {
       >
         <Button>{t("Buttons.viewAll")}</Button>
       </Link>
-      <SlideWrapper className="hidden tablet:flex laptop:hidden justify-center items-center w-[48.9%] aspect-[356/314]">
+      <SlideWrapper className="hidden tablet:flex laptop:hidden justify-center items-center w-[48.9%] aspect-[356/314] p-4">
         <Link href="/rent" locale={locale}>
           <Button>{t("Buttons.viewAll")}</Button>
         </Link>

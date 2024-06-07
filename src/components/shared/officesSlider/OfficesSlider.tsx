@@ -42,7 +42,7 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
                 height="0"
                 alt={alt}
                 sizes="100%"
-                className={`w-full h-full object-cover`}
+                className={`w-full h-full aspect-[296/169] object-cover`}
               />
             </div>
           </SwiperSlide>
@@ -65,7 +65,7 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
                 height="0"
                 alt={alt}
                 sizes="100%"
-                className={`w-full h-full object-cover`}
+                className={`w-full h-full aspect-[296/169] object-cover`}
               />
             </div>
           </SwiperSlide>
