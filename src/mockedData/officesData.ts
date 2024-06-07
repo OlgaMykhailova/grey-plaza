@@ -184,9 +184,9 @@ export const officesData = {
       building: "4",
       purpose: "Офісне приміщення",
       photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674968/181_kjgduz.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674971/185_tise7e.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674970/182_dowsls.jpg",
-        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674968/181_kjgduz.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674966/175_nebi8a.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717674966/173_qpiy0d.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717684908/4%D0%92-203_%D0%A4___1_n3trsu.jpg",

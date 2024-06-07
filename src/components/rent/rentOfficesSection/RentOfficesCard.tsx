@@ -13,15 +13,11 @@ interface RentOfficesCardProps {
 }
 
 export default function RentOfficesCard({ office }: RentOfficesCardProps) {
-  const sliderList = office.photos.map((photo) => ({
-    image: photo,
-    alt: "office photo",
-  }));
-
+    const { photos } = office;
   return (
     <div>
       <SlideWrapper className="p-3">
-        <OfficesSlider sliderList={sliderList} />
+        <OfficesSlider sliderList={photos} />
         <RentOfficesCardThumb office={office} />
       </SlideWrapper>
     </div>
