@@ -14,7 +14,7 @@ export default function RentOfficesList({
       {officesData[currentCategory].map((office) => (
         <li
           key={office.id}
-          className="w-full tablet:w-[calc((100%-16px)/2)] laptop:w-[calc((100%-32px)/3)]"
+          className="w-full tablet:w-[calc((100%-16px)/2)] tablet:max-w-[calc((100%-16px)/2)] laptop:w-[calc((100%-32px)/3)] laptop:max-w-[calc((100%-32px)/3)]"
         >
           <RentOfficesCard office={office} />
         </li>

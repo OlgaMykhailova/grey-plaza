@@ -350,7 +350,7 @@ export const officesData: OfficesData = {
       id: "1(В)-102(Х)",
       area: "69,80",
       building: "1",
-      purpose: "Громадське харчування, лабораторія, косметологія",
+      purpose: "Громадське харчування",
       photos: [
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717677878/21_ssvtnm.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717677882/26_gnzb6e.jpg",

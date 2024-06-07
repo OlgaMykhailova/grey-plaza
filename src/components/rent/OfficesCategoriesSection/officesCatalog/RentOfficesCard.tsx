@@ -15,11 +15,11 @@ interface RentOfficesCardProps {
 export default function RentOfficesCard({ office }: RentOfficesCardProps) {
   const { photos } = office;
   return (
-    <div>
-      <SlideWrapper className="p-3 laptop:p-5">
+    <SlideWrapper className="flex flex-col justify-between h-full p-3 laptop:p-5">
+      <div className="w-full">
         <OfficesSlider sliderList={photos} />
-        <RentOfficesCardThumb office={office} />
-      </SlideWrapper>
-    </div>
+      </div>
+      <RentOfficesCardThumb office={office} />
+    </SlideWrapper>
   );
 }
