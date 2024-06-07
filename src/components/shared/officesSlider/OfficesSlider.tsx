@@ -15,7 +15,7 @@ interface OfficesSliderProps {
 
 export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperProps | null>(null);
-  console.log(sliderList);
+
   return (
     <>
       <Swiper

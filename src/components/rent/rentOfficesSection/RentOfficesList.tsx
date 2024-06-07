@@ -1,8 +1,6 @@
 import { officesData } from "@/src/mockedData/officesData";
 import RentOfficesCard from "./RentOfficesCard";
 
-console.log(officesData.category300);
-
 export default function RentOfficesList() {
   return (
     <ul>
