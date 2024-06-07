@@ -1,4 +1,21 @@
-export const officesData = {
+type OfficeItem = {
+  id: string;
+  area: string;
+  building: string;
+  purpose: string;
+  photos: string[];
+};
+
+type OfficesData = {
+  category1000: OfficeItem[];
+  category500: OfficeItem[];
+  category300: OfficeItem[];
+  category200: OfficeItem[];
+  category100: OfficeItem[];
+  categoryLess100: OfficeItem[];
+};
+
+export const officesData: OfficesData = {
   category1000: [
     {
       id: "4(А,В,С)-301(Ф)",
@@ -333,7 +350,7 @@ export const officesData = {
       id: "1(В)-102(Х)",
       area: "69,80",
       building: "1",
-      purpose: "Громадське харчування, лабораторія, косметологія",
+      purpose: "Громадське харчування",
       photos: [
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717677878/21_ssvtnm.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717677882/26_gnzb6e.jpg",

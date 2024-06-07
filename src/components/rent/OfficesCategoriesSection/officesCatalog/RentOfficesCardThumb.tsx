@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Button from "../../shared/buttons/Button";
+import Button from "../../../shared/buttons/Button";
 
 interface RentOfficesCardThumbProps {
   office: {
@@ -18,8 +18,8 @@ export default function RentOfficesCardThumb({
   const { area, building, purpose } = office;
 
   return (
-    <div className="flex flex-wrap justify-between items-center gap-x-5 gap-y-3 mt-3 laptop:mt-4 text-xs laptop:text-base text-black">
-      <div>
+    <div className="flex flex-wrap justify-between items-end gap-x-5 gap-y-3 h-auto mt-3 laptop:mt-4 text-xs laptop:text-base text-black">
+      <div className="w-[50%]">
         <p className="mb-1">
           {t("Rent.area")}
           <span className="text-xsb laptop:text-baseb">

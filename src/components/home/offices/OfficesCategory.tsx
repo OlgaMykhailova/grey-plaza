@@ -13,9 +13,9 @@ export default function OfficesCategory({
   return (
     <div className="tablet:w-[48.9%] laptop:w-[32%] tablet:aspect-[356/320] laptop:aspect-[390/347]">
       <OfficesSlider sliderList={sliderList} />
-      <FilterButton className="tablet:h-[12.5%] mt-[3.43%]">
+      <div className="flex items-center justify-center h-10 tablet:h-[14.3%] laptop:h-10 mt-[3.43%] border border-primary text-primary text-baseb laptop:text-mdb">
         {categoryName}
-      </FilterButton>
+      </div>
     </div>
   );
 }
