@@ -1,6 +1,6 @@
-import OfficesSlider from "../../shared/officesSlider/OfficesSlider";
+import OfficesSlider from "../../../shared/officesSlider/OfficesSlider";
 import RentOfficesCardThumb from "./RentOfficesCardThumb";
-import SlideWrapper from "../../shared/slider/SlideWrapper";
+import SlideWrapper from "../../../shared/slider/SlideWrapper";
 
 interface RentOfficesCardProps {
   office: {

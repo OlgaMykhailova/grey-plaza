@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import FilterButton from "../../shared/buttons/FilterButton";
+import FilterButton from "../../../shared/buttons/FilterButton";
 
 export default function FilterButtonsList() {
   const t = useTranslations("Rent");

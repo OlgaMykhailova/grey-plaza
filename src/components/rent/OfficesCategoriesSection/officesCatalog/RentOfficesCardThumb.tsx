@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Button from "../../shared/buttons/Button";
+import Button from "../../../shared/buttons/Button";
 
 interface RentOfficesCardThumbProps {
   office: {
