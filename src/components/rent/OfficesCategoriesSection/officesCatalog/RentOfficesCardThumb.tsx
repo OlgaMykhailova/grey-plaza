@@ -19,7 +19,7 @@ export default function RentOfficesCardThumb({
 
   return (
     <div className="flex flex-wrap justify-between items-end gap-x-5 gap-y-3 h-auto mt-3 laptop:mt-4 text-xs laptop:text-base text-black">
-      <div className="max-w-[40%]">
+      <div className="w-[50%]">
         <p className="mb-1">
           {t("Rent.area")}
           <span className="text-xsb laptop:text-baseb">
