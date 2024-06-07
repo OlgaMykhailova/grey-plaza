@@ -1,12 +1,9 @@
 import FilterButton from "../../shared/buttons/FilterButton";
-import OfficesSlider from "./OfficesSlider";
+import OfficesSlider from "../../shared/officesSlider/OfficesSlider";
 
 interface OfficesCategoryProps {
   categoryName: string;
-  sliderList: {
-    image: string;
-    alt: string;
-  }[];
+  sliderList: string[];
 }
 
 export default function OfficesCategory({

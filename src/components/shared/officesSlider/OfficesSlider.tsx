@@ -10,14 +10,12 @@ import "swiper/css/thumbs";
 import "./officesSlider.css";
 
 interface OfficesSliderProps {
-  sliderList: {
-    image: string;
-    alt: string;
-  }[];
+  sliderList: string[];
 }
 
 export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperProps | null>(null);
+  console.log(sliderList);
   return (
     <>
       <Swiper
@@ -33,16 +31,16 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
         loop={true}
         className="offices-slider"
       >
-        {sliderList.map(({ image, alt }, idx) => (
+        {sliderList.map((photo, idx) => (
           <SwiperSlide key={idx}>
             <div className="swiper-slide-transform">
               <Image
-                src={`/images/officesImages/${image}`}
+                src={photo}
                 width="0"
                 height="0"
-                alt={alt}
+                alt="office photo"
                 sizes="100%"
-                className={`w-full h-full`}
+                className={`w-full h-full aspect-[296/169] object-cover`}
               />
             </div>
           </SwiperSlide>
@@ -52,21 +50,20 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
         onSwiper={setThumbsSwiper}
         spaceBetween={4}
         slidesPerView={4}
-        freeMode={true}
         watchSlidesProgress={true}
         modules={[Thumbs, FreeMode]}
         className="thumb-slider"
       >
-        {sliderList.map(({ image, alt }, idx) => (
+        {sliderList.map((photo, idx) => (
           <SwiperSlide key={idx}>
             <div className="swiper-slide-transform">
               <Image
-                src={`/images/officesImages/${image}`}
+                src={photo}
                 width="0"
                 height="0"
-                alt={alt}
+                alt="small office photo"
                 sizes="100%"
-                className={`w-full h-full`}
+                className={`w-full h-full aspect-[296/169] object-cover`}
               />
             </div>
           </SwiperSlide>
