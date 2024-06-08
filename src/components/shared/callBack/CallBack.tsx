@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { itemVariants } from "../navigationMenu/NavigationMenuItem";
 import CallBackModal from "./CallBackModal";
 import { NotificationModal } from "../notifications/NotificationModal";
 
@@ -12,7 +14,7 @@ export default function CallBack({ closeHeaderMenu }: CallBackProps) {
   const [isNotificationShawn, setIsNotificationShawn] = useState(false);
 
   return (
-    <>
+    <motion.div variants={itemVariants}>
       <CallBackModal
         closeHeaderMenu={closeHeaderMenu}
         setIsError={setIsError}
@@ -24,6 +26,6 @@ export default function CallBack({ closeHeaderMenu }: CallBackProps) {
         setIsError={setIsError}
         setIsNotificationShawn={setIsNotificationShawn}
       />
-    </>
+    </motion.div>
   );
 }

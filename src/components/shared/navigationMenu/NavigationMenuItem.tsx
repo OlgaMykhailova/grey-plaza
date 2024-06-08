@@ -1,10 +1,29 @@
+"use client";
 import { useLocale } from "next-intl";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface NavigationMenuItemProps {
   menuItem: { title: string; id: string };
   onClick?: () => void;
 }
+
+export const itemVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+};
 
 export default function NavigationMenuItem({
   menuItem,
@@ -14,7 +33,11 @@ export default function NavigationMenuItem({
   const locale = useLocale();
 
   return (
-    <li onClick={onClick} className="relative text-inherit">
+    <motion.li
+      onClick={onClick}
+      className="relative text-inherit"
+      variants={itemVariants}
+    >
       <Link
         href={`/${locale}${id}`}
         className="inline-block py-[9.5px] laptop:py-3 outline-none after:content-[''] after:absolute after:left-0 after:bottom-[1.5px] after:h-[1px] 
@@ -23,6 +46,6 @@ export default function NavigationMenuItem({
       >
         {title}
       </Link>
-    </li>
+    </motion.li>
   );
 }

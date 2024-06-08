@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Container from "../Container";
 import SocialLinks from "../socialLinks/SocialLinks";
 import HeaderNavigationMenu from "./HeaderNavigationMenu";
@@ -10,21 +12,47 @@ interface HeaderMenuProps {
   ) => void;
 }
 
+const variants = {
+  open: {
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.7,
+      delayChildren: 1.4,
+      staggerChildren: 0.15,
+    },
+  },
+  closed: {
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.3,
+    },
+  },
+};
+
 export default function HeaderMenu({
   isHeaderMenuOpened = false,
   setIsHeaderMenuOpened,
 }: HeaderMenuProps) {
   return (
-    <div
+    <motion.div
+      initial={false}
+      animate={isHeaderMenuOpened ? "open" : "closed"}
       className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-headerGradient backdrop-blur-sm ${
         isHeaderMenuOpened ? "h-[calc(100vh-72px)] no-doc-scroll" : "h-0"
       }`}
     >
       <Container className="flex flex-col items-center gap-y-10 h-full py-10">
         <HeaderNavigationMenu onClick={() => setIsHeaderMenuOpened(false)} />
-        <SocialLinks />
-        <CallBack closeHeaderMenu={() => setIsHeaderMenuOpened(false)} />
+        <motion.div
+          variants={variants}
+          className="flex flex-col items-center gap-y-10"
+        >
+          <SocialLinks />
+          <CallBack closeHeaderMenu={() => setIsHeaderMenuOpened(false)} />
+        </motion.div>
       </Container>
-    </div>
+    </motion.div>
   );
 }
