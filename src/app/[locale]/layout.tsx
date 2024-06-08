@@ -4,6 +4,7 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import Providers from "@/src/components/providers/Providers";
 import Header from "@/src/components/shared/header/Header";
 import Footer from "@/src/components/shared/footer/Footer";
+import CookiesComponent from "@/src/components/shared/CookiesComponent";
 import "./globals.css";
 
 const fira = Fira_Sans({
@@ -48,6 +49,7 @@ export default function LocaleLayout({
               {children}
             </main>
             <Footer />
+            <CookiesComponent />
           </Providers>
         </body>
       </NextIntlClientProvider>
