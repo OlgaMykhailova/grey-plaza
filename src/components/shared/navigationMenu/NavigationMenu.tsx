@@ -17,10 +17,11 @@ export const variants = {
   open: {
     transition: {
       type: "spring",
-      bounce: 0,
-      duration: 0.7,
+      bounce: 0.6,
+      ease: "easeIn",
+      duration: 2.5,
       delayChildren: 0.4,
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
     },
   },
   closed: {

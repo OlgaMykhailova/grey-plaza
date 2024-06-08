@@ -17,9 +17,10 @@ const variants = {
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 0.7,
-      delayChildren: 1.4,
-      staggerChildren: 0.15,
+      ease: "easeIn",
+      duration: 2,
+      delayChildren: 2.2,
+      staggerChildren: 0.35,
     },
   },
   closed: {
