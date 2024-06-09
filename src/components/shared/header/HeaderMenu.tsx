@@ -13,7 +13,7 @@ interface HeaderMenuProps {
 }
 
 const variants = {
-  open: {
+  visible: {
     transition: {
       type: "spring",
       bounce: 0,
@@ -23,7 +23,7 @@ const variants = {
       staggerChildren: 0.35,
     },
   },
-  closed: {
+  hidden: {
     transition: {
       type: "spring",
       bounce: 0,
@@ -39,7 +39,7 @@ export default function HeaderMenu({
   return (
     <motion.div
       initial={false}
-      animate={isHeaderMenuOpened ? "open" : "closed"}
+      animate={isHeaderMenuOpened ? "visible" : "hidden"}
       className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-headerGradient backdrop-blur-sm ${
         isHeaderMenuOpened ? "h-[calc(100vh-72px)] no-doc-scroll" : "h-0"
       }`}
