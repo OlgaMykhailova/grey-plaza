@@ -14,7 +14,7 @@ interface NavigationMenuProps {
 }
 
 export const variants = {
-  open: {
+  visible: {
     transition: {
       type: "spring",
       bounce: 0.6,
@@ -24,7 +24,7 @@ export const variants = {
       staggerChildren: 0.2,
     },
   },
-  closed: {
+  hidden: {
     transition: {
       type: "spring",
       bounce: 0,
