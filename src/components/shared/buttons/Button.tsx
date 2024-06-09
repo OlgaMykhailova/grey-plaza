@@ -34,7 +34,7 @@ export default function Button({
         size === "big"
           ? "w-[180px] h-[56px] laptop:w-[207px]"
           : "w-[162px] h-[40px]"
-      }  outline-none text-baseb text-white-text ${className}`}
+      }  outline-none text-baseb text-white-text active:scale-95 transition duration-300 ease-out-quart ${className}`}
     >
       {children}
       <div
