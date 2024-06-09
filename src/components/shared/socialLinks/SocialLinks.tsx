@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+import { itemVariants } from "../navigationMenu/NavigationMenuItem";
 import SocialLinkItem from "./SocialLinkItem";
 
 export default function SocialLinks() {
@@ -16,10 +19,13 @@ export default function SocialLinks() {
   ];
 
   return (
-    <ul className="flex justify-center tablet:justify-start gap-4">
+    <motion.ul
+      variants={itemVariants}
+      className="flex justify-center tablet:justify-start gap-4"
+    >
       {socialList.map((social, idx) => (
         <SocialLinkItem key={idx} social={social} />
       ))}
-    </ul>
+    </motion.ul>
   );
 }
