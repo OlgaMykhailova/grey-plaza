@@ -14,7 +14,7 @@ export default function Location() {
   return (
     <section className="relative z-10 pt-20 tablet:pt-10 laptop:pt-[96px] mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20">
       <SectionHexagonBgImage />
-      <SectionTitle className="w-1/2 mx-auto laptop:w-[430px]">
+      <SectionTitle className="w-[281px] mx-auto tablet:w-[430px]">
         {t("Location.title")}
       </SectionTitle>
       <div className="flex flex-col">
