@@ -11,7 +11,7 @@ export default function OfficesCategoryList() {
   const { category1000, category500, category300 } = officesData;
 
   return (
-    <div className="flex flex-col gap-y-5 tablet:gap-x-4 tablet:flex-row tablet:flex-wrap">
+    <div className="flex flex-col gap-y-5 tablet:flex-row tablet:justify-between tablet:flex-wrap">
       <OfficesCategory
         sliderList={category1000[0].photos}
         categoryName={t("Rent.category1000")}
