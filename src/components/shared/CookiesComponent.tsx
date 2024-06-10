@@ -28,7 +28,7 @@ export default function CookiesComponent() {
   return (
     <div
       className={`fixed z-10 left-0 bottom-0 flex items-center justify-center w-full max-h-[286px] tablet:max-h-[223px] laptop:max-h-[180px]
-       py-10 px-5 laptop:py-12 laptop:px-[100px] bg-primary text-white-text text-base laptop:text-lg ${
+       py-10 px-5 laptop:py-12 laptop:px-[100px] bg-blue text-white-text text-base laptop:text-lg ${
          isAccepted ? "translate-y-[101%]" : "translate-y-0"
        } 
        transition-[transform] duration-[1000ms] ease-out-quart`}
