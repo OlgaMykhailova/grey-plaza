@@ -8,8 +8,6 @@ import IconLocationSmall from "../../icons/IconLocationSmall";
 export default function ContactInfo() {
   const t = useTranslations("Footer");
 
-  // TODO change google map link when is ready
-
   const contactsList = [
     {
       icon: <IconPhone />,

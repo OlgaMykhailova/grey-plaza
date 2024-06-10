@@ -22,7 +22,8 @@ export default function OfficesCatalog({
         <RentOfficesTitle currentCategory={currentCategory} />
         <RentOfficesList currentCategory={currentCategory} />
         <Link
-          href={`/${locale}/rent#categories`}
+          href={`/rent#categories`}
+          locale={locale}
           className="block w-[320px] h-10 mt-8 laptop:mt-9 mx-auto outline-none"
         >
           <TextButton>{t("chooseAnotherCategory")}</TextButton>
