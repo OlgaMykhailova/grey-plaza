@@ -5,7 +5,7 @@ export default function NotFoundImage() {
   return (
     <div
       className="flex items-center justify-center gap-x-3 tablet:gap-x-[25px] laptop:gap-x-[53px] w-[320px] tablet:w-[712px] 
-    laptop:w-[806px] mx-auto mb-[90px] tablet:mb-[56px]"
+    laptop:w-[806px] mx-auto mb-[90px] tablet:mb-[106px] laptop:tablet:mb-[56px]"
     >
       <Image
         src={`/images/icons/4.svg`}
