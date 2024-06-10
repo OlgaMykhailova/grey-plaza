@@ -28,7 +28,7 @@ export default function LogoLink({ className }: LogoLinkProps) {
           width="0"
           height="0"
           alt="logo hover effect"
-          className={`laptop:group-hover:w-[72px] h-auto transition-[width] duration-[600ms] ease-out-in`}
+          className={`laptop:group-hover:w-[72px] laptop:group-focus-visible:w-[72px] h-auto transition-[width] duration-[600ms] ease-out-in`}
         />
       </div>
     </Link>
