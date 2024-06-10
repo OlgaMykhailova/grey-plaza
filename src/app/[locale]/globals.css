@@ -9,9 +9,12 @@
 }
 
 :root:has(.no-doc-scroll) {
-  position: fixed;
-  overflow-y: scroll;
-  width: 100%;
+  overflow-y: hidden;
+  @media screen and (min-width: 1280px) {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,8 +45,7 @@
 }
 
 body {
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 @layer utilities {

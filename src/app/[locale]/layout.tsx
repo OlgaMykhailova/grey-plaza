@@ -40,14 +40,10 @@ export default function LocaleLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body
-          className={`min-h-[100vh] ${fira.variable} text-grey bg-white-bg font-fira`}
-        >
+        <body className={`${fira.variable} text-grey bg-white-bg font-fira`}>
           <Providers>
             <Header />
-            <main className="min-h-[calc(100vh-72px-748px)] tablet:min-h-[calc(100vh-80px-488px)] laptop:min-h-[calc(100vh-80px-448px)]">
-              {children}
-            </main>
+            <main className="flex-1">{children}</main>
             <Footer />
             <CookiesComponent />
           </Providers>

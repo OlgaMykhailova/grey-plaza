@@ -7,5 +7,9 @@ interface ProvidersProps {
 }
 
 export default function Providers({ children }: ProvidersProps) {
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return (
+    <NextUIProvider className="flex flex-col min-h-[100vh]">
+      {children}
+    </NextUIProvider>
+  );
 }
