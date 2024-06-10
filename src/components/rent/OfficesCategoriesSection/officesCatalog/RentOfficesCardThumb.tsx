@@ -35,7 +35,7 @@ export default function RentOfficesCardThumb({
         </p>
         <p>{purpose}</p>
       </div>
-      <Link href={`/${locale}/rent#rent-write-us`}>
+      <Link href={`/${locale}/rent#rent-write-us`} className="outline-none">
         <Button size="small">{t("Buttons.leaveRequest")}</Button>
       </Link>
     </div>
