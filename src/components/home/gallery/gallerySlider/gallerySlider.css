@@ -49,6 +49,7 @@
   height: 72px;
   border-radius: 100%;
   background-color: var(--color-secondary);
+  transition: background-color 300ms ease-in;
 }
 
 .gallery-slider .swiper-button-next::after {
@@ -64,11 +65,7 @@
   background-repeat: no-repeat;
 }
 
-.gallery-slider .swiper-button-next:hover::after {
-  background-image: url("/images/icons/arrowHover.svg");
-}
-
+.gallery-slider .swiper-button-next:hover::after,
 .gallery-slider .swiper-button-prev:hover::after {
-  background-image: url("/images/icons/arrowHover.svg");
-  transform: rotate(-180deg);
+  background-color: var(--color-primary);
 }
