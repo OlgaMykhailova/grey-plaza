@@ -102,6 +102,7 @@ export default function CallBackForm({
             <Field
               name="name"
               type="text"
+              required
               autoComplete="on"
               placeholder={
                 status === "name" ? t("WriteUs.namePlaceholder") : ""
@@ -138,6 +139,7 @@ export default function CallBackForm({
               mask={PHONE_NUMBER_MASK}
               name="phone"
               type="text"
+              required
               autoComplete="on"
               placeholder={
                 status === "phone" ? t("WriteUs.phonePlaceholder") : ""
@@ -171,7 +173,7 @@ export default function CallBackForm({
             </p>
           </div>
           <div className="relative">
-            <Button type="submit" disabled={!(dirty && isValid) || isLoading}>
+            <Button type="submit" disabled={isLoading}>
               {t("Buttons.send")}
             </Button>
             <Image
