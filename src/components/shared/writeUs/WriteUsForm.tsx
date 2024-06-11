@@ -87,7 +87,7 @@ export default function WriteUsForm({
       onSubmit={submitForm}
       validationSchema={validationSchema}
     >
-      {({ values, errors, touched, status, setStatus, dirty, isValid }) => (
+      {({ values, errors, touched, status, setStatus }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full laptop:w-[40%] text-base">
           <label
             className={`${labelStyles} ${
