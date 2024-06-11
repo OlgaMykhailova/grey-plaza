@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
 import { Fira_Sans } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -44,7 +45,9 @@ export default function LocaleLayout({
           <Providers>
             <Header />
             <main className="flex-1">{children}</main>
-            <Footer />
+            <Suspense>
+              <Footer />
+            </Suspense>
             <CookiesComponent />
           </Providers>
         </body>
