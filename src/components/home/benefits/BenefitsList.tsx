@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion";
 import BenefitsListItem from "./BenefitsListItem";
 
 export default function BenefitsList() {
@@ -56,24 +56,26 @@ export default function BenefitsList() {
   ];
 
   return (
-    <motion.ul
-      initial="hidden"
-      variants={{
-        visible: {
-          transition: {
-            delayChildren: 0.4,
-            staggerChildren: 0.5,
-            ease: "easeIn",
+    <LazyMotion features={domAnimation}>
+      <m.ul
+        initial="hidden"
+        variants={{
+          visible: {
+            transition: {
+              delayChildren: 0.4,
+              staggerChildren: 0.5,
+              ease: "easeIn",
+            },
           },
-        },
-      }}
-      animate={controls}
-      ref={ref}
-      className="tablet:flex tablet:flex-wrap"
-    >
-      {benefitsList.map((benefit, idx) => (
-        <BenefitsListItem key={idx} benefit={benefit} />
-      ))}
-    </motion.ul>
+        }}
+        animate={controls}
+        ref={ref}
+        className="tablet:flex tablet:flex-wrap"
+      >
+        {benefitsList.map((benefit, idx) => (
+          <BenefitsListItem key={idx} benefit={benefit} />
+        ))}
+      </m.ul>
+    </LazyMotion>
   );
 }

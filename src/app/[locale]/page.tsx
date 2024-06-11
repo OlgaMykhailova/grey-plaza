@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Hero from "@/src/components/home/hero/Hero";
 import Offers from "@/src/components/home/offers/Offers";
 import Infrastructure from "@/src/components/home/infrastructure/Infrastructure";
@@ -14,15 +13,13 @@ export default function Home() {
     <div className="pt-[72px] tablet:pt-20">
       <Hero />
       <Offers />
-      <Suspense>
-        <Infrastructure />
-        <Equipment />
-        <Benefits />
-        <Offices />
-        <Gallery />
-        <WriteUs id="write-us" />
-        <Location />
-      </Suspense>
+      <Infrastructure />
+      <Equipment />
+      <Benefits />
+      <Offices />
+      <Gallery />
+      <WriteUs id="write-us" />
+      <Location />
     </div>
   );
 }

@@ -11,6 +11,7 @@ export default function HeroInfoItemMobTab({
   heroInfoItem,
 }: HeroInfoItemProps) {
   const { quantity, description } = heroInfoItem;
+
   return (
     <motion.li
       variants={itemVariants}

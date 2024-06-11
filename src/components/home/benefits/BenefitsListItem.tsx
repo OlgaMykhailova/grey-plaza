@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion";
 
 interface BenefitsListItemProps {
   benefit: { title: string; description: string; icon: string };
@@ -16,7 +16,7 @@ export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
     triggerOnce: true,
   });
   const controls = useAnimation();
-  
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -43,39 +43,41 @@ export default function BenefitsListItem({ benefit }: BenefitsListItemProps) {
   };
 
   return (
-    <motion.li
-      variants={itemVariants}
-      className="flex gap-4 tablet:w-[46.4%] laptop:w-[33%] px-3 py-4 [&:not(:last-child)]:mb-2 tablet:[&:not(:last-child)]:mb-0 text-white-text"
-    >
-      <Image
-        src={`/images/icons/${icon}`}
-        width="0"
-        height="0"
-        alt={title}
-        className={`w-[32px] h-[32px]`}
-      />
-
-      <motion.div
-        animate={controls}
-        ref={ref}
-        initial="hidden"
-        variants={{
-          visible: {
-            transition: {
-              delayChildren: 0.4,
-              staggerChildren: 0.5,
-              ease: "easeIn",
-            },
-          },
-        }}
+    <LazyMotion features={domAnimation}>
+      <m.li
+        variants={itemVariants}
+        className="flex gap-4 tablet:w-[46.4%] laptop:w-[33%] px-3 py-4 [&:not(:last-child)]:mb-2 tablet:[&:not(:last-child)]:mb-0 text-white-text"
       >
-        <motion.h3 variants={itemVariants} className="mb-2 text-mdb">
-          {title}
-        </motion.h3>
-        <motion.p variants={itemVariants} className={`text-base`}>
-          {description}
-        </motion.p>
-      </motion.div>
-    </motion.li>
+        <Image
+          src={`/images/icons/${icon}`}
+          width="0"
+          height="0"
+          alt={title}
+          className={`w-[32px] h-[32px]`}
+        />
+
+        <m.div
+          animate={controls}
+          ref={ref}
+          initial="hidden"
+          variants={{
+            visible: {
+              transition: {
+                delayChildren: 0.4,
+                staggerChildren: 0.5,
+                ease: "easeIn",
+              },
+            },
+          }}
+        >
+          <m.h3 variants={itemVariants} className="mb-2 text-mdb">
+            {title}
+          </m.h3>
+          <m.p variants={itemVariants} className={`text-base`}>
+            {description}
+          </m.p>
+        </m.div>
+      </m.li>
+    </LazyMotion>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-import { useState, Suspense } from "react";
+import { useState } from "react";
 import Container from "../Container";
 import LogoLink from "../LogoLink";
 import BurgerMenuButton from "./BurgerMenuButton";
@@ -23,13 +23,11 @@ export default function Header() {
           />
         </div>
       </Container>
-      <Suspense>
-        {" "}
-        <HeaderMenu
-          isHeaderMenuOpened={isHeaderMenuOpened}
-          setIsHeaderMenuOpened={setIsHeaderMenuOpened}
-        />
-      </Suspense>
+
+      <HeaderMenu
+        isHeaderMenuOpened={isHeaderMenuOpened}
+        setIsHeaderMenuOpened={setIsHeaderMenuOpened}
+      />
     </header>
   );
 }
