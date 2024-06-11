@@ -1,12 +1,24 @@
+import dynamic from "next/dynamic";
 import Hero from "@/src/components/home/hero/Hero";
 import Offers from "@/src/components/home/offers/Offers";
-import Infrastructure from "@/src/components/home/infrastructure/Infrastructure";
-import Equipment from "@/src/components/home/equipment/Equipment";
-import Benefits from "@/src/components/home/benefits/Benefits";
-import Offices from "@/src/components/home/offices/Offices";
-import Gallery from "@/src/components/home/gallery/Gallery";
-import WriteUs from "@/src/components/shared/writeUs/WriteUs";
-import Location from "@/src/components/home/location/Location";
+
+const Infrastructure = dynamic(
+  () => import("@/src/components/home/infrastructure/Infrastructure")
+);
+const Equipment = dynamic(
+  () => import("@/src/components/home/equipment/Equipment")
+);
+const Benefits = dynamic(
+  () => import("@/src/components/home/benefits/Benefits")
+);
+const Offices = dynamic(() => import("@/src/components/home/offices/Offices"));
+const Gallery = dynamic(() => import("@/src/components/home/gallery/Gallery"));
+const WriteUs = dynamic(
+  () => import("@/src/components/shared/writeUs/WriteUs")
+);
+const Location = dynamic(
+  () => import("@/src/components/home/location/Location")
+);
 
 export default function Home() {
   return (
