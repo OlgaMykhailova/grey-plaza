@@ -109,6 +109,7 @@ export default function WriteUsForm({
               name="name"
               type="text"
               autoComplete="on"
+              required
               placeholder={
                 status === "name" ? t("WriteUs.namePlaceholder") : ""
               }
@@ -142,6 +143,7 @@ export default function WriteUsForm({
             <Field
               name="email"
               type="email"
+              required
               autoComplete="on"
               placeholder={
                 status === "email" ? t("WriteUs.emailPlaceholder") : ""
@@ -213,6 +215,7 @@ export default function WriteUsForm({
               as="textarea"
               name="message"
               type="text"
+              required
               autoComplete="on"
               placeholder={
                 status === "message" ? t("WriteUs.messagePlaceholder") : ""
@@ -246,7 +249,7 @@ export default function WriteUsForm({
             </p>
           </div>
           <div className="relative">
-            <Button type="submit" disabled={!(dirty && isValid) || isLoading}>
+            <Button type="submit" disabled={isLoading}>
               {t("Buttons.send")}
             </Button>
             <Image
