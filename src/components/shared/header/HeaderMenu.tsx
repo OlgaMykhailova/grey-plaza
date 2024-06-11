@@ -41,8 +41,11 @@ export default function HeaderMenu({
       <m.div
         initial={false}
         animate={isHeaderMenuOpened ? "visible" : "hidden"}
-        className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-headerGradient backdrop-blur-sm ${
-          isHeaderMenuOpened ? "h-[calc(100vh-72px)] no-doc-scroll" : "h-0"
+        className={`absolute top-[72px] left-0 z-20 w-[100vw] overflow-hidden transition-[height] duration-[600ms] ease-out-quart bg-headerGradient 
+        ${
+          isHeaderMenuOpened
+            ? "h-[calc(100dvh-72px)] tablet:h-[calc(100dvh-80px)] no-doc-scroll"
+            : "h-0"
         }`}
       >
         <Container className="flex flex-col items-center gap-y-10 h-full py-10">
