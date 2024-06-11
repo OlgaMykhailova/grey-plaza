@@ -28,8 +28,8 @@ export default function MapSchemeModal() {
         placement="center"
         radius="none"
         hideCloseButton={true}
-        className="max-w-[560px] max-h-[311px] tablet:max-w-[728px] tablet:max-h-[404px] tablet:min-w-[728px] tablet:min-h-[404px] laptop:max-w-[1204px] 
-        laptop:min-w-[1204px] laptop:max-h-[669px] laptop:min-h-[669px] aspect-[360/200] tablet:aspect-[728/404] laptop:aspect-[1204/669]"
+        className="max-w-[560px] max-h-[311px] tablet:max-w-[728px] tablet:max-h-[421px] tablet:min-w-[728px] tablet:min-h-[421px] laptop:max-w-[1204px] 
+        laptop:min-w-[1204px] laptop:max-h-[696px] laptop:min-h-[696px] aspect-[360/208] tablet:aspect-[728/421] laptop:aspect-[1204/696]"
         classNames={{ backdrop: "bg-backdrop bg-opacity-90" }}
       >
         <ModalContent className="relative bg-primary">
