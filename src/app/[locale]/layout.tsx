@@ -44,9 +44,7 @@ export default function LocaleLayout({
           <Providers>
             <Header />
             <main className="flex-1">{children}</main>
-
             <Footer />
-
             <CookiesComponent />
           </Providers>
         </body>
