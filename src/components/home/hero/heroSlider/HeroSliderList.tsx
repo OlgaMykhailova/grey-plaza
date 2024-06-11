@@ -33,6 +33,7 @@ export default function HeroSliderList({
             height="0"
             sizes="100%"
             alt="building"
+            priority={idx === 0}
             className="absolute z[-10] w-full h-auto laptop:h-full object-cover"
           />
           <div className="absolute w-full h-full bg-heroGradient"></div>

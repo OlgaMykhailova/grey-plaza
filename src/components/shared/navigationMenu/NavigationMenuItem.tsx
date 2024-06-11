@@ -1,7 +1,7 @@
 "use client";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 interface NavigationMenuItemProps {
   menuItem: { title: string; id: string };
@@ -33,20 +33,22 @@ export default function NavigationMenuItem({
   const locale = useLocale();
 
   return (
-    <motion.li
-      onClick={onClick}
-      className="relative text-inherit"
-      variants={itemVariants}
-    >
-      <Link
-        href={`/${id}`}
-        locale={locale}
-        className="inline-block py-[9.5px] laptop:py-3 outline-none after:content-[''] after:absolute after:left-0 after:bottom-[1.5px] after:h-[1px] 
+    <LazyMotion features={domAnimation}>
+      <m.li
+        onClick={onClick}
+        className="relative text-inherit"
+        variants={itemVariants}
+      >
+        <Link
+          href={`/${id}`}
+          locale={locale}
+          className="inline-block py-[9.5px] laptop:py-3 outline-none after:content-[''] after:absolute after:left-0 after:bottom-[1.5px] after:h-[1px] 
         after:w-0 after:bg-accent laptop:hover:after:w-full laptop:focus-visible:after:w-full after:overflow-hidden after:transition-[width] 
         after:duration-[600ms] after:ease-out-quart"
-      >
-        {title}
-      </Link>
-    </motion.li>
+        >
+          {title}
+        </Link>
+      </m.li>
+    </LazyMotion>
   );
 }

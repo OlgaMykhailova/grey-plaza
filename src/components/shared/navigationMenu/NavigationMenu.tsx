@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import NavigationMenuItem from "./NavigationMenuItem";
 
 interface MenuItem {
@@ -39,15 +39,21 @@ export default function NavigationMenu({
   className = "",
 }: NavigationMenuProps) {
   return (
-    <motion.nav>
-      <motion.ul
-        variants={variants}
-        className={`flex flex-col items-center text-base text-white-text ${className}`}
-      >
-        {menuList.map((menuItem, idx) => (
-          <NavigationMenuItem key={idx} menuItem={menuItem} onClick={onClick} />
-        ))}
-      </motion.ul>
-    </motion.nav>
+    <LazyMotion features={domAnimation}>
+      <m.nav>
+        <m.ul
+          variants={variants}
+          className={`flex flex-col items-center text-base text-white-text ${className}`}
+        >
+          {menuList.map((menuItem, idx) => (
+            <NavigationMenuItem
+              key={idx}
+              menuItem={menuItem}
+              onClick={onClick}
+            />
+          ))}
+        </m.ul>
+      </m.nav>
+    </LazyMotion>
   );
 }
