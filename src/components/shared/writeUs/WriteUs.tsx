@@ -14,7 +14,7 @@ export default function WriteUs({ id }: WriteUsProps) {
   return (
     <section
       id={id}
-      className="relative z-10 min-h-[792px] tablet:min-h-[614px] laptop:min-h-[594px] mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20"
+      className="relative z-10 min-h-[792px] tablet:min-h-[614px] laptop:min-h-[594px] mb-10 tablet:mb-[60px] scroll-mt-[72px] tablet:scroll-mt-20 bg-blue"
     >
       <Image
         src={`/images/bgImages/writeUsBgImageMobile.webp`}

@@ -23,7 +23,6 @@ export default function Header() {
           />
         </div>
       </Container>
-
       <HeaderMenu
         isHeaderMenuOpened={isHeaderMenuOpened}
         setIsHeaderMenuOpened={setIsHeaderMenuOpened}
