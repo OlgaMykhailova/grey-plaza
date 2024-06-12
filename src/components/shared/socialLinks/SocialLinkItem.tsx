@@ -21,7 +21,7 @@ export default function SocialLinkItem({ social }: SocialLinkItemProps) {
           width="0"
           height="0"
           alt="phone"
-          className="z-30 w-9 h-9"
+          className="z-10 w-9 h-9"
         />
       </a>
     </li>
