@@ -7,7 +7,7 @@ interface SocialLinkItemProps {
 export default function SocialLinkItem({ social }: SocialLinkItemProps) {
   const { name, icon, url } = social;
   return (
-    <li className="rounded-full">
+    <li>
       <a
         href={url}
         target="_blank"
