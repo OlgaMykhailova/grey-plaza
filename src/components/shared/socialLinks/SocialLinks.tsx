@@ -21,7 +21,7 @@ export default function SocialLinks() {
   return (
     <motion.ul
       variants={itemVariants}
-      className="flex justify-center tablet:justify-start gap-4 laptop:py-2"
+      className="flex justify-center tablet:justify-start gap-4"
     >
       {socialList.map((social, idx) => (
         <SocialLinkItem key={idx} social={social} />

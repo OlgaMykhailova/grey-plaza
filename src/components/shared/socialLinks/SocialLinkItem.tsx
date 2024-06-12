@@ -13,8 +13,9 @@ export default function SocialLinkItem({ social }: SocialLinkItemProps) {
         target="_blank"
         rel="noopener noreferrer nofollow"
         aria-label={name}
-        className="relative flex items-center justify-center w-[42px] h-[42px] outline-none before:content-[''] before:absolute before:w-0 before:h-0 before:rounded-full before:bg-secondary
-        transition before:duration-300 before:ease-out-quart laptop:focus-visible:before:w-[38px] laptop:focus-visible:before:h-[38px] laptop:hover:before:w-[38px] laptop:hover:before:h-[38px] before:blur-[2px]"
+        className="relative flex items-center justify-center w-9 h-9 outline-none before:content-[''] before:absolute before:w-0 before:h-0 before:rounded-full before:bg-secondary
+        transition before:duration-300 before:ease-out-quart laptop:focus-visible:before:w-full laptop:focus-visible:before:h-full laptop:hover:before:w-full laptop:hover:before:h-full 
+        before:will-change-transform before:blur-[3px]"
       >
         <Image
           src={`/images/icons/${icon}`}
