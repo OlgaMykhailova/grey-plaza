@@ -87,7 +87,7 @@ export default function WriteUsForm({
       onSubmit={submitForm}
       validationSchema={validationSchema}
     >
-      {({ values, errors, touched, status, setStatus }) => (
+      {({ values, errors, touched, status, setStatus, dirty, isValid }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full laptop:w-[40%] text-base">
           <label
             className={`${labelStyles} ${
@@ -109,7 +109,6 @@ export default function WriteUsForm({
               name="name"
               type="text"
               autoComplete="on"
-              required
               placeholder={
                 status === "name" ? t("WriteUs.namePlaceholder") : ""
               }
@@ -143,7 +142,6 @@ export default function WriteUsForm({
             <Field
               name="email"
               type="email"
-              required
               autoComplete="on"
               placeholder={
                 status === "email" ? t("WriteUs.emailPlaceholder") : ""
@@ -215,7 +213,6 @@ export default function WriteUsForm({
               as="textarea"
               name="message"
               type="text"
-              required
               autoComplete="on"
               placeholder={
                 status === "message" ? t("WriteUs.messagePlaceholder") : ""
@@ -249,7 +246,7 @@ export default function WriteUsForm({
             </p>
           </div>
           <div className="relative">
-            <Button type="submit" disabled={isLoading}>
+            <Button type="submit" disabled={!(dirty && isValid) || isLoading}>
               {t("Buttons.send")}
             </Button>
             <Image
