@@ -13,7 +13,7 @@ export default function ZoomButton({ onClick, isZoomed }: ZoomButtonProps) {
       type="button"
       onClick={onClick}
       aria-label="zoom button"
-      className="absolute bottom-2 right-2 flex justify-center items-center h-8 w-8 tablet:h-10 tablet:w-10 text-primary laptop:hover:text-accent
+      className="absolute bottom-3 right-3 laptop:bottom-4 laptop:right-4 flex justify-center items-center h-8 w-8 tablet:h-10 tablet:w-10 text-primary laptop:hover:text-accent
       laptop:focus-visible:text-accent transition-[color] duration-[300ms] ease-out-quart"
     >
       {isZoomed ? (
