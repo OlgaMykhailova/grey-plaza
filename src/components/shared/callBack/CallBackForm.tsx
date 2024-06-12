@@ -81,7 +81,7 @@ export default function CallBackForm({
       onSubmit={submitForm}
       validationSchema={validationSchema}
     >
-      {({ values, errors, touched, status, setStatus }) => (
+      {({ values, errors, touched, status, setStatus, dirty, isValid }) => (
         <Form className="flex flex-col items-center gap-y-7 h-full text-base">
           <label
             className={`${labelStyles} ${
@@ -102,7 +102,6 @@ export default function CallBackForm({
             <Field
               name="name"
               type="text"
-              required
               autoComplete="on"
               placeholder={
                 status === "name" ? t("WriteUs.namePlaceholder") : ""
@@ -139,7 +138,6 @@ export default function CallBackForm({
               mask={PHONE_NUMBER_MASK}
               name="phone"
               type="text"
-              required
               autoComplete="on"
               placeholder={
                 status === "phone" ? t("WriteUs.phonePlaceholder") : ""
@@ -173,7 +171,7 @@ export default function CallBackForm({
             </p>
           </div>
           <div className="relative">
-            <Button type="submit" disabled={isLoading}>
+            <Button type="submit" disabled={!(dirty && isValid) || isLoading}>
               {t("Buttons.send")}
             </Button>
             <Image
