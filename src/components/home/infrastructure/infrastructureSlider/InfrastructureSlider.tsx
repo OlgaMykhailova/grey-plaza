@@ -2,9 +2,10 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, Parallax } from "swiper/modules";
+import { Navigation, Scrollbar, Parallax } from "swiper/modules";
 import SlideWrapper from "../../../shared/SlideWrapper";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
 import "./infrastructureSlider.css";
@@ -65,13 +66,24 @@ export default function InfrastructureSlider() {
 
   return (
     <Swiper
-      modules={[Scrollbar, Parallax]}
+      modules={[Navigation, Scrollbar, Parallax]}
+      navigation
       parallax={true}
       spaceBetween={22}
       slidesPerView={1.1}
       breakpoints={{
-        768: { slidesPerView: 2.1, parallax: false },
-        1280: { slidesPerView: 3.1, spaceBetween: 20, parallax: false },
+        320: { navigation: { enabled: false } },
+        768: {
+          slidesPerView: 2.1,
+          parallax: false,
+          navigation: { enabled: false },
+        },
+        1280: {
+          slidesPerView: 3.1,
+          spaceBetween: 20,
+          parallax: false,
+          navigation: { enabled: true },
+        },
       }}
       scrollbar={true}
       grabCursor={true}
