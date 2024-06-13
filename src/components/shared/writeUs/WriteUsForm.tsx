@@ -73,7 +73,7 @@ export default function WriteUsForm({
 
   const labelStyles = "relative w-full h-12 px-4 py-3 bg-white-bg";
   const textLabelStyles =
-    "absolute left-4 transition-translate duration-300 ease-out-quart bg-white-bg";
+    "absolute left-4 transition-[top] duration-300 ease-out-quart bg-white-bg";
   const fieldStyles = "outline-none w-full h-full text-black bg-white-bg";
   const teaxtAreaLabelStyles = "relative w-full h-[116px] p-4 bg-white-bg";
   const textAreaStyles =
