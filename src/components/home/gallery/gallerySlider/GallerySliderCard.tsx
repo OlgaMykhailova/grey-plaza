@@ -18,7 +18,7 @@ export default function GallerySliderCard({
       height="0"
       alt={alt}
       sizes="100%"
-      className={`w-full h-full`}
+      className={`w-full h-auto`}
     />
   );
 }
