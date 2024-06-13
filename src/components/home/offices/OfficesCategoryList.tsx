@@ -11,31 +11,34 @@ export default function OfficesCategoryList() {
   const { category1000, category500, category300 } = officesData;
 
   return (
-    <div className="flex flex-col gap-y-5 tablet:flex-row tablet:justify-between tablet:flex-wrap">
-      <OfficesCategory
-        sliderList={category1000[0].photos}
-        categoryName={t("Rent.category1000")}
-      />
-      <OfficesCategory
-        sliderList={category500[0].photos}
-        categoryName={t("Rent.category500")}
-      />
-      <OfficesCategory
-        sliderList={category300[0].photos}
-        categoryName={t("Rent.category300")}
-      />
-      <Link
-        href="/rent"
-        locale={locale}
-        className="tablet:hidden laptop:block mt-4 mx-auto outline-none"
-      >
-        <Button>{t("Buttons.viewAll")}</Button>
-      </Link>
-      <SlideWrapper className="hidden tablet:flex laptop:hidden justify-center items-center w-[48.9%] aspect-[356/314] p-4">
+    <>
+      <div className="flex flex-col gap-y-5 tablet:flex-row tablet:justify-between tablet:flex-wrap">
+        <OfficesCategory
+          sliderList={category1000[0].photos}
+          categoryName={t("Rent.category1000")}
+        />
+        <OfficesCategory
+          sliderList={category500[0].photos}
+          categoryName={t("Rent.category500")}
+        />
+        <OfficesCategory
+          sliderList={category300[0].photos}
+          categoryName={t("Rent.category300")}
+        />
+
+        <div className="flex flex-col w-[48.9%]">
+          <SlideWrapper className="hidden tablet:flex laptop:hidden flex-1 self-stretch justify-center items-center p-4">
+            <Link href="/rent" locale={locale} className="outline-none">
+              <Button>{t("Buttons.viewAll")}</Button>
+            </Link>
+          </SlideWrapper>
+        </div>
+      </div>
+      <div className="flex tablet:hidden laptop:flex justify-center mt-4">
         <Link href="/rent" locale={locale} className="outline-none">
           <Button>{t("Buttons.viewAll")}</Button>
         </Link>
-      </SlideWrapper>
-    </div>
+      </div>
+    </>
   );
 }
