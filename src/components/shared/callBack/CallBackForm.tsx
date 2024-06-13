@@ -70,7 +70,7 @@ export default function CallBackForm({
 
   const labelStyles = "relative w-full h-12 px-4 py-3 text-grey bg-white-bg";
   const textLabelStyles =
-    "absolute left-4 transition-translate duration-300 ease-out-quart text-grey bg-white-bg";
+    "absolute left-4 transition-[top] duration-300 ease-out-quart text-grey bg-white-bg";
   const fieldStyles = "outline-none w-full h-full text-black bg-white-bg";
   const errorStyles =
     "absolute bottom-[-16px] right-0 text-2xs text-error-text";
@@ -163,8 +163,8 @@ export default function CallBackForm({
               <Link
                 href={`/policy`}
                 locale={locale}
-                onClick={onClose}
-                className="outline-none  border-b-[1px] border-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
+                target="_blank"
+                className="outline-none border-b-[1px] border-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
             laptop:hover:border-accent laptop:focus-visible:border-accent transition-[color] duration-[300ms] ease-out-quart"
               >
                 {t("WriteUs.policy")}
