@@ -95,7 +95,7 @@ export default function InfrastructureSlider() {
         <SwiperSlide key={idx}>
           <div className="swiper-slide-transform">
             <SlideWrapper className="p-4 w-full">
-              <div className="relative z-10 flex items-end w-full aspect-[1/1]">
+              <div className="relative z-10 flex items-end w-full aspect-[1/1] bg-secondary bg-opacity-60">
                 <Image
                   src={`/images/infrastructureImages/${image}`}
                   width="0"

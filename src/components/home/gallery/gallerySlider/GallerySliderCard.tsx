@@ -12,13 +12,15 @@ export default function GallerySliderCard({
 }: GallerySliderCardProps) {
   const { image, alt } = galleryItem;
   return (
-    <Image
-      src={`/images/galleryImages/${image}`}
-      width="0"
-      height="0"
-      alt={alt}
-      sizes="100%"
-      className={`w-full h-auto`}
-    />
+    <div className="aspect-[243/243] tablet:aspect-[628/285] bg-secondary bg-opacity-60">
+      <Image
+        src={`/images/galleryImages/${image}`}
+        width="0"
+        height="0"
+        alt={alt}
+        sizes="100%"
+        className={`w-full h-auto`}
+      />
+    </div>
   );
 }
