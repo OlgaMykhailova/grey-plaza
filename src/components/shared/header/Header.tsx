@@ -14,7 +14,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 z-20 w-full h-[72px] tablet:h-20 bg-blue">
       <Container className="flex justify-between items-center h-full">
-        <LogoLink className="w-[78px] tablet:w-[110px] h-10 tablet:h-14" />
+        <LogoLink
+          closeHeaderMenu={() => setIsHeaderMenuOpened(false)}
+          className="w-[78px] tablet:w-[110px] h-10 tablet:h-14"
+        />
         <div className="flex items-center gap-x-5">
           <PhoneLink />
           <BurgerMenuButton

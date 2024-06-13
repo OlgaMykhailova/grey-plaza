@@ -4,14 +4,19 @@ import Link from "next/link";
 
 interface LogoLinkProps {
   className?: string;
+  closeHeaderMenu?: () => void;
 }
 
-export default function LogoLink({ className }: LogoLinkProps) {
+export default function LogoLink({
+  className,
+  closeHeaderMenu,
+}: LogoLinkProps) {
   const locale = useLocale();
 
   return (
     <Link
       href={`/`}
+      onClick={closeHeaderMenu}
       locale={locale}
       className={`block relative group outline-none ${className}`}
     >

@@ -163,6 +163,7 @@ export default function CallBackForm({
               <Link
                 href={`/policy`}
                 locale={locale}
+                onClick={onClose}
                 className="outline-none  border-b-[1px] border-white-text laptop:hover:text-accent laptop:focus-visible:text-accent 
             laptop:hover:border-accent laptop:focus-visible:border-accent transition-[color] duration-[300ms] ease-out-quart"
               >
