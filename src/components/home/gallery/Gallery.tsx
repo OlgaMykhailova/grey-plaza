@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import SectionTitle from "../../shared/SectionTitle";
 import Container from "../../shared/Container";
 import GallerySlider from "./gallerySlider/GallerySlider";
+import GallerySliderList from "./gallerySlider/GallerySliderList";
 
 export default function Gallery() {
   const t = useTranslations("Gallery");
@@ -14,7 +15,7 @@ export default function Gallery() {
       <Container>
         <SectionTitle>{t("title")}</SectionTitle>
       </Container>
-      <GallerySlider />
+      <GallerySliderList />
     </section>
   );
 }
