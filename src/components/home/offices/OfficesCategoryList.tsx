@@ -19,11 +19,11 @@ export default function OfficesCategoryList() {
         />
         <OfficesCategory
           sliderList={category600[0].photos}
-          categoryName={t("Rent.category500")}
+          categoryName={t("Rent.category600")}
         />
         <OfficesCategory
           sliderList={category400[0].photos}
-          categoryName={t("Rent.category300")}
+          categoryName={t("Rent.category400")}
         />
 
         <div className="flex flex-col w-[48.9%]">
