@@ -21,8 +21,8 @@ export default function FilterButtonsList({
 
   const filtersList: FiltersList[] = [
     { id: "category1000" },
-    { id: "category500" },
-    { id: "category300" },
+    { id: "category600" },
+    { id: "category400" },
     { id: "category200" },
     { id: "category100" },
     { id: "categoryLess100" },

@@ -131,7 +131,7 @@ export default function CallBackForm({
                   : "top-[14px] text-base"
               }`}
             >
-              {t("WriteUs.phone")}*
+              {t("WriteUs.phone")} *
             </p>
             <Field
               as={MaskedInput}

@@ -8,7 +8,7 @@ import SlideWrapper from "../../shared/SlideWrapper";
 export default function OfficesCategoryList() {
   const t = useTranslations("");
   const locale = useLocale();
-  const { category1000, category500, category300 } = officesData;
+  const { category1000, category600, category400 } = officesData;
 
   return (
     <>
@@ -18,12 +18,12 @@ export default function OfficesCategoryList() {
           categoryName={t("Rent.category1000")}
         />
         <OfficesCategory
-          sliderList={category500[0].photos}
-          categoryName={t("Rent.category500")}
+          sliderList={category600[0].photos}
+          categoryName={t("Rent.category600")}
         />
         <OfficesCategory
-          sliderList={category300[0].photos}
-          categoryName={t("Rent.category300")}
+          sliderList={category400[0].photos}
+          categoryName={t("Rent.category400")}
         />
 
         <div className="flex flex-col w-[48.9%]">

@@ -4,8 +4,6 @@ import { itemVariants } from "../navigationMenu/NavigationMenuItem";
 import SocialLinkItem from "./SocialLinkItem";
 
 export default function SocialLinks() {
-  // TODO change social links when is ready
-
   const socialList = [
     {
       name: "facebook",
