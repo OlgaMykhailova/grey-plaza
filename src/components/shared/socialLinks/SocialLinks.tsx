@@ -12,10 +12,16 @@ export default function SocialLinks() {
       icon: "facebook.svg",
       url: "https://www.facebook.com/Greyplazabc",
     },
-    { name: "instagram", icon: "instagram.svg", url: "" },
-    { name: "tiktok", icon: "tiktok.svg", url: "" },
-    { name: "whatsapp", icon: "whatsapp.svg", url: "" },
-    { name: "telegram", icon: "telegram.svg", url: "" },
+    {
+      name: "whatsapp",
+      icon: "whatsapp.svg",
+      url: "https://wa.me/380504448694",
+    },
+    {
+      name: "telegram",
+      icon: "telegram.svg",
+      url: "https://t.me/Tamara_Korshun",
+    },
   ];
 
   return (
