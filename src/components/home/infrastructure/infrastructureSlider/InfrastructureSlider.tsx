@@ -27,7 +27,7 @@ export default function InfrastructureSlider() {
       description: t("sportSimulatorsDescription"),
     },
     {
-      image: "cafe.jpg",
+      image: "cafe.webp",
       alt: "Cafe",
       title: t("cafeTitle"),
       description: t("cafeDescription"),
