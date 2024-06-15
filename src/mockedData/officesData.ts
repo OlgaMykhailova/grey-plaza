@@ -8,8 +8,8 @@ type OfficeItem = {
 
 type OfficesData = {
   category1000: OfficeItem[];
-  category500: OfficeItem[];
-  category300: OfficeItem[];
+  category600: OfficeItem[];
+  category400: OfficeItem[];
   category200: OfficeItem[];
   category100: OfficeItem[];
   categoryLess100: OfficeItem[];
@@ -85,7 +85,7 @@ export const officesData: OfficesData = {
     },
   ],
 
-  category500: [
+  category600: [
     {
       id: "2(D)-305(Р)",
       area: "675,43",
@@ -143,7 +143,7 @@ export const officesData: OfficesData = {
     // },
   ],
 
-  category300: [
+  category400: [
     {
       id: "2(D)-204(Р)",
       area: "509,80",
