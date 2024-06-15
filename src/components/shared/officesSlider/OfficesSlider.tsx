@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperProps } from "swiper";
@@ -35,7 +36,7 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
           <SwiperSlide key={idx}>
             <div className="swiper-slide-transform flex justify-center items-center w-full h-full aspect-[296/169] bg-secondary bg-opacity-[43%]">
               {photo ? (
-                <Image
+                <CldImage
                   src={photo}
                   width="0"
                   height="0"
@@ -69,7 +70,7 @@ export default function OfficesSlider({ sliderList }: OfficesSliderProps) {
           <SwiperSlide key={idx}>
             <div className="swiper-slide-transform flex justify-center items-center w-full h-full aspect-[296/169] bg-secondary bg-opacity-[43%]">
               {photo ? (
-                <Image
+                <CldImage
                   src={photo}
                   width="0"
                   height="0"
