@@ -16,6 +16,8 @@ type OfficesData = {
 };
 
 export const officesData: OfficesData = {
+  // TODO Update offices when photos is ready
+
   category1000: [
     {
       id: "4(А,В,С)-301(Ф)",
@@ -29,18 +31,18 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717611831/4_%D0%90_%D0%92_%D0%A1_-301_%D0%A4__page-0001_1_hoigit.jpg",
       ],
     },
-    {
-      id: "4(А,В,С)-601(Ф)",
-      area: "2062,94",
-      building: "4",
-      purpose: "Офісне приміщення",
-      photos: [
-        "",
-        "",
-        "",
-        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717685018/4_%D0%90_%D0%92_%D0%A1_-601_%D0%A4_oav0lo.jpg",
-      ],
-    },
+    // {
+    //   id: "4(А,В,С)-601(Ф)",
+    //   area: "2062,94",
+    //   building: "4",
+    //   purpose: "Офісне приміщення",
+    //   photos: [
+    //     "",
+    //     "",
+    //     "",
+    //     "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717685018/4_%D0%90_%D0%92_%D0%A1_-601_%D0%A4_oav0lo.jpg",
+    //   ],
+    // },
     {
       id: "5(А)-201(Б)",
       area: "1868,45",
@@ -96,13 +98,13 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717665980/2_D__305_%D0%A0__page-0001_fetul9.jpg",
       ],
     },
-    {
-      id: "4(А)-202(Ф)",
-      area: "805,38",
-      building: "4",
-      purpose: "Офісне приміщення",
-      photos: ["", "", "", ""],
-    },
+    // {
+    //   id: "4(А)-202(Ф)",
+    //   area: "805,38",
+    //   building: "4",
+    //   purpose: "Офісне приміщення",
+    //   photos: ["", "", "", ""],
+    // },
     {
       id: "4(А)-402(Ф)",
       area: "932,36",
@@ -132,13 +134,13 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717684812/4_%D0%90_-502_%D0%A4_1_wryclq.jpg",
       ],
     },
-    {
-      id: "5(А)-503/2(Б)",
-      area: "523,93",
-      building: "5",
-      purpose: "Офісне приміщення",
-      photos: ["", "", "", ""],
-    },
+    // {
+    //   id: "5(А)-503/2(Б)",
+    //   area: "523,93",
+    //   building: "5",
+    //   purpose: "Офісне приміщення",
+    //   photos: ["", "", "", ""],
+    // },
   ],
 
   category300: [
@@ -325,13 +327,13 @@ export const officesData: OfficesData = {
   ],
 
   categoryLess100: [
-    {
-      id: "1(В)-101(Х)",
-      area: "53,9",
-      building: "1",
-      purpose: "Офісне приміщення",
-      photos: ["", "", "", ""],
-    },
+    // {
+    //   id: "1(В)-101(Х)",
+    //   area: "53,9",
+    //   building: "1",
+    //   purpose: "Офісне приміщення",
+    //   photos: ["", "", "", ""],
+    // },
     {
       id: "1(А)-103/2(Х)",
       area: "26,46",
