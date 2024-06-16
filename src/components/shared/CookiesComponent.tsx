@@ -22,7 +22,7 @@ export default function CookiesComponent() {
 
   const handleClick = () => {
     setIsAccepted(true);
-    Cookies.set("isAcceptedCookies", "true");
+    Cookies.set("isAcceptedCookies", "true", { expires: 365 });
   };
 
   return (
