@@ -48,7 +48,7 @@ export default function CallBackForm({
       const data =
         `<b>Передзвоніть мені</b>\n` +
         `Ім'я: ${values.name.trim()}\n` +
-        `Телефон: ${values.phone.trim()}\n`;
+        `Телефон: ${values.phone.replace(/[^\d+]/g, "")}\n`;
       await axios({
         method: "post",
         url: "/api/sendDataTelegram",
