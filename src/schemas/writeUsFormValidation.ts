@@ -19,7 +19,7 @@ export const WriteUsValidation = () => {
     phone: yup.string().matches(phoneRegex, t("wrongPhone")),
     message: yup
       .string()
-      .min(10, t("messageMinMaxSymbols"))
+      .min(3, t("messageMinMaxSymbols"))
       .max(200, t("messageMinMaxSymbols"))
       .required(t("required")),
   });
