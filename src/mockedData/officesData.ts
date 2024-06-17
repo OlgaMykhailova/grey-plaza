@@ -20,6 +20,21 @@ export const officesData: OfficesData = {
 
   category1000: [
     {
+      id: "4(С)-101/2(Ф)",
+      area: "2086,04",
+      building: "4",
+      purpose: "Офісне приміщення",
+      photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650128/257_alapzn.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650124/236_ylhv13.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650119/213_ttwxsq.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650127/243_b8vcvw.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650126/239_qjlj56.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650119/210_iqorch.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650135/4_%D0%A1_-101_2_%D0%A4__page-0001_z0ge5l.jpg",
+      ],
+    },
+    {
       id: "4(А,В,С)-301(Ф)",
       area: "2062,50",
       building: "4",
@@ -31,18 +46,22 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717611831/4_%D0%90_%D0%92_%D0%A1_-301_%D0%A4__page-0001_1_hoigit.jpg",
       ],
     },
-    // {
-    //   id: "4(А,В,С)-601(Ф)",
-    //   area: "2062,94",
-    //   building: "4",
-    //   purpose: "Офісне приміщення",
-    //   photos: [
-    //     "",
-    //     "",
-    //     "",
-    //     "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717685018/4_%D0%90_%D0%92_%D0%A1_-601_%D0%A4_oav0lo.jpg",
-    //   ],
-    // },
+    {
+      id: "4(А,В,С)-601(Ф)",
+      area: "2062,94",
+      building: "4",
+      purpose: "Офісне приміщення",
+      photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650559/IMG_2451_fvycrl.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650556/IMG_2450_acrfze.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650554/IMG_2449_wx3qkx.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650552/IMG_2448_kcopzw.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650542/IMG_2443_sl105g.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650539/IMG_2442_koncgp.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718650535/IMG_2440_xxgcy3.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717685018/4_%D0%90_%D0%92_%D0%A1_-601_%D0%A4_oav0lo.jpg",
+      ],
+    },
     {
       id: "5(А)-201(Б)",
       area: "1868,45",
