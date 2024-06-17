@@ -324,6 +324,20 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717677488/3_B_-703_%D0%A4__page-0001_ir5pbw.jpg",
       ],
     },
+    {
+      id: "3(B)-401(Ф)",
+      area: "159,27",
+      building: "3",
+      purpose: "Офісне приміщення",
+      photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718646327/937_e27ubi.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718646325/936_czmr6f.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718646328/941_psgrn6.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718646329/943_owxh1v.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718646332/945_xmsfne.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718646336/3_%D0%92_-401_%D0%A4__page-0001_tydcux.jpg",
+      ],
+    },
   ],
 
   categoryLess100: [
