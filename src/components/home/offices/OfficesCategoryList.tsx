@@ -14,7 +14,7 @@ export default function OfficesCategoryList() {
     <>
       <div className="flex flex-col gap-y-5 tablet:flex-row tablet:justify-between tablet:flex-wrap">
         <OfficesCategory
-          sliderList={category1000[0].photos}
+          sliderList={category1000[1].photos}
           categoryName={t("Rent.category1000")}
         />
         <OfficesCategory
