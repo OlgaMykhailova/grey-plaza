@@ -327,13 +327,6 @@ export const officesData: OfficesData = {
   ],
 
   categoryLess100: [
-    // {
-    //   id: "1(В)-101(Х)",
-    //   area: "53,9",
-    //   building: "1",
-    //   purpose: "Офісне приміщення",
-    //   photos: ["", "", "", ""],
-    // },
     {
       id: "1(А)-103/2(Х)",
       area: "26,46",
@@ -375,6 +368,35 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678073/18_wqwon3.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678075/20_lzyo4q.jpg",
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717678083/1_%D0%90_-103_7_%D0%A5__page-0001_syq3uv.jpg",
+      ],
+    },
+    {
+      id: "2(A)-102(Р)",
+      area: "46,14",
+      building: "2",
+      purpose: "Офісне приміщення",
+      photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645801/860_x5iwqd.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645821/863_sfqqib.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645802/861_vzfx0c.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645822/865_ziwsqe.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645797/858_pnmnil.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645840/2_%D0%90_-102_%D0%A0__page-0001_sjfa5j.jpg",
+      ],
+    },
+    {
+      id: "2(A)-205(Р)",
+      area: "21,23",
+      building: "2",
+      purpose: "Міні кав'ярня",
+      photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645310/13_qzlr2c.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645311/16_wlx4ll.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645311/14_djguea.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645309/101_ditlxi.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645309/100_mf4fzs.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645309/102_yyfxpt.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718645326/2_%D0%90__205_%D0%A0__page-0001_1_gmwqd6.jpg",
       ],
     },
     {
