@@ -211,6 +211,20 @@ export const officesData: OfficesData = {
         "https://res.cloudinary.com/dws8qdbjg/image/upload/v1717684908/4%D0%92-203_%D0%A4___1_n3trsu.jpg",
       ],
     },
+    {
+      id: "6-201(Б)",
+      area: "409,64",
+      building: "6",
+      purpose: "Офісне приміщення",
+      photos: [
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718648130/IMG_2412_c3k3mf.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718648133/IMG_2413_ogils6.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718648126/IMG_2411_wy1zbv.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718648123/IMG_2410_o3xkee.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718648115/IMG_2408_vbxnoc.jpg",
+        "https://res.cloudinary.com/dws8qdbjg/image/upload/v1718648139/6-201_%D0%91__page-0001_pwgcen.jpg",
+      ],
+    },
   ],
 
   category200: [
