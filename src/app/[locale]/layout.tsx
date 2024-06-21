@@ -38,6 +38,10 @@ export default function LocaleLayout({
     <html lang={locale} className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta
+          name="google-site-verification"
+          content="pHR0XfU0yXOPq_53gA016tQTbs90M84nWcW4JWGBvhU"
+        />
       </head>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${fira.variable} text-grey bg-white-bg font-fira`}>
