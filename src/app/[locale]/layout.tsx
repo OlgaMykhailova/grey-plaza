@@ -20,6 +20,12 @@ export async function generateMetadata({
 }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
+    alternates: {
+      canonical: "/",
+      languages: {
+        uk: "/ua",
+      },
+    },
     title: t("title"),
     description: t("description"),
   };
