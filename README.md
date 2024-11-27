@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Multi-page application for business center Grey Plaza
 
-## Getting Started
+## Live page
 
-First, run the development server:
+[https://greyplaza.com.ua/](https://greyplaza.com.ua/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technical Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This app is built using Next.js for server-side rendering and static site generation. TypeScript ensures type safety and better development workflows. For localization, Next-intl is integrated. For API requests Axios is used. For styling is used TailwindCSS. Form handling is powered by Formik, validation handled by Yup for reliable user input management. Framer-motion is used for animations. Responsive layout.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Description
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This website is developed for the Grey Plaza Business Center to highlight its unique features and advantages. It is designed to help users easily browse and select available rental spaces within the business center. The homepage offers user-friendly navigation and incorporates animations to enhance the visual appeal. It includes forms for gathering user information, which are integrated with a Telegram channel to streamline processing by the company's managers. Additionally, the site features a custom 404 page to improve the user experience.
 
-## Learn More
+Hero section
 
-To learn more about Next.js, take a look at the following resources:
+![Hero](/public/images/screenshots/hero.webp)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Write us section
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Write us](/public/images/screenshots/writeUs.webp)
 
-## Deploy on Vercel
+Rent page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Rent page](/public/images/screenshots/rent.webp)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Not found page
+
+![Not found page](/public/images/screenshots/notFound.webp)
