@@ -8,6 +8,20 @@ import Section5 from "@/src/components/policy/Section5";
 import Section6 from "@/src/components/policy/Section6";
 import Section7 from "@/src/components/policy/Section7";
 import Container from "@/src/components/shared/Container";
+import { generatePageMetaData } from "@/src/utils/generatePageMetaData";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const { locale } = params;
+  return generatePageMetaData({
+    locale,
+    namespace: "Metadata",
+    canonical: "/policy",
+  });
+}
 
 export default function Policy() {
   return (
