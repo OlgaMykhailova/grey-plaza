@@ -24,7 +24,7 @@ export async function generatePageMetaData({
     alternates: {
       canonical: localizedCanonical,
       languages: {
-        uk: `/ua${canonical}`,
+        uk: `/ua`,
       },
     },
     title: t("title"),
