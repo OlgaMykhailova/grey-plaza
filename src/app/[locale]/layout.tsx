@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { generatePageMetaData } from "@/src/utils/generatePageMetaData";
 import { Fira_Sans } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import Providers from "@/src/components/providers/Providers";
@@ -14,21 +14,16 @@ const fira = Fira_Sans({
 });
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
   params: { locale: string };
 }) {
-  const t = await getTranslations({ locale, namespace: "Metadata" });
-  return {
-    alternates: {
-      canonical: "/",
-      languages: {
-        uk: "/ua",
-      },
-    },
-    title: t("title"),
-    description: t("description"),
-  };
+  const { locale } = params;
+  return generatePageMetaData({
+    locale,
+    namespace: "Metadata",
+    canonical: "/",
+  });
 }
 
 export default function LocaleLayout({
